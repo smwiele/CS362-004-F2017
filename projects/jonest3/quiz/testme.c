@@ -6,13 +6,36 @@
 char inputChar()
 {
     // TODO: rewrite this function
-    return ' ';
+    return rand() % (125 + 1 - 32) + 32;
 }
 
 char *inputString()
 {
     // TODO: rewrite this function
-    return "";
+    static char string[6];
+    
+    int i;
+    int max = 122;
+    int min = 97;
+	
+    char c;
+
+    for(i = 0; i < 5; i++){
+	c = rand() % (max + 1 - min) + min;
+
+	if(c == 'r'){
+		min = 101;
+		max = 116;
+	}
+	else if(c == 'e')
+		min = 115;
+	else if(c == 's')
+		min = 101;
+
+	string[i] = c; 		
+    }
+    string[5] = '\0';
+    return string;
 }
 
 void testme()
@@ -31,7 +54,7 @@ void testme()
     if (c == '[' && state == 0) state = 1;
     if (c == '(' && state == 1) state = 2;
     if (c == '{' && state == 2) state = 3;
-    if (c == ' '&& state == 3) state = 4;
+    if (c == ' ' && state == 3) state = 4;
     if (c == 'a' && state == 4) state = 5;
     if (c == 'x' && state == 5) state = 6;
     if (c == '}' && state == 6) state = 7;
