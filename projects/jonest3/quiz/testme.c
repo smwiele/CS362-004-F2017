@@ -31,6 +31,10 @@ char *inputString()
 		min = 115;
 	else if(c == 's')
 		min = 101;
+	else{
+		min = 97;
+		max = 122;
+	}
 
 	string[i] = c; 		
     }
