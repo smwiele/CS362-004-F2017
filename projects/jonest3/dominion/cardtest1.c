@@ -25,7 +25,7 @@ int main(){
 
    int counter = 0;
    while(counter < 500){
-
+   
    counter++;
    printf("---------- TESTING CARD: adventurer ----------\n");
 
@@ -85,12 +85,14 @@ int main(){
    }
    printf("\n-Size: %d\n", testG.discardCount[0]);
 
+
+// adventurer
    int temphand[MAX_HAND];
    int drawntreasure = 0;
    int z = 0;
 
    while(drawntreasure<2){
-	if (G.handCount[0] <1){//if the deck is empty we need to shuffle discard and add to deck
+	if (G.deckCount[0] <1){//if the deck is empty we need to shuffle discard and add to deck
 		shuffle(0, &G);
 	}
         drawCard(0, &G);
