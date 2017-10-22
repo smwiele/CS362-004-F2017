@@ -13,8 +13,6 @@
 
 #define UNITTEST "updateCoins"
 
-long random_at_most(long max); // https://stackoverflow.com/questions/2509679/how-to-generate-a-random-number-from-within-a-range
-
 const char* getCardName(enum CARD card);
 
 int main(){
@@ -35,144 +33,147 @@ int main(){
    int mixedHand[MAX_HAND];
    
    int i,j;
-   long rand;
 
+   for(j = 0; j < MAX_HAND; j++){
+	// set up 3 pure decks
+	allCopper[j] = copper;
+	allSilver[j] = silver;
+	allGold[j] = gold;
+	mixedHand[j] = gold;
+	allThree[j] = gold;
+	copperSilver[j] = silver;
+	silverGold[j] = gold;
+	goldCopper[j] = copper;
 
-   for(i = 0; i < 8; i++){
-   	for(j = 0; j < MAX_HAND; j++){
-   		allCopper[j] = copper;
-   		allSilver[j] = silver;
-   		allGold[j] = gold;
-
-		rand = random_at_most(1);
-
-		if((int)rand == 1){
-			copperSilver[j] = copper;
-			silverGold[j] = silver;
-			goldCopper[j] = gold;
-		}
-		else{
-			copperSilver[j] = silver;
-			silverGold[j] = gold;
-			goldCopper[j] = copper;
-		}	
-
-		rand = random_at_most(2);
-
-		if((int)rand == 1)
-			allThree[j] = copper;
-		else if((int)rand == 2)	
-			allThree[j] = silver;
-		else
-			allThree[j] = gold;
-
-		rand = random_at_most(6);
-
-		if((int) rand == 1)
-			mixedHand[j] = curse;
-		else if((int) rand == 2)
-			mixedHand[j] = estate;
-       		 else if((int) rand == 3)
-                	mixedHand[j] = duchy;
-	        else if((int) rand == 4)
-        	        mixedHand[j] = province;
-	        else if((int) rand == 5)
-       		        mixedHand[j] = copper;
-        	else if((int) rand == 6)
-                	mixedHand[j] = silver;
-        	else
-                	mixedHand[j] = gold;
-   	}
-   	arrayOfHands[0] = allCopper;
-   	arrayOfHands[1] = allSilver;
-   	arrayOfHands[2] = allGold;
-   	arrayOfHands[3] = copperSilver;
-   	arrayOfHands[4] = silverGold;
-   	arrayOfHands[5] = goldCopper;
-   	arrayOfHands[6] = allThree;
-   	arrayOfHands[7] = mixedHand;
-
-   	int factor;
-
- //  for(i = 0; i <= 7; i++){
-   	if(i == 0){	
-		factor = 1;
-		printf("---Testing ALL COPPER\n");
+	// set up mixed deck
+	if(j % 2 == 0)
+		mixedHand[j] = curse;
+	else if(j % 6 == 0)
+		mixedHand[j] = estate;
+	else if(j % 5 == 0)
+               	mixedHand[j] = duchy;
+        else if(j % 4 == 0)
+       	        mixedHand[j] = province;
+        else if(j % 3 == 0){
+	        mixedHand[j] = copper;
+		allThree[j] = copper;
 	}
-	else if(i == 1){
-		factor = 2;
-		printf("---Testing ALL SILVER\n");
+       	else if(j % 2 != 0){
+               	mixedHand[j] = silver;
+		allThree[j] = silver;
+                copperSilver[j] = copper;
+                silverGold[j] = silver;
+                goldCopper[j] = gold;
 	}
-	else if(i == 2){
-		factor = 3;
-		printf("---Testing ALL GOLD\n");
-	}
-	else if(i == 3)
-		printf("---Testing COPPER & SILVER\n");
-	else if(i == 4)
-		printf("---Testing SILVER & GOLD\n");
-	else if(i == 5)
-		printf("---Testing GOLD & COPPER\n");
-	else if(i == 6)
-		printf("---Testing ALL THREE\n");
-	else
-		printf("---Testing MIXED HAND\n");
+    }
 
-   	int numPlayers;
-   	struct gameState G;
-   	int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, 
-		     sea_hag, tribute, smithy};
-   	int bonus = 0;
-	int seed = 10000;
-	int currentHand;
-	int success = 1;
-	int copperCount;
-	int silverCount;
-	int goldCount;
+    arrayOfHands[0] = allCopper;
+    arrayOfHands[1] = allSilver;
+    arrayOfHands[2] = allGold;
+    arrayOfHands[3] = copperSilver;
+    arrayOfHands[4] = silverGold;
+    arrayOfHands[5] = goldCopper;
+    arrayOfHands[6] = allThree;
+    arrayOfHands[7] = mixedHand;
+ 
+    int factor;
+    int numPlayers;
+    struct gameState G;
+    int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, 
+  	         sea_hag, tribute, smithy};
+    int bonus = 0;
+    int seed = 10000;
+    int currentHand;
+    int success = 1;
+    int copperCount;
+    int silverCount;
+    int goldCount;
+
+    for(i = 0; i < 8; i++){
+        if(i == 0){
+                factor = 1;
+                printf("----------Testing ALL COPPER\n");
+        }
+        else if(i == 1){
+                factor = 2;
+                printf("----------Testing ALL SILVER\n");
+        }
+        else if(i == 2){
+                factor = 3;
+                printf("----------Testing ALL GOLD\n");
+        }
+        else if(i == 3)
+                printf("----------Testing COPPER & SILVER\n");
+        else if(i == 4)
+                printf("----------Testing SILVER & GOLD\n");
+        else if(i == 5)
+                printf("----------Testing GOLD & COPPER\n");
+        else if(i == 6)
+                printf("----------Testing ALL THREE\n");
+        else
+                printf("----------Testing MIXED HAND\n");
 
    	for(numPlayers = 2; numPlayers <= MAX_PLAYERS; numPlayers++){
-		printf("----------TESTING FOR %d PLAYERS----------\n", numPlayers);
+		printf("\n----------TESTING FOR %d PLAYERS----------\n", numPlayers);
 		memset(&G, 23, sizeof(struct gameState));
-		initializeGame(numPlayers, k, seed, &G);
+//		initializeGame(MAX_PLAYERS, k, seed, &G);
 
 		int player;
-		for(player = 1; player <= numPlayers; player++){
+		for(player = 1; player <= MAX_PLAYERS; player++){
 			printf("Player %d:\n", player);
 
-			for(currentHand = 0; currentHand < 5; currentHand++){
-				printf("--Current Hand Size: %d\n",currentHand);
+			for(currentHand = 0; currentHand < MAX_HAND; currentHand++){
+//				G.handCount[player] = currentHand;
+//				printf("--Current Hand Size: %d\n", G.handCount[player]);
+//                                printf("--Current Hand Size: %d\n", currentHand);
+
+				memcpy(G.hand[player], arrayOfHands[i], sizeof(int) * MAX_HAND);
+
+//                                printf("--Current Hand Size: %d\n", G.handCount[player]);
 				G.handCount[player] = currentHand;
-				memcpy(G.hand[player], arrayOfHands[i], sizeof(int) * currentHand);
-
-				int y;
-				copperCount = 0;
-				silverCount = 0;
-				goldCount = 0;
-
-				for(y = 0; y < currentHand; y++){
-					printf("Card: %s\n", getCardName((G.hand[player][y])));						
-					if(G.hand[player][y] == copper)
-						copperCount++;
-					else if(G.hand[player][y] == silver)
-						silverCount++;
-					else if(G.hand[player][y] == gold)
-						goldCount++;
-				}
-
   				updateCoins(player, &G, bonus);
 
-				int coinSum;
+				int y;
 
+//                                printf("--Current Hand Size: %d\n", G.handCount[player]);
+//				G.hand[player][3] = copper;
+				G.hand[player][4] = copper;
+
+                                G.handCount[player] = currentHand;
+
+//				G.hand[player][5] = copper;
+//				G.hand[player][6] = copper;
+				for(y = 0; y < G.handCount[player]; y++){
+//					printf("Card: %s\n", getCardName(G.hand[player][y]));
+//					printf("y = %d and handCount = %d\n", y, G.handCount[player]);
+				}
 				if(i < 3){
-					if(G.coins != currentHand * factor)
+/*					if(G.coins !=  G.handCount[player] * factor)
 					{
 						success = 0;
-						printf("Error for Player %d at hand %d.\n",player, currentHand); 	
+						printf("Error for Player %d at hand %d.\n", player, G.handCount[player]); 	
 						printf("G.coins  = %d\n", G.coins);
-						printf("Expected = %d\n", currentHand * factor);
+						printf("Expected = %d\n", G.handCount[player] * factor);
+						return 0;
 					} 
-				}
+*/				}
 				else{
+	     	                        int y;
+	                                copperCount = 0;
+                	                silverCount = 0;
+                        	        goldCount = 0;
+
+                                	for(y = 0; y < G.handCount[player]; y++){
+	       	                                if(G.hand[player][y] == copper)
+                	                                copperCount += 1;
+                        	                else if(G.hand[player][y] == silver)
+                                	                silverCount += 1;
+	                                        else if(G.hand[player][y] == gold)
+        	                                        goldCount += 1;
+	                                }
+
+					int coinSum;
+
 					if(i == 3)
 						coinSum = (copperCount * 1) + (silverCount * 2);
 					else if(i == 4)
@@ -184,43 +185,25 @@ int main(){
 					
 					if(G.coins != coinSum){
 						success = 0;
-						printf("Error for Player %d at hand %d.\n", player, currentHand);
+						printf("Error for Player %d at hand %d.\n", player, G.handCount[player]);
 						printf("G.coins  = %d\n", G.coins);
 						printf("Expected = %d\n", coinSum);
+						return 0;
 					}	
 				}
 			}
 			if(success)
 				printf("Test = PASSED\n");
-			if(player != MAX_PLAYERS){
-				printf("Press [ENTER] to see next player.\n");
-				while(getchar() != '\n');
-			}
+//			if(player != MAX_PLAYERS){
+//				printf("Press [ENTER] to see next player.\n");
+//				while(getchar() != '\n');
+//			}
 		}
    	}
-	printf("Press [ENTER] to test next hand combination.\n");
-	while(getchar() != '\n');
+//	if( i != 8){
+//		printf("Press [ENTER] to test next hand combination.\n");
+//		while(getchar() != '\n');
+//	}
    }
    return 0;
-}
-
-// Assumes 0 <= max <= RAND_MAX
-// Returns in the closed interval [0, max]
-long random_at_most(long max) {
-  unsigned long
-  // max <= RAND_MAX < ULONG_MAX, so this is okay.
-  	num_bins = (unsigned long) max + 1,
-        num_rand = (unsigned long) RAND_MAX + 1,
-        bin_size = num_rand / num_bins,
-        defect   = num_rand % num_bins;
-
-   long x;
-   do {
-   	x = random();
-   }
-   // This is carefully written not to overflow
-   while (num_rand - defect <= (unsigned long)x);
-
-   // Truncated division is intentional
-   return x/bin_size;
 }
