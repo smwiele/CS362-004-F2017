@@ -1,0 +1,299 @@
+        -:    0:Source:cardtest2.c
+        -:    0:Graph:cardtest2.gcno
+        -:    0:Data:cardtest2.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/*jonest3
+        -:    2: * Card Test 2*/
+        -:    3:
+        -:    4:#include "dominion.h"
+        -:    5:#include "dominion_helpers.h"
+        -:    6:#include "rngs.h"
+        -:    7:#include "getCard.h"
+        -:    8:#include <stdio.h>
+        -:    9:#include <math.h>
+        -:   10:#include <stdlib.h>
+        -:   11:#include <assert.h>
+        -:   12:#include <string.h>
+        -:   13:
+        -:   14:// smithy card
+        -:   15:
+function main called 1 returned 100% blocks executed 79%
+        1:   16:int main(){
+        -:   17:   struct gameState G, testG;
+        1:   18:   int seed = 10000;
+        1:   19:   int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+        1:   20:   int numPlayers = 2;
+        -:   21:   int i;
+        1:   22:   int pass = 1;
+        -:   23:
+        1:   24:   initializeGame(numPlayers, k, seed, &G);
+call    0 returned 100%
+        -:   25:
+        1:   26:   int counter = 0;
+      502:   27:   while(counter < 500){
+branch  0 taken 99%
+branch  1 taken 1% (fallthrough)
+      500:   28:   counter++;
+      500:   29:   printf("---------- TESTING CARD: smithy ----------\n");
+call    0 returned 100%
+        -:   30:
+      500:   31:   printf("Before: \n");
+call    0 returned 100%
+        -:   32:
+      500:   33:   int handCount = G.handCount[0];
+        -:   34:
+      500:   35:   printf("-Hand: ");
+call    0 returned 100%
+      548:   36:   for(i = 0; i < G.handCount[0]; i++){
+branch  0 taken 9%
+branch  1 taken 91% (fallthrough)
+       48:   37:	printf("%s ", getCardName(G.hand[0][i]));
+call    0 returned 100%
+call    1 returned 100%
+        -:   38:   }
+      500:   39:   printf("\n-Size: %d\n", G.handCount[0]);
+call    0 returned 100%
+        -:   40:
+      500:   41:   printf("-Deck: ");
+call    0 returned 100%
+      507:   42:   for(i = 0; i < G.deckCount[0]; i++){
+branch  0 taken 1%
+branch  1 taken 99% (fallthrough)
+        7:   43:	printf("%s ", getCardName(G.deck[0][i]));
+call    0 returned 100%
+call    1 returned 100%
+        -:   44:   }
+      500:   45:   printf("\n-Size: %d\n", G.deckCount[0]);
+call    0 returned 100%
+        -:   46:
+      500:   47:   printf("-Discard: ");
+call    0 returned 100%
+      500:   48:   for(i = 0; i < G.discardCount[0]; i++){
+branch  0 taken 0%
+branch  1 taken 100% (fallthrough)
+    #####:   49:	printf("%s ", getCardName(G.discard[0][i]));
+call    0 never executed
+call    1 never executed
+        -:   50:   }
+      500:   51:   printf("\n-Size: %d\n", G.discardCount[0]);
+call    0 returned 100%
+        -:   52:
+        -:   53:   // copy the game state to a testcase
+      500:   54:   memcpy(&testG, &G, sizeof(struct gameState));
+        -:   55:
+      500:   56:   printf("--TESTING: cardEffect & smithy\n");
+call    0 returned 100%
+      500:   57:   if(cardEffect(smithy, 0, 0, 0, &testG, 0, NULL) < 0){
+call    0 returned 100%
+branch  1 taken 0% (fallthrough)
+branch  2 taken 100%
+    #####:   58:	printf("TEST = FAILED >> cardEffect returned < 0\n");
+call    0 never executed
+    #####:   59:	pass = 0;
+        -:   60:   }
+      500:   61:   else printf("TEST = PASSED\n");
+call    0 returned 100%
+        -:   62:
+      500:   63:   printf("\nAfter: \n");
+call    0 returned 100%
+        -:   64:
+      500:   65:   printf("-Hand: ");
+call    0 returned 100%
+      544:   66:   for(i = 0; i < testG.handCount[0]; i++){
+branch  0 taken 8%
+branch  1 taken 92% (fallthrough)
+       44:   67:        printf("%s ", getCardName(testG.hand[0][i]));
+call    0 returned 100%
+call    1 returned 100%
+        -:   68:   }
+      500:   69:   printf("\n-Size: %d\n", testG.handCount[0]);
+call    0 returned 100%
+        -:   70:
+      500:   71:   printf("-Deck: ");
+call    0 returned 100%
+      501:   72:   for(i = 0; i < testG.deckCount[0]; i++){
+branch  0 taken 1%
+branch  1 taken 99% (fallthrough)
+        1:   73:        printf("%s ", getCardName(testG.deck[0][i]));
+call    0 returned 100%
+call    1 returned 100%
+        -:   74:   }
+      500:   75:   printf("\n-Size: %d\n", testG.deckCount[0]);
+call    0 returned 100%
+        -:   76:
+      500:   77:   printf("-Discard: ");
+call    0 returned 100%
+      500:   78:   for(i = 0; i < testG.discardCount[0]; i++){
+branch  0 taken 0%
+branch  1 taken 100% (fallthrough)
+    #####:   79:        printf("%s ", getCardName(testG.discard[0][i]));
+call    0 never executed
+call    1 never executed
+        -:   80:   }
+      500:   81:   printf("\n-Size: %d\n", testG.discardCount[0]);
+call    0 returned 100%
+        -:   82:
+        -:   83:   // Smithy
+        -:   84:   // +3 Cards
+     2000:   85:   for (i = 0; i < 3; i++)
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+        -:   86:   {
+     1500:   87:	drawCard(0, &G);
+call    0 returned 100%
+        -:   88:   }
+        -:   89:   // discard card from hand
+      500:   90:   discardCard(0, 0, &G, 0);
+call    0 returned 100%
+        -:   91:
+      500:   92:   printf("---Print Results\n");
+call    0 returned 100%
+        -:   93:
+      500:   94:   printf("\nExpected: \n");
+call    0 returned 100%
+        -:   95:
+      500:   96:   printf("-Hand: ");
+call    0 returned 100%
+      543:   97:   for(i = 0; i < G.handCount[0]; i++){
+branch  0 taken 8%
+branch  1 taken 92% (fallthrough)
+       43:   98:        printf("%s ", getCardName(G.hand[0][i]));
+call    0 returned 100%
+call    1 returned 100%
+        -:   99:   }
+      500:  100:   printf("\n-Size: %d\n", G.handCount[0]);
+call    0 returned 100%
+        -:  101:
+      500:  102:   printf("-Deck: ");
+call    0 returned 100%
+      502:  103:   for(i = 0; i < G.deckCount[0]; i++){
+branch  0 taken 1%
+branch  1 taken 99% (fallthrough)
+        2:  104:        printf("%s ", getCardName(G.deck[0][i]));
+call    0 returned 100%
+call    1 returned 100%
+        -:  105:   }
+      500:  106:   printf("\n-Size: %d\n", G.deckCount[0]);
+call    0 returned 100%
+        -:  107:
+      500:  108:   printf("-Discard: ");
+call    0 returned 100%
+      500:  109:   for(i = 0; i < G.discardCount[0]; i++){
+branch  0 taken 0%
+branch  1 taken 100% (fallthrough)
+    #####:  110:        printf("%s ", getCardName(G.discard[0][i]));
+call    0 never executed
+call    1 never executed
+        -:  111:   }
+      500:  112:   printf("\n-Size: %d\n", G.discardCount[0]);
+call    0 returned 100%
+        -:  113:
+      500:  114:   printf("\n\n--Results:\n");
+call    0 returned 100%
+        -:  115:
+      500:  116:   printf("-Hand Count:\n");
+call    0 returned 100%
+      500:  117:   printf("Expected: %d\nResults : %d\n", G.handCount[0], testG.handCount[0]);
+call    0 returned 100%
+        -:  118:
+      500:  119:   printf("--TESTING HAND COUNT--\n");
+call    0 returned 100%
+      500:  120:   if(G.handCount[0] != testG.handCount[0]){ printf("CARD FAILED AT >> Hand Count\n"); pass = 0;}
+branch  0 taken 97% (fallthrough)
+branch  1 taken 3%
+call    2 returned 100%
+        -:  121:   else{
+       50:  122:	for(i = 0; i < G.handCount[0]; i++){
+branch  0 taken 72%
+branch  1 taken 28% (fallthrough)
+       36:  123:		if(G.hand[0][i] != testG.hand[0][i]){ printf("CARD FAILED AT >> Hands do not match\n"); pass = 0;}
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+call    2 never executed
+        -:  124:	}
+        -:  125:   }
+      500:  126:   if(pass)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  127:	printf("TESTING = PASSED\n");
+call    0 never executed
+        -:  128:
+      500:  129:   printf("--TESTING HAND COUNT GAIN--\n");
+call    0 returned 100%
+      500:  130:   if(testG.handCount[0] == (2+handCount)){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  131:	printf("TESTING = PASSED\n");
+call    0 never executed
+        -:  132:   }
+        -:  133:   else{
+      500:  134:	printf("CARD FAILED AT >> Hand Count did not gain 3 cards & discard smithy.\n");
+call    0 returned 100%
+      500:  135:	pass = 0;
+        -:  136:   }
+      500:  137:   printf("\n-Deck Count:\n");
+call    0 returned 100%
+      500:  138:   printf("Expected: %d\nResults : %d\n", G.deckCount[0], testG.deckCount[0]);
+call    0 returned 100%
+        -:  139:
+      500:  140:   printf("--TESTING DECK COUNT\n");
+call    0 returned 100%
+      500:  141:   if(G.deckCount[0] != testG.deckCount[0]){ printf("CARD FAILED AT >> Deck Count\n"); pass = 0;}
+branch  0 taken 1% (fallthrough)
+branch  1 taken 99%
+call    2 returned 100%
+        -:  142:   else{
+      499:  143:	for(i = 0; i < G.deckCount[0]; i++){
+branch  0 taken 0%
+branch  1 taken 100% (fallthrough)
+    #####:  144:		if(G.deck[0][i] != testG.deck[0][i]){ printf("CARD FAILED AT >> Decks do not match\n"); pass = 0;}
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+        -:  145:	}
+        -:  146:   }
+      500:  147:   if(pass)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  148:	printf("TESTING = PASSED\n");
+call    0 never executed
+        -:  149:
+      500:  150:   printf("\n-Discard Count:\n");
+call    0 returned 100%
+      500:  151:   printf("Expected: %d\nResults : %d\n", G.discardCount[0], testG.discardCount[0]);
+call    0 returned 100%
+        -:  152:
+      500:  153:   printf("--TESTING DISCARD\n");
+call    0 returned 100%
+      500:  154:   if(G.discardCount[0] != testG.discardCount[0]){ printf("CARD FAILED AT >> Discard Count\n"); pass = 0;}
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+call    2 never executed
+        -:  155:   else{
+      500:  156:	for(i = 0; i < G.discardCount[0]; i++){
+branch  0 taken 0%
+branch  1 taken 100% (fallthrough)
+    #####:  157:		if(G.discard[0][i] != testG.discard[0][i]){ printf("CARD FAILED AT >> Discards do not match\n"); pass = 0;}
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+        -:  158:	}	
+        -:  159:   }
+      500:  160:   if(pass)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  161:	printf("TESTING = PASSED\n");
+call    0 never executed
+        -:  162:
+      500:  163:   if(pass)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  164:	printf(">>> TEST SUCCESSFUL <<<\n");
+call    0 never executed
+        -:  165:   else
+      500:  166:	printf(">>> TEST FAILED <<<\n");
+call    0 returned 100%
+        -:  167:   }
+        1:  168:   return 0;
+        -:  169:}
