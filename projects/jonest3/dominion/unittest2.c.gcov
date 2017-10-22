@@ -1,7 +1,7 @@
         -:    0:Source:unittest2.c
         -:    0:Graph:unittest2.gcno
         -:    0:Data:unittest2.gcda
-        -:    0:Runs:2
+        -:    0:Runs:1
         -:    0:Programs:1
         -:    1:/* jonest3
         -:    2: * Unit Test 2*/
@@ -22,72 +22,72 @@
         -:   17:int checkShuffleFeature(int newDeck[], int size_array, int player, struct gameState *state);
         -:   18:void delay(int number_of_seconds);
         -:   19:
-function main called 2 returned 100% blocks executed 100%
-        2:   20:int main(){
-        2:   21:   printf("----------TESTING SHUFFLE----------\n");
+function main called 1 returned 100% blocks executed 100%
+        1:   20:int main(){
+        1:   21:   printf("----------TESTING SHUFFLE----------\n");
 call    0 returned 100%
         -:   22:
         -:   23:   // Set up game
-        2:   24:   int seed = 1000;
-        2:   25:   int player = 2;
-        2:   26:   int k[10] = {adventurer, council_room, feast, gardens, mine, remodel, smithy, village, baron, great_hall};
+        1:   24:   int seed = 1000;
+        1:   25:   int player = 2;
+        1:   26:   int k[10] = {adventurer, council_room, feast, gardens, mine, remodel, smithy, village, baron, great_hall};
         -:   27:   struct gameState state;
         -:   28:
         -:   29:   int *arrayOfDecks[MAX_PLAYERS];
         -:   30:
-        2:   31:   int testDeck[] = {curse, estate, duchy, province, copper, silver, gold,
+        1:   31:   int testDeck[] = {curse, estate, duchy, province, copper, silver, gold,
         -:   32:		     adventurer, council_room, feast, gardens, mine, remodel,
         -:   33:		     smithy, village, baron, great_hall, minion, steward, tribute,
         -:   34:		     ambassador, cutpurse, embargo, outpost, salvager, sea_hag, 
         -:   35:		     treasure_map};
         -:   36:
-        2:   37:   arrayOfDecks[0] = testDeck;
+        1:   37:   arrayOfDecks[0] = testDeck;
         -:   38:
-        2:   39:   initializeGame(player, k, seed, &state);
+        1:   39:   initializeGame(player, k, seed, &state);
 call    0 returned 100%
         -:   40:
-        2:   41:   printf("--Check deckCount--\n");
+        1:   41:   printf("--Check deckCount--\n");
 call    0 returned 100%
-        2:   42:   if(checkDeckCount(player, &state))
+        1:   42:   if(checkDeckCount(player, &state))
 call    0 returned 100%
 branch  1 taken 100% (fallthrough)
 branch  2 taken 0%
         -:   43:   {
-        2:   44:	printf("Test Successfully Completed\n\n");
+        1:   44:	printf("Test Successfully Completed\n\n");
 call    0 returned 100%
         -:   45:
-        2:   46:	int length_array = 5;//10;//26;
+        1:   46:	int length_array = 5;//10;//26;
         -:   47:
         -:   48:	int i;
-       10:   49:	for(i = 2; i <= length_array; i++){
+        5:   49:	for(i = 2; i <= length_array; i++){
 branch  0 taken 80%
 branch  1 taken 20% (fallthrough)
-        8:   50:		printf("Deck Size: %d\n", i);
+        4:   50:		printf("Deck Size: %d\n", i);
 call    0 returned 100%
-        8:   51:		checkShuffleFeature(arrayOfDecks[0],i,player,&state); 
+        4:   51:		checkShuffleFeature(arrayOfDecks[0],i,player,&state); 
 call    0 returned 100%
-        8:   52:		printf("\n");
+        4:   52:		printf("\n");
 call    0 returned 100%
         -:   53:	}
         -:   54:   }
-        2:   55:   return 0;
+        1:   55:   return 0;
         -:   56:}
         -:   57:
-function checkDeckCount called 2 returned 100% blocks executed 80%
-        2:   58:int checkDeckCount(int player, struct gameState *state){
+function checkDeckCount called 1 returned 100% blocks executed 80%
+        1:   58:int checkDeckCount(int player, struct gameState *state){
         -:   59:
-        2:   60:   int deckCount = -50;
+        1:   60:   int deckCount = -50;
         -:   61:   int i;
         -:   62:   int results;
         -:   63:
-      204:   64:   for(i = 0; i < 101; i++){
+      102:   64:   for(i = 0; i < 101; i++){
 branch  0 taken 99%
 branch  1 taken 1% (fallthrough)
-      202:   65:   	state->deckCount[player] = deckCount;
-      202:   66:	results = shuffle(player, state);
+      101:   65:   	state->deckCount[player] = deckCount;
+      101:   66:	results = shuffle(player, state);
 call    0 returned 100%
         -:   67:
-      202:   68:	if(deckCount < 1  &&  results != -1)
+      101:   68:	if(deckCount < 1  &&  results != -1)
 branch  0 taken 50% (fallthrough)
 branch  1 taken 50%
 branch  2 taken 0% (fallthrough)
@@ -97,65 +97,65 @@ branch  3 taken 100%
 call    0 never executed
     #####:   71:		return 0;
         -:   72:	}
-      202:   73:	deckCount++;
+      101:   73:	deckCount++;
         -:   74:   }
-        2:   75:   return 1;  // means successful
+        1:   75:   return 1;  // means successful
         -:   76:}
         -:   77:
-function checkShuffleFeature called 8 returned 100% blocks executed 100%
-        8:   78:int checkShuffleFeature(int newDeck[], int size_array, int player, struct gameState *state){
+function checkShuffleFeature called 4 returned 100% blocks executed 100%
+        4:   78:int checkShuffleFeature(int newDeck[], int size_array, int player, struct gameState *state){
         -:   79:
         -:   80:// int deck[MAX_PLAYERS][MAX_DECK]
-        8:   81:   state->deckCount[player] = size_array;
+        4:   81:   state->deckCount[player] = size_array;
         -:   82:   int i;
-       36:   83:   for(i = 0; i < size_array; i++){
+       18:   83:   for(i = 0; i < size_array; i++){
 branch  0 taken 78%
 branch  1 taken 22% (fallthrough)
-       28:   84:	printf("%s ", getCardName(newDeck[i]));
+       14:   84:	printf("%s ", getCardName(newDeck[i]));
 call    0 returned 100%
 call    1 returned 100%
-       28:   85:	state->deck[player][i] = newDeck[i];
+       14:   85:	state->deck[player][i] = newDeck[i];
         -:   86:   }
-        8:   87:   printf("\n");
+        4:   87:   printf("\n");
 call    0 returned 100%
-        8:   88:   printf("Shuffle Tests:\n");
+        4:   88:   printf("Shuffle Tests:\n");
 call    0 returned 100%
         -:   89:   
         -:   90:   int j;
-       48:   91:   for(j = 0; j < 5; j++){
+       24:   91:   for(j = 0; j < 5; j++){
 branch  0 taken 83%
 branch  1 taken 17% (fallthrough)
-       40:   92:	delay(2);
+       20:   92:	delay(2);
 call    0 returned 100%
-       40:   93:	shuffle(player, state);
+       20:   93:	shuffle(player, state);
 call    0 returned 100%
         -:   94:
         -:   95://   printf("\nDeck count: %d\n", state->deckCount[player]);
-      180:   96:   	for(i = 0; i < state->deckCount[player]; i++){
+       90:   96:   	for(i = 0; i < state->deckCount[player]; i++){
 branch  0 taken 78%
 branch  1 taken 22% (fallthrough)
-      140:   97:		printf("%s ", getCardName(state->deck[player][i]));
+       70:   97:		printf("%s ", getCardName(state->deck[player][i]));
 call    0 returned 100%
 call    1 returned 100%
         -:   98:	}
-       40:   99:	printf("\n");
+       20:   99:	printf("\n");
 call    0 returned 100%
         -:  100:   }  
-        8:  101:   printf("\n");
+        4:  101:   printf("\n");
 call    0 returned 100%
         -:  102:
-        8:  103:   return 0;
+        4:  103:   return 0;
         -:  104:}
         -:  105:
         -:  106://http://www.geeksforgeeks.org/time-delay-c/
-function delay called 40 returned 100% blocks executed 100%
-       40:  107:void delay(int number_of_seconds)
+function delay called 20 returned 100% blocks executed 100%
+       20:  107:void delay(int number_of_seconds)
         -:  108:{
-       40:  109:   int milli_seconds = 1000 * number_of_seconds;
-       40:  110:   clock_t start_time = clock();
+       20:  109:   int milli_seconds = 1000 * number_of_seconds;
+       20:  110:   clock_t start_time = clock();
 call    0 returned 100%
-       40:  111:   while(clock() < start_time + milli_seconds);
+       20:  111:   while(clock() < start_time + milli_seconds);
 call    0 returned 100%
 branch  1 taken 99%
 branch  2 taken 1% (fallthrough)
-       40:  112:}
+       20:  112:}

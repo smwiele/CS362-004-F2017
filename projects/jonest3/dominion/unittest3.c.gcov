@@ -1,7 +1,7 @@
         -:    0:Source:unittest3.c
         -:    0:Graph:unittest3.gcno
         -:    0:Data:unittest3.gcda
-        -:    0:Runs:2
+        -:    0:Runs:1
         -:    0:Programs:1
         -:    1:/* jonest3
         -:    2: * Unit Test 3*/
@@ -26,26 +26,26 @@
         -:   21:void printPlayersCards(int testCase, int player, struct gameState *state);
         -:   22:int check_if_gained(int card, int testCase, int player, struct gameState *state);
         -:   23:
-function main called 2 returned 100% blocks executed 100%
-        2:   24:int main(){
+function main called 1 returned 100% blocks executed 100%
+        1:   24:int main(){
         -:   25:
-        2:   26:   printf("TESTING gainCard()\n\n");
+        1:   26:   printf("TESTING gainCard()\n\n");
 call    0 returned 100%
         -:   27:
         -:   28:   // set up game
-        2:   29:   printf("MAX_PLAYERS = %d\n", MAX_PLAYERS);
+        1:   29:   printf("MAX_PLAYERS = %d\n", MAX_PLAYERS);
 call    0 returned 100%
         -:   30:
-        2:   31:   int numPlayers = MAX_PLAYERS;
+        1:   31:   int numPlayers = MAX_PLAYERS;
         -:   32:   struct gameState G;
-        2:   33:   int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, 
+        1:   33:   int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, 
         -:   34:		tribute, smithy};
-        2:   35:   int seed = 1000;
+        1:   35:   int seed = 1000;
         -:   36:   
-        2:   37:   initializeGame(numPlayers, k, seed, &G);
+        1:   37:   initializeGame(numPlayers, k, seed, &G);
 call    0 returned 100%
         -:   38:
-        2:   39:   int cardArray[] = {curse, estate, duchy, province,
+        1:   39:   int cardArray[] = {curse, estate, duchy, province,
         -:   40:		      copper, silver, gold,
         -:   41:		      adventurer, council_room, feast, gardens, mine,
         -:   42:		      remodel, smithy, village,
@@ -54,153 +54,153 @@ call    0 returned 100%
         -:   45:		      sea_hag, treasure_map};
         -:   46:
         -:   47:   // Clear discard, deck, and hands for all players
-        2:   48:   clear_Deck_Discard_Hand(&G);
+        1:   48:   clear_Deck_Discard_Hand(&G);
 call    0 returned 100%
         -:   49:
         -:   50:   int testCase;
         -:   51:   int i,j,m;
         -:   52://   int gained; // 0 = true
         -:   53:
-       58:   54:   for(i = 0; i < 28; i++){
+       29:   54:   for(i = 0; i < 28; i++){
 branch  0 taken 97%
 branch  1 taken 3% (fallthrough)
-       56:   55:	printf("--Card: %s\n\n", getCardName(cardArray[i]));
+       28:   55:	printf("--Card: %s\n\n", getCardName(cardArray[i]));
 call    0 returned 100%
 call    1 returned 100%
         -:   56:
-      280:   57:	for(j = 0; j < MAX_PLAYERS; j++){
+      140:   57:	for(j = 0; j < MAX_PLAYERS; j++){
 branch  0 taken 80%
 branch  1 taken 20% (fallthrough)
-      896:   58:   		for(testCase = 0; testCase < 3; testCase++){
+      448:   58:   		for(testCase = 0; testCase < 3; testCase++){
 branch  0 taken 75%
 branch  1 taken 25% (fallthrough)
-      672:   59:			if(testCase == 0){
+      336:   59:			if(testCase == 0){
 branch  0 taken 33% (fallthrough)
 branch  1 taken 67%
-      224:   60:				printf("Testing Gaining %s to Discard for Player %d:\n", getCardName(cardArray[i]),j);                                   
+      112:   60:				printf("Testing Gaining %s to Discard for Player %d:\n", getCardName(cardArray[i]),j);                                   
 call    0 returned 100%
 call    1 returned 100%
-      224:   61:				gainCard(cardArray[i], &G, 0, j);
+      112:   61:				gainCard(cardArray[i], &G, 0, j);
 call    0 returned 100%
         -:   62:			}
-      448:   63:			else if(testCase == 1){
+      224:   63:			else if(testCase == 1){
 branch  0 taken 50% (fallthrough)
 branch  1 taken 50%
-      224:   64:				printf("Testing Gaining %s to Deck for Player %d:\n", getCardName(cardArray[i]),j);
+      112:   64:				printf("Testing Gaining %s to Deck for Player %d:\n", getCardName(cardArray[i]),j);
 call    0 returned 100%
 call    1 returned 100%
-      224:   65:				gainCard(cardArray[i], &G, 1, j);
+      112:   65:				gainCard(cardArray[i], &G, 1, j);
 call    0 returned 100%
         -:   66:
         -:   67:			}
         -:   68:			else{
-      224:   69:				printf("Testing Gaining %s to Hand for Player %d:\n", getCardName(cardArray[i]),j);
+      112:   69:				printf("Testing Gaining %s to Hand for Player %d:\n", getCardName(cardArray[i]),j);
 call    0 returned 100%
 call    1 returned 100%
-      224:   70:				gainCard(cardArray[i], &G, 2, j);
+      112:   70:				gainCard(cardArray[i], &G, 2, j);
 call    0 returned 100%
         -:   71:			}
         -:   72:		
-      672:   73:			if(check_if_gained(cardArray[i],testCase, j, &G)){
+      336:   73:			if(check_if_gained(cardArray[i],testCase, j, &G)){
 call    0 returned 100%
 branch  1 taken 59% (fallthrough)
 branch  2 taken 41%
-      396:   74:				printf("--TEST PASSED--\n");
+      198:   74:				printf("--TEST PASSED--\n");
 call    0 returned 100%
-     1980:   75:				for(m = 0; m < MAX_PLAYERS; m++){
+      990:   75:				for(m = 0; m < MAX_PLAYERS; m++){
 branch  0 taken 80%
 branch  1 taken 20%
-     1584:   76:					printPlayersCards(testCase, m, &G);
+      792:   76:					printPlayersCards(testCase, m, &G);
 call    0 returned 100%
         -:   77:				}
         -:   78:			}
         -:   79:			else{
-      276:   80:				printf("Supply of %s was empty; COULD NOT GAIN\n", getCardName(cardArray[i]));
+      138:   80:				printf("Supply of %s was empty; COULD NOT GAIN\n", getCardName(cardArray[i]));
 call    0 returned 100%
 call    1 returned 100%
-      276:   81:				printf("--TEST PASSED--\n");				
+      138:   81:				printf("--TEST PASSED--\n");				
 call    0 returned 100%
         -:   82:			}
         -:   83:	   	}
         -:   84:	}
         -:   85:   }
         -:   86:
-        2:   87:   return 0;
+        1:   87:   return 0;
         -:   88:}
         -:   89:
-function clear_Deck_Discard_Hand called 2 returned 100% blocks executed 100%
-        2:   90:void clear_Deck_Discard_Hand(struct gameState *state){
+function clear_Deck_Discard_Hand called 1 returned 100% blocks executed 100%
+        1:   90:void clear_Deck_Discard_Hand(struct gameState *state){
         -:   91:
         -:   92:   int i;
         -:   93:
-       10:   94:   for(i = 0; i < MAX_PLAYERS; i++){
+        5:   94:   for(i = 0; i < MAX_PLAYERS; i++){
 branch  0 taken 80%
 branch  1 taken 20% (fallthrough)
-        8:   95:	state->deck[i][0] = 0;
-        8:   96:	state->deckCount[i] = 0;
-        8:   97:	state->discard[i][0] = 0;
-        8:   98:	state->deckCount[i] = 0;
-        8:   99:	state->hand[i][0] = 0;
-        8:  100:	state->handCount[i] = 0;
+        4:   95:	state->deck[i][0] = 0;
+        4:   96:	state->deckCount[i] = 0;
+        4:   97:	state->discard[i][0] = 0;
+        4:   98:	state->deckCount[i] = 0;
+        4:   99:	state->hand[i][0] = 0;
+        4:  100:	state->handCount[i] = 0;
         -:  101:   }
-        2:  102:}
+        1:  102:}
         -:  103:
-function printPlayersCards called 1584 returned 100% blocks executed 100%
-     1584:  104:void printPlayersCards(int testCase, int player, struct gameState *state){
+function printPlayersCards called 792 returned 100% blocks executed 100%
+      792:  104:void printPlayersCards(int testCase, int player, struct gameState *state){
         -:  105:   int i;
         -:  106:
         -:  107:
-     1584:  108:   printf("Player %d: ", player);
+      792:  108:   printf("Player %d: ", player);
 call    0 returned 100%
         -:  109:
-     1584:  110:   if(testCase == 0){
+      792:  110:   if(testCase == 0){
 branch  0 taken 36% (fallthrough)
 branch  1 taken 64%
-     5832:  111:	for(i = 0; i < state->discardCount[player]; i++){
+     2916:  111:	for(i = 0; i < state->discardCount[player]; i++){
 branch  0 taken 90%
 branch  1 taken 10%
-     5256:  112:		printf("%s ", getCardName(state->discard[player][i]));
+     2628:  112:		printf("%s ", getCardName(state->discard[player][i]));
 call    0 returned 100%
 call    1 returned 100%
         -:  113:	}
         -:  114:   }
-     1008:  115:   else if(testCase == 1){
+      504:  115:   else if(testCase == 1){
 branch  0 taken 50% (fallthrough)
 branch  1 taken 50%
-     4536:  116:	for(i = 0; i < state->deckCount[player]; i++){
+     2268:  116:	for(i = 0; i < state->deckCount[player]; i++){
 branch  0 taken 89%
 branch  1 taken 11%
-     4032:  117:		printf("%s ", getCardName(state->deck[player][i]));
+     2016:  117:		printf("%s ", getCardName(state->deck[player][i]));
 call    0 returned 100%
 call    1 returned 100%
         -:  118:	}
         -:  119:   }
         -:  120:   else{
-     4536:  121:	for(i = 0; i < state->handCount[player]; i++){
+     2268:  121:	for(i = 0; i < state->handCount[player]; i++){
 branch  0 taken 89%
 branch  1 taken 11% (fallthrough)
-     4032:  122:		printf("%s ", getCardName(state->hand[player][i]));
+     2016:  122:		printf("%s ", getCardName(state->hand[player][i]));
 call    0 returned 100%
 call    1 returned 100%
         -:  123:	}
         -:  124:   }
-     1584:  125:   printf("\n");
+      792:  125:   printf("\n");
 call    0 returned 100%
-     1584:  126:}
+      792:  126:}
         -:  127:
-function check_if_gained called 672 returned 100% blocks executed 100%
-      672:  128:int check_if_gained(int card, int testCase, int player, struct gameState *state){
+function check_if_gained called 336 returned 100% blocks executed 100%
+      336:  128:int check_if_gained(int card, int testCase, int player, struct gameState *state){
         -:  129:
-      672:  130:   if(testCase == 0){
+      336:  130:   if(testCase == 0){
 branch  0 taken 33% (fallthrough)
 branch  1 taken 67%
-      224:  131:	return (card == state->discard[player][(state->discardCount[player])-1]);
+      112:  131:	return (card == state->discard[player][(state->discardCount[player])-1]);
         -:  132:   }
-      448:  133:   else if(testCase == 1){
+      224:  133:   else if(testCase == 1){
 branch  0 taken 50% (fallthrough)
 branch  1 taken 50%
-      224:  134:	return (card == state->deck[player][(state->deckCount[player])-1]);
+      112:  134:	return (card == state->deck[player][(state->deckCount[player])-1]);
         -:  135:   }
-      224:  136:   return (card == state->hand[player][(state->handCount[player])-1]);
+      112:  136:   return (card == state->hand[player][(state->handCount[player])-1]);
         -:  137:   
         -:  138:} 

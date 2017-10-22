@@ -40,7 +40,7 @@ player: player.c interface.o
 all: playdom player testDrawCard testBuyCard badTestDrawCard getCard.o unittest1 unittest2 unittest3 unittest4
 
 clean:
-	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe unittest1 unittest2 unittest3 unittest4 badTestDrawCard cardtest
+	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe unittest1 unittest2 unittest3 unittest4 badTestDrawCard cardtest unittestresults.out
 
 cardtest: cardtest4.c dominion.o rngs.o
 	gcc -o cardtest -g cardtest4.c dominion.o rngs.o $(CFLAGS)
@@ -69,3 +69,23 @@ cardtest3: cardtest3.c dominion.o rngs.o getCard.o
 
 cardtest4: cardtest4.c dominion.o rngs.o getCard.o
 	gcc -o cardtest4 -g cardtest4.c dominion.o rngs.o getCard.o $(CFLAGS)
+
+tests: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4
+
+unittestresults.out: clean tests
+	./unittest1 &> unittestresults.out
+	gcov unittest1.c -b >> unittestresults.out
+	./unittest2 >> unittestresults.out
+	gcov unittest2.c -b >> unittestresults.out
+	./unittest3 >> unittestresults.out
+	gcov unittest3.c -b >> unittestresults.out
+	./unittest4 >> unittestresults.out
+	gcov unittest4.c -b >> unittestresults.out
+	./cardtest1 >> unittestresults.out
+	gcov cardtest1.c -b >> unittestresults.out
+	./cardtest2 >> unittestresults.out
+	gcov cardtest2.c -b >> unittestresults.out
+	./cardtest3 >> unittestresults.out
+	gcov cardtest3.c -b >> unittestresults.out
+	./cardtest4 >> unittestresults.out
+	gcov cardtest4.c -b >> unittestresults.out
