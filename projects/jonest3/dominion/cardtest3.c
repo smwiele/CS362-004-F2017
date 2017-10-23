@@ -24,15 +24,16 @@ int main(){
    initializeGame(numPlayers, k, seed, &G);
 
    int counter = 0;
-   while(counter < 500){
-
+//   while(counter < 500){
+{
    counter++;
    printf("---------- TESTING CARD: village ----------\n");
 
    printf("Before: \n");
 
    int handCount = G.handCount[0];
-
+   int numActions = G.numActions;
+ 
    printf("-Hand: ");
    for(i = 0; i < G.handCount[0]; i++){
 	printf("%s ", getCardName(G.hand[0][i]));
@@ -135,6 +136,7 @@ int main(){
    printf("Expected: %d\nResults : %d\n", G.handCount[0], testG.handCount[0]);
 
    printf("--TESTING HAND COUNT--\n");
+   pass = 1;
    if(G.handCount[0] != testG.handCount[0]){ printf("CARD FAILED AT >> Hand Count\n"); pass = 0;}
    else{
 	for(i = 0; i < G.handCount[0]; i++){
@@ -145,6 +147,7 @@ int main(){
 	printf("TESTING = PASSED\n");
 
    printf("--TESTING HAND COUNT GAIN--\n");
+   pass = 1;
    if(testG.handCount[0] == (handCount)){
 	printf("TESTING = PASSED\n");
    }
@@ -152,10 +155,11 @@ int main(){
 	printf("CARD FAILED AT >> Hand Count did not gain 1 cards & discard 1.\n");
 	pass = 0;
    }
+
    printf("\n-Deck Count:\n");
    printf("Expected: %d\nResults : %d\n", G.deckCount[0], testG.deckCount[0]);
-
    printf("--TESTING DECK COUNT\n");
+   pass = 1;
    if(G.deckCount[0] != testG.deckCount[0]){ printf("CARD FAILED AT >> Deck Count\n"); pass = 0;}
    else{
 	for(i = 0; i < G.deckCount[0]; i++){
@@ -167,8 +171,8 @@ int main(){
 
    printf("\n-Discard Count:\n");
    printf("Expected: %d\nResults : %d\n", G.discardCount[0], testG.discardCount[0]);
-
    printf("--TESTING DISCARD\n");
+   pass = 1;
    if(G.discardCount[0] != testG.discardCount[0]){ printf("CARD FAILED AT >> Discard Count\n"); pass = 0;}
    else{
 	for(i = 0; i < G.discardCount[0]; i++){
@@ -179,6 +183,7 @@ int main(){
 	printf("TESTING = PASSED\n");
 
    printf("--TESTING PLAYED CARDS\n");
+   pass = 1;
    if(testG.playedCardCount == G.playedCardCount){ 
    	printf("TEST = PASSED\n");
 	for(i = 0; i < G.playedCardCount; i++){
@@ -192,11 +197,12 @@ int main(){
 	printf("CARD FAILED AT >> Played Card Count\n");
 	pass = 0;
    }
-
+   
+   printf("--TESTING ACTION COUNT\n");
+   pass = 1;
+   if(testG.numActions != numActions+2) { printf("CARD FAILED @ >> did not gain 2 actions\n"); pass = 0;}
    if(pass)
-	printf(">>> TEST SUCCESSFUL <<<\n");
-   else
-	printf(">>> TEST FAILED <<<\n");
+	printf("TEST = SUCCESSFUL\n");
    }
    return 0;
 }
