@@ -20,7 +20,7 @@
         -:   15:
         -:   16:const char* getCardName(enum CARD card);
         -:   17:
-function main called 1 returned 100% blocks executed 78%
+function main called 1 returned 100% blocks executed 89%
         1:   18:int main(){
         1:   19:   printf("TESTING %s\n", UNITTEST);
 call    0 returned 100%
@@ -112,169 +112,180 @@ branch  1 taken 0%
         -:   89:    int silverCount;
         -:   90:    int goldCount;
         -:   91:
-        4:   92:    for(i = 0; i < 8; i++){
-branch  0 taken 100%
-branch  1 taken 0% (fallthrough)
-        4:   93:        if(i == 0){
-branch  0 taken 25% (fallthrough)
-branch  1 taken 75%
+        9:   92:    for(i = 0; i < 8; i++){
+branch  0 taken 89%
+branch  1 taken 11% (fallthrough)
+        8:   93:        if(i == 0){
+branch  0 taken 13% (fallthrough)
+branch  1 taken 88%
         1:   94:                factor = 1;
         1:   95:                printf("----------Testing ALL COPPER\n");
 call    0 returned 100%
         -:   96:        }
-        3:   97:        else if(i == 1){
-branch  0 taken 33% (fallthrough)
-branch  1 taken 67%
+        7:   97:        else if(i == 1){
+branch  0 taken 14% (fallthrough)
+branch  1 taken 86%
         1:   98:                factor = 2;
         1:   99:                printf("----------Testing ALL SILVER\n");
 call    0 returned 100%
         -:  100:        }
-        2:  101:        else if(i == 2){
-branch  0 taken 50% (fallthrough)
-branch  1 taken 50%
+        6:  101:        else if(i == 2){
+branch  0 taken 17% (fallthrough)
+branch  1 taken 83%
         1:  102:                factor = 3;
         1:  103:                printf("----------Testing ALL GOLD\n");
 call    0 returned 100%
         -:  104:        }
-        1:  105:        else if(i == 3)
-branch  0 taken 100% (fallthrough)
-branch  1 taken 0%
+        5:  105:        else if(i == 3)
+branch  0 taken 20% (fallthrough)
+branch  1 taken 80%
         1:  106:                printf("----------Testing COPPER & SILVER\n");
 call    0 returned 100%
-    #####:  107:        else if(i == 4)
-branch  0 never executed
-branch  1 never executed
-    #####:  108:                printf("----------Testing SILVER & GOLD\n");
-call    0 never executed
-    #####:  109:        else if(i == 5)
-branch  0 never executed
-branch  1 never executed
-    #####:  110:                printf("----------Testing GOLD & COPPER\n");
-call    0 never executed
-    #####:  111:        else if(i == 6)
-branch  0 never executed
-branch  1 never executed
-    #####:  112:                printf("----------Testing ALL THREE\n");
-call    0 never executed
-        -:  113:        else
-    #####:  114:                printf("----------Testing MIXED HAND\n");
-call    0 never executed
-        -:  115:
-       13:  116:   	for(numPlayers = 2; numPlayers <= MAX_PLAYERS; numPlayers++){
-branch  0 taken 77%
-branch  1 taken 23% (fallthrough)
-       10:  117:		printf("\n----------TESTING FOR %d PLAYERS----------\n", numPlayers);
+        4:  107:        else if(i == 4)
+branch  0 taken 25% (fallthrough)
+branch  1 taken 75%
+        1:  108:                printf("----------Testing SILVER & GOLD\n");
 call    0 returned 100%
-       10:  118:		memset(&G, 23, sizeof(struct gameState));
-        -:  119://		initializeGame(MAX_PLAYERS, k, seed, &G);
+        3:  109:        else if(i == 5)
+branch  0 taken 33% (fallthrough)
+branch  1 taken 67%
+        1:  110:                printf("----------Testing GOLD & COPPER\n");
+call    0 returned 100%
+        2:  111:        else if(i == 6)
+branch  0 taken 50% (fallthrough)
+branch  1 taken 50%
+        1:  112:                printf("----------Testing ALL THREE\n");
+call    0 returned 100%
+        -:  113:        else
+        1:  114:                printf("----------Testing MIXED HAND\n");
+call    0 returned 100%
+        -:  115:
+       32:  116:   	for(numPlayers = 2; numPlayers <= MAX_PLAYERS; numPlayers++){
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+       24:  117:		printf("\n----------TESTING FOR %d PLAYERS----------\n", numPlayers);
+call    0 returned 100%
+       24:  118:		memset(&G, 23, sizeof(struct gameState));
+       24:  119:		initializeGame(MAX_PLAYERS, k, seed, &G);
+call    0 returned 100%
         -:  120:
         -:  121:		int player;
-       46:  122:		for(player = 1; player <= MAX_PLAYERS; player++){
+      120:  122:		for(player = 1; player <= MAX_PLAYERS; player++){
 branch  0 taken 80%
 branch  1 taken 20% (fallthrough)
-       37:  123:			printf("Player %d:\n", player);
+       96:  123:			printf("Player %d:\n", player);
 call    0 returned 100%
         -:  124:
-    18042:  125:			for(currentHand = 0; currentHand < MAX_HAND; currentHand++){
-branch  0 taken 99%
-branch  1 taken 1% (fallthrough)
-        -:  126://				G.handCount[player] = currentHand;
-        -:  127://				printf("--Current Hand Size: %d\n", G.handCount[player]);
+      576:  125:			for(currentHand = 0; currentHand < 5; currentHand++){
+branch  0 taken 83%
+branch  1 taken 17% (fallthrough)
+      480:  126:				G.handCount[player] = currentHand;
+      480:  127:				printf("--Current Hand Size: %d\n", G.handCount[player]);
+call    0 returned 100%
         -:  128://                                printf("--Current Hand Size: %d\n", currentHand);
         -:  129:
-    18006:  130:				memcpy(G.hand[player], arrayOfHands[i], sizeof(int) * MAX_HAND);
+      480:  130:				memcpy(G.hand[player], arrayOfHands[i], sizeof(int) * MAX_HAND);
         -:  131:
-        -:  132://                                printf("--Current Hand Size: %d\n", G.handCount[player]);
-    18006:  133:				G.handCount[player] = currentHand;
-    18006:  134:  				updateCoins(player, &G, bonus);
+      480:  132:                                printf("--Current Hand Size: %d\n", G.handCount[player]);
+call    0 returned 100%
+      480:  133:				G.handCount[player] = currentHand;
+      480:  134:  				updateCoins(player, &G, bonus);
 call    0 returned 100%
         -:  135:
         -:  136:				int y;
         -:  137:
-        -:  138://                                printf("--Current Hand Size: %d\n", G.handCount[player]);
+        -:  138://                              printf("--Current Hand Size: %d\n", G.handCount[player]);
         -:  139://				G.hand[player][3] = copper;
-    18006:  140:				G.hand[player][4] = copper;
+        -:  140://				G.hand[player][4] = copper;
         -:  141:
-    18006:  142:                                G.handCount[player] = currentHand;
+        -:  142://                                G.handCount[player] = currentHand;
         -:  143:
         -:  144://				G.hand[player][5] = copper;
         -:  145://				G.hand[player][6] = copper;
-    18006:  146:				for(y = 0; y < G.handCount[player]; y++){
-branch  0 taken 99%
-branch  1 taken 1% (fallthrough)
-        -:  147://					printf("Card: %s\n", getCardName(G.hand[player][y]));
-        -:  148://					printf("y = %d and handCount = %d\n", y, G.handCount[player]);
+     1440:  146:				for(y = 0; y < G.handCount[player]; y++){
+branch  0 taken 67%
+branch  1 taken 33% (fallthrough)
+      960:  147:					printf("Card: %s\n", getCardName(G.hand[player][y]));
+call    0 returned 100%
+call    1 returned 100%
+      960:  148:					printf("y = %d and handCount = %d\n", y, G.handCount[player]);
+call    0 returned 100%
         -:  149:				}
-    18006:  150:				if(i < 3){
-branch  0 taken 1% (fallthrough)
-branch  1 taken 99%
-        -:  151:/*					if(G.coins !=  G.handCount[player] * factor)
+      480:  150:				if(i < 3){
+branch  0 taken 38% (fallthrough)
+branch  1 taken 63%
+      180:  151:					if(G.coins !=  G.handCount[player] * factor)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
         -:  152:					{
-        -:  153:						success = 0;
-        -:  154:						printf("Error for Player %d at hand %d.\n", player, G.handCount[player]); 	
-        -:  155:						printf("G.coins  = %d\n", G.coins);
-        -:  156:						printf("Expected = %d\n", G.handCount[player] * factor);
-        -:  157:						return 0;
+    #####:  153:						success = 0;
+    #####:  154:						printf("Error for Player %d at hand %d.\n", player, G.handCount[player]); 	
+call    0 never executed
+    #####:  155:						printf("G.coins  = %d\n", G.coins);
+call    0 never executed
+    #####:  156:						printf("Expected = %d\n", G.handCount[player] * factor);
+call    0 never executed
+    #####:  157:						return 0;
         -:  158:					} 
-        -:  159:*/				}
+        -:  159:				}
         -:  160:				else{
         -:  161:	     	                        int y;
-        6:  162:	                                copperCount = 0;
-        6:  163:                	                silverCount = 0;
-        6:  164:                        	        goldCount = 0;
+      300:  162:	                                copperCount = 0;
+      300:  163:                	                silverCount = 0;
+      300:  164:                        	        goldCount = 0;
         -:  165:
-       21:  166:                                	for(y = 0; y < G.handCount[player]; y++){
-branch  0 taken 71%
-branch  1 taken 29% (fallthrough)
-       15:  167:	       	                                if(G.hand[player][y] == copper)
-branch  0 taken 33% (fallthrough)
-branch  1 taken 67%
-        5:  168:                	                                copperCount += 1;
-       10:  169:                        	                else if(G.hand[player][y] == silver)
-branch  0 taken 100% (fallthrough)
-branch  1 taken 0%
-       10:  170:                                	                silverCount += 1;
-    #####:  171:	                                        else if(G.hand[player][y] == gold)
-branch  0 never executed
-branch  1 never executed
-    #####:  172:        	                                        goldCount += 1;
+      900:  166:                                	for(y = 0; y < G.handCount[player]; y++){
+branch  0 taken 67%
+branch  1 taken 33% (fallthrough)
+      600:  167:	       	                                if(G.hand[player][y] == copper)
+branch  0 taken 24% (fallthrough)
+branch  1 taken 76%
+      144:  168:                	                                copperCount += 1;
+      456:  169:                        	                else if(G.hand[player][y] == silver)
+branch  0 taken 42% (fallthrough)
+branch  1 taken 58%
+      192:  170:                                	                silverCount += 1;
+      264:  171:	                                        else if(G.hand[player][y] == gold)
+branch  0 taken 73% (fallthrough)
+branch  1 taken 27%
+      192:  172:        	                                        goldCount += 1;
         -:  173:	                                }
         -:  174:
         -:  175:					int coinSum;
         -:  176:
-        6:  177:					if(i == 3)
-branch  0 taken 100% (fallthrough)
-branch  1 taken 0%
-        6:  178:						coinSum = (copperCount * 1) + (silverCount * 2);
-    #####:  179:					else if(i == 4)
-branch  0 never executed
-branch  1 never executed
-    #####:  180:						coinSum = (silverCount * 2) + (goldCount * 3);
-    #####:  181:					else if(i == 5)
-branch  0 never executed
-branch  1 never executed
-    #####:  182:						coinSum = (goldCount * 3) + (copperCount * 1);
+      300:  177:					if(i == 3)
+branch  0 taken 20% (fallthrough)
+branch  1 taken 80%
+       60:  178:						coinSum = (copperCount * 1) + (silverCount * 2);
+      240:  179:					else if(i == 4)
+branch  0 taken 25% (fallthrough)
+branch  1 taken 75%
+       60:  180:						coinSum = (silverCount * 2) + (goldCount * 3);
+      180:  181:					else if(i == 5)
+branch  0 taken 33% (fallthrough)
+branch  1 taken 67%
+       60:  182:						coinSum = (goldCount * 3) + (copperCount * 1);
         -:  183:					else
-    #####:  184:						coinSum = (goldCount * 3) + (silverCount * 2) + (copperCount * 1);
+      120:  184:						coinSum = (goldCount * 3) + (silverCount * 2) + (copperCount * 1);
         -:  185:					
-        6:  186:					if(G.coins != coinSum){
-branch  0 taken 17% (fallthrough)
-branch  1 taken 83%
-        1:  187:						success = 0;
-        1:  188:						printf("Error for Player %d at hand %d.\n", player, G.handCount[player]);
-call    0 returned 100%
-        1:  189:						printf("G.coins  = %d\n", G.coins);
-call    0 returned 100%
-        1:  190:						printf("Expected = %d\n", coinSum);
-call    0 returned 100%
-        1:  191:						return 0;
+      300:  186:					if(G.coins != coinSum){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  187:						success = 0;
+    #####:  188:						printf("Error for Player %d at hand %d.\n", player, G.handCount[player]);
+call    0 never executed
+    #####:  189:						printf("G.coins  = %d\n", G.coins);
+call    0 never executed
+    #####:  190:						printf("Expected = %d\n", coinSum);
+call    0 never executed
+    #####:  191:						return 0;
         -:  192:					}	
         -:  193:				}
         -:  194:			}
-       36:  195:			if(success)
+       96:  195:			if(success)
 branch  0 taken 100% (fallthrough)
 branch  1 taken 0%
-       36:  196:				printf("Test = PASSED\n");
+       96:  196:				printf("Test = PASSED\n");
 call    0 returned 100%
         -:  197://			if(player != MAX_PLAYERS){
         -:  198://				printf("Press [ENTER] to see next player.\n");
@@ -287,5 +298,5 @@ call    0 returned 100%
         -:  205://		while(getchar() != '\n');
         -:  206://	}
         -:  207:   }
-    #####:  208:   return 0;
+        1:  208:   return 0;
         -:  209:}

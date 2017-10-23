@@ -116,39 +116,39 @@ int main(){
    	for(numPlayers = 2; numPlayers <= MAX_PLAYERS; numPlayers++){
 		printf("\n----------TESTING FOR %d PLAYERS----------\n", numPlayers);
 		memset(&G, 23, sizeof(struct gameState));
-//		initializeGame(MAX_PLAYERS, k, seed, &G);
+		initializeGame(MAX_PLAYERS, k, seed, &G);
 
 		int player;
 		for(player = 1; player <= MAX_PLAYERS; player++){
 			printf("Player %d:\n", player);
 
-			for(currentHand = 0; currentHand < MAX_HAND; currentHand++){
-//				G.handCount[player] = currentHand;
-//				printf("--Current Hand Size: %d\n", G.handCount[player]);
+			for(currentHand = 0; currentHand < 5; currentHand++){
+				G.handCount[player] = currentHand;
+				printf("--Current Hand Size: %d\n", G.handCount[player]);
 //                                printf("--Current Hand Size: %d\n", currentHand);
 
 				memcpy(G.hand[player], arrayOfHands[i], sizeof(int) * MAX_HAND);
 
-//                                printf("--Current Hand Size: %d\n", G.handCount[player]);
+                                printf("--Current Hand Size: %d\n", G.handCount[player]);
 				G.handCount[player] = currentHand;
   				updateCoins(player, &G, bonus);
 
 				int y;
 
-//                                printf("--Current Hand Size: %d\n", G.handCount[player]);
+//                              printf("--Current Hand Size: %d\n", G.handCount[player]);
 //				G.hand[player][3] = copper;
-				G.hand[player][4] = copper;
+//				G.hand[player][4] = copper;
 
-                                G.handCount[player] = currentHand;
+//                                G.handCount[player] = currentHand;
 
 //				G.hand[player][5] = copper;
 //				G.hand[player][6] = copper;
 				for(y = 0; y < G.handCount[player]; y++){
-//					printf("Card: %s\n", getCardName(G.hand[player][y]));
-//					printf("y = %d and handCount = %d\n", y, G.handCount[player]);
+					printf("Card: %s\n", getCardName(G.hand[player][y]));
+					printf("y = %d and handCount = %d\n", y, G.handCount[player]);
 				}
 				if(i < 3){
-/*					if(G.coins !=  G.handCount[player] * factor)
+					if(G.coins !=  G.handCount[player] * factor)
 					{
 						success = 0;
 						printf("Error for Player %d at hand %d.\n", player, G.handCount[player]); 	
@@ -156,7 +156,7 @@ int main(){
 						printf("Expected = %d\n", G.handCount[player] * factor);
 						return 0;
 					} 
-*/				}
+				}
 				else{
 	     	                        int y;
 	                                copperCount = 0;

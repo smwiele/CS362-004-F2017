@@ -5,19 +5,20 @@
 #include "dominion_helpers.h"
 #include "rngs.h"
 #include "getCard.h"
+#include "interface.h"
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
 #include <assert.h>
 #include <string.h>
 
-// mine card
+// great_hall card
 
 int main(){
    struct gameState G, testG;
    int seed = 10000;
    int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
-   int numPlayers = 2;
+   int numPlayers = MAX_PLAYERS;
    int i;
    int pass = 1;
 
@@ -25,234 +26,160 @@ int main(){
 
    int counter = 0;
 //   while(counter < 500){
-{
+//{
    counter++;
-   printf("---------- TESTING CARD: minee ----------\n");
+   printf("---------- TESTING CARD: great_hall ----------\n");
 
    printf("Before: \n");
 
-   int handCount = G.handCount[0];
-
    printf("-Hand: ");
-   for(i = 0; i < G.handCount[0]; i++){
-	printf("%s ", getCardName(G.hand[0][i]));
-   }
-   printf("\n-Size: %d\n", G.handCount[0]);
+   printHand(0, &G);
+   printf("-Size: %d\n\n", G.handCount[0]);
+   int handNum = G.handCount[0];
 
    printf("-Deck: ");
-   for(i = 0; i < G.deckCount[0]; i++){
-	printf("%s ", getCardName(G.deck[0][i]));
-   }
-   printf("\n-Size: %d\n", G.deckCount[0]);
-
+   printDeck(0, &G);
+   printf("-Size: %d\n\n", G.deckCount[0]);
+ 
    printf("-Discard: ");
-   for(i = 0; i < G.discardCount[0]; i++){
-	printf("%s ", getCardName(G.discard[0][i]));
-   }
-   printf("\n-Size: %d\n", G.discardCount[0]);
-
+   printDiscard(0, &G);
+   printf("-Size: %d\n\n", G.discardCount[0]);
+ 
    printf("-Played: ");
-   for(i = 0; i < G.playedCardCount; i++){
-	printf("%s ", getCardName(G.playedCards[i]));
-   }
-   printf("\n-Size: %d\n", G.playedCardCount);
+   printPlayed(0, &G);
+   printf("-Size: %d\n\n", G.playedCardCount);
+ 
+   printf("Game Action Count: %d\n\n", G.numActions);
+   int numActions = G.numActions;
 
    // copy the game state to a testcase
    memcpy(&testG, &G, sizeof(struct gameState));
 
-   int j;
-   int choice1, choice2, choice3;
-   for(j = 0; j < 3; j++){
-	if(j == 0)
-	{
-		choice1 = 1;
-		choice2 = 0;
-		choice3 = 0;
-	}
-	else if(j == 1)
-	{
-		choice1 = 0;
-		choice2 = 1;
-		choice3 = 0;
-	}
-	else if(j == 2)
-	{
-		choice1 = 0;
-		choice2 = 0;
-		choice3 = 1;
-	}
-
-
-   	printf("--TESTING: cardEffect & mine\n");
-   	if(cardEffect(mine, choice1, choice2, choice3, &testG, 1, NULL) < 0){
-		printf("TEST = FAILED >> cardEffect returned < 0\n");
-		pass = 0;
-   	}
-   	else printf("TEST = PASSED\n");
-
-   	printf("\nAfter: \n");
-
-   	printf("-Hand: ");
-   	for(i = 0; i < testG.handCount[0]; i++){
-        	printf("%s ", getCardName(testG.hand[0][i]));
-   	}
-   	printf("\n-Size: %d\n", testG.handCount[0]);
-
-   	printf("-Deck: ");
-   	for(i = 0; i < testG.deckCount[0]; i++){
-        	printf("%s ", getCardName(testG.deck[0][i]));
-   	}
-   	printf("\n-Size: %d\n", testG.deckCount[0]);
-
-   	printf("-Discard: ");
-   	for(i = 0; i < testG.discardCount[0]; i++){
-        	printf("%s ", getCardName(testG.discard[0][i]));
-   	}
-   	printf("\n-Size: %d\n", testG.discardCount[0]);
-
-   	printf("-Played: ");
-   	for(i = 0; i < testG.playedCardCount; i++){
-		printf("%s ", getCardName(testG.playedCards[i]));
-   	}
-   	printf("\n-Size: %d\n", testG.playedCardCount);
-
-   	// mine
-      int m;
-      int result = 1;
-      m = G.hand[0][choice1];  //store card we will trash
-
-      if (G.hand[0][choice1] < copper || G.hand[0][choice1] > gold)
-	{
-	  result = -1;
-//	  break;
-	}
-		
-      if (choice2 > treasure_map || choice2 < curse)
-	{
-	  result = -1;
-//	  break;
-	}
-
-      if ( (getCost(G.hand[0][choice1]) + 3) > getCost(choice2) )
-	{
-	  result = -1;
-//	  break;
-	}
-	
-      if (result){
-      		gainCard(choice2, &G, 2, 0);
-
-      		//discard card from hand
-      		discardCard(0, 0, &G, 0);
-      
-      		//discard trashed card
-	      for (i = 0; i < G.handCount[0]; i++)
-	      {
-      			if (G.hand[0][i] == m)
-       	    		{
-       				discardCard(i, 0, &G, 0);			
-       	      	      		break;
-            		}
-      	      }
-	}
-         
-   	printf("---Print Results\n");
-
-   	printf("\nExpected: \n");
-
-   	printf("-Hand: ");
-   	for(i = 0; i < G.handCount[0]; i++){
-        	printf("%s ", getCardName(G.hand[0][i]));
-   	}
-   	printf("\n-Size: %d\n", G.handCount[0]);
-
-   	printf("-Deck: ");
-   	for(i = 0; i < G.deckCount[0]; i++){
-        	printf("%s ", getCardName(G.deck[0][i]));
-   	}
-   	printf("\n-Size: %d\n", G.deckCount[0]);
-
-   	printf("-Discard: ");
-   	for(i = 0; i < G.discardCount[0]; i++){
-        	printf("%s ", getCardName(G.discard[0][i]));
-   	}
-   	printf("\n-Size: %d\n", G.discardCount[0]);
-
-  	printf("-Played: ");
-   	for(i = 0; i < G.playedCardCount; i++){
-		printf("%s ", getCardName(G.playedCards[i]));
-   	}
-   	printf("\n-Size: %d\n", G.playedCardCount);
-
-   	printf("\n\n--Results:\n");
-
-   	printf("-Hand Count:\n");
-   	printf("Expected: %d\nResults : %d\n", G.handCount[0], testG.handCount[0]);
-
-   	printf("--TESTING HAND COUNT--\n");
-   	if(G.handCount[0] != testG.handCount[0]){ printf("CARD FAILED AT >> Hand Count\n"); pass = 0;}
-   	else{
-		for(i = 0; i < G.handCount[0]; i++){
-			if(G.hand[0][i] != testG.hand[0][i]){ printf("CARD FAILED AT >> Hands do not match\n"); pass = 0;}
-		}
-   	}
-   	if(pass)
-		printf("TESTING = PASSED\n");
-
-   	printf("--TESTING HAND COUNT GAIN--\n");
-   	if(testG.handCount[0] == (handCount)){
-		printf("TESTING = PASSED\n");
-   	}
-   	else{
-		printf("CARD FAILED AT >> Hand Count did not gain 1 cards & discard 1.\n");
-		pass = 0;
-   	}
-   	printf("\n-Deck Count:\n");
-  	printf("Expected: %d\nResults : %d\n", G.deckCount[0], testG.deckCount[0]);
-
-   	printf("--TESTING DECK COUNT\n");
-   	if(G.deckCount[0] != testG.deckCount[0]){ printf("CARD FAILED AT >> Deck Count\n"); pass = 0;}
-   	else{
-		for(i = 0; i < G.deckCount[0]; i++){
-			if(G.deck[0][i] != testG.deck[0][i]){ printf("CARD FAILED AT >> Decks do not match\n"); pass = 0;}
-		}
-   	}
-   	if(pass)
-		printf("TESTING = PASSED\n");
-
-   	printf("\n-Discard Count:\n");
-   	printf("Expected: %d\nResults : %d\n", G.discardCount[0], testG.discardCount[0]);
-
-   	printf("--TESTING DISCARD\n");
-   	if(G.discardCount[0] != testG.discardCount[0]){ printf("CARD FAILED AT >> Discard Count\n"); pass = 0;}
-   	else{
-		for(i = 0; i < G.discardCount[0]; i++){
-			if(G.discard[0][i] != testG.discard[0][i]){ printf("CARD FAILED AT >> Discards do not match\n"); pass = 0;}
-		}	
-   	}
-   	if(pass)
-		printf("TESTING = PASSED\n");
-
-   	printf("--TESTING PLAYED CARDS\n");
-   	if(testG.playedCardCount == G.playedCardCount){ 
-   		printf("TEST = PASSED\n");
-		for(i = 0; i < G.playedCardCount; i++){
-			if(G.playedCards[i] != testG.playedCards[i]){
-				printf("CARD FAILED AT >> Played cards do not match\n");
-				pass = 0;
-			}
-		}
-   	}
-   	else{
-		printf("CARD FAILED AT >> Played Card Count\n");
-		pass = 0;
-   	}
-
-   	if(pass)
-		printf(">>> TEST SUCCESSFUL <<<\n");
-   	else
-		printf(">>> TEST FAILED <<<\n");
-   	}
+   printf("--TESTING: cardEffect & mine\n");
+   if(cardEffect(great_hall, 0, 0, 0, &testG, 0, NULL) < 0){
+	printf("TEST = FAILED >> cardEffect returned < 0\n");
+	pass = 0;
    }
+   else printf("TEST = PASSED\n");
+
+   printf("\nAfter: \n");
+
+   printf("-Hand: ");
+   printHand(0, &testG);
+   printf("-Size: %d\n\n", testG.handCount[0]);
+
+   printf("-Deck: ");
+   printDeck(0, &testG);
+   printf("-Size: %d\n\n", testG.deckCount[0]);
+
+   printf("-Discard: ");
+   printDiscard(0, &testG);
+   printf("-Size: %d\n\n", testG.discardCount[0]);
+
+   printf("-Played: ");
+   printPlayed(0, &testG);
+   printf("-Size: %d\n\n", testG.playedCardCount);
+
+   printf("Game Action Count: %d\n\n", testG.numActions);
+   
+   // great_hall
+   drawCard(0, &G);
+   G.numActions++;
+   discardCard(0,0,&G,0);
+
+   printf("------RESULTS-----\n");
+
+   printf("\nExpected: \n");
+
+   printf("-Hand: ");
+   printHand(0, &G);
+   printf("-Size: %d\n\n", G.handCount[0]);
+
+   printf("-Deck: ");
+   printDeck(0, &G);
+   printf("-Size: %d\n\n", G.deckCount[0]);
+
+   printf("-Discard: ");
+   printDiscard(0, &G);
+   printf("-Size: %d\n\n", G.discardCount[0]);
+
+   printf("-Played: ");
+   printPlayed(0, &G);
+   printf("-Size: %d\n\n", G.playedCardCount);
+
+   printf("Game Action Count: %d\n\n",G.numActions);
+
+   printf("\n\n--Results:\n");
+
+   printf("--Testing Hands--\n\n");
+   printf("-Hand Count:\n");
+   printf("Expected: %d\nResults: %d\n", G.handCount[0], testG.handCount[0]);
+   pass = 1;
+   if(G.handCount[0] != testG.handCount[0]) {printf("TEST FAILED @ Expected Hand Count != Results\n"); pass = 0;}
+   else{
+  	pass = 1;
+	for(i = 0; i < G.handCount[0]; i++){
+		if(G.hand[0][i] != testG.hand[0][i]) {printf("TEST FAILED @ Hands do not match.\n"); break; pass = 0;}
+	}
+   }
+   if(pass)
+	printf("TEST SUCCESSFUL\n");
+
+   printf("--Testing Hand Increase by Exact Amount--\n");
+   pass = 1;
+   if(testG.handCount[0] != handNum) {printf("TEST FAILED @ Hand Count did not increase by 1\n"); pass = 0;}
+   if(pass)
+	printf("TEST SUCCESSFUL\n");
+
+   printf("--Testing Decks--\n");
+   printf("-Deck Count:\n");
+   printf("Expected: %d\nResults: %d\n", G.deckCount[0], testG.deckCount[0]);
+   pass = 1;
+   if(G.deckCount[0] != testG.deckCount[0]) {printf("TEST FAILED @ Expected Deck Count != Results\n"); pass = 0;}
+   else{
+	pass = 1;
+        for(i = 0; i < G.deckCount[0]; i++){
+                if(G.deck[0][i] != testG.deck[0][i]) {printf("TEST FAILED @ Decks do not match.\n"); break; pass = 0;}
+        }
+   }
+   if(pass)
+	printf("TEST SUCCESSFUL\n");
+
+   printf("--Testing Discard--\n");
+   printf("-Discard Count:\n");
+   printf("Expected: %d\nResults: %d\n", G.discardCount[0], testG.discardCount[0]);
+   pass = 1;
+   if(G.discardCount[0] != testG.discardCount[0]) {printf("TEST FAILED @ Expected Discard Count != Results\n"); pass = 0;}
+   else{
+        for(i = 0; i < G.discardCount[0]; i++){
+                if(G.discard[0][i] != testG.discard[0][i]) {printf("TEST FAILED @ Discards do not match.\n"); break; pass = 0;}
+        }
+   }
+   if(pass)
+	printf("TEST SUCCESSFUL\n");
+
+   printf("--Testing Played--\n");
+   printf("-Played Count:\n");
+   printf("Expected: %d\nResults: %d\n", G.playedCardCount, testG.playedCardCount);
+   pass = 1;
+   if(G.playedCardCount != testG.playedCardCount) {printf("TEST FAILED @ Expected Played Count != Results\n"); pass = 0;}
+   else{
+        for(i = 0; i < G.playedCardCount; i++){
+                if(G.playedCards[i] != testG.playedCards[i]) {printf("TEST FAILED @ Played cards do not match.\n"); break; pass = 0;}
+        }
+   }
+   if(pass)
+	printf("TEST SUCCESSFUL\n");
+
+   printf("--Testing Action Count--\n");
+   printf("-# of Actions:\n");
+   printf("Expected: %d\nResults: %d\n", G.numActions, testG.numActions);
+   pass = 1;
+   if(G.numActions != testG.numActions){ printf("TEST FAILED @ Expected Number of Actions != Results\n"); pass = 0;}
+
+   if(testG.numActions != numActions+1){ printf("TEST FAILED @ Number of Actions != +1 Action\n"); pass = 0;}
+
+   if(pass)
+	printf("TEST SUCCESSFUL\n");
    return 0;
 }
