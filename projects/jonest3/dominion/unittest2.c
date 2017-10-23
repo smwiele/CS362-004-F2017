@@ -54,12 +54,12 @@ int main(){
 	// check to see if game is over when 3 supply piles are 0
    	else if(i == 2){
 		// For all cards
-		int cards[25] = {curse, estate, duchy, copper, 
+		int cards[25] = {duchy, copper, 
 				silver, gold, adventurer, council_room, feast, 
 				gardens, mine, remodel, smithy, village, 
 				baron, great_hall, minion, steward, tribute, 
 				ambassador, cutpurse, embargo, outpost, salvager, 
-				sea_hag};
+				sea_hag, curse, estate};
 		int card1, card2, card3, m;
 		
 		for(m = 0; m < 23; m++){

@@ -24,8 +24,8 @@ int main(){
    initializeGame(numPlayers, k, seed, &G);
 
    int counter = 0;
-   while(counter < 500){
-   
+//   while(counter < 500){
+{   
    counter++;
    printf("---------- TESTING CARD: adventurer ----------\n");
 
