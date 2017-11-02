@@ -1,0 +1,19 @@
+        -:    0:Source:randomtestadventurer.c
+        -:    0:Graph:randomtestadventurer.gcno
+        -:    0:Data:randomtestadventurer.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/*
+        -:    2: * Taylor Jones jonest3
+        -:    3: * Card: Adventurer
+        -:    4:*/
+        -:    5:
+        -:    6:#include "dominion.h"
+        -:    7:#include "rngs.h"
+        -:    8:#include <stdio.h>
+        -:    9:#include <stdlib.h>
+        -:   10:
+function main called 1 returned 100% blocks executed 100%
+        1:   11:int main(){
+        1:   12:   return 0;
+        -:   13:} 

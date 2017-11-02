@@ -1,0 +1,19 @@
+        -:    0:Source:randomtestcard2.c
+        -:    0:Graph:randomtestcard2.gcno
+        -:    0:Data:randomtestcard2.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/*
+        -:    2: * Taylor Jones jonest3
+        -:    3: * Card:
+        -:    4:*/
+        -:    5:
+        -:    6:#include "dominion.h"
+        -:    7:#include "rngs.h"
+        -:    8:#include <stdlib.h>
+        -:    9:#include <stdio.h>
+        -:   10:
+function main called 1 returned 100% blocks executed 100%
+        1:   11:int main(){
+        1:   12:   return 0;
+        -:   13:}
