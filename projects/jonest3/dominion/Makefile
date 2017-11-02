@@ -40,7 +40,7 @@ player: player.c interface.o
 all: playdom player testDrawCard testBuyCard badTestDrawCard getCard.o dominion.o tests randomtestcard1.out randomttestcard2.out randomtestadventurer.out
 
 clean:
-	rm -f *.o playdom.exe playdom player player.exe *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe badTestDrawCard tests
+	rm -f *.o playdom.exe playdom player player.exe *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe badTestDrawCard randomtestcard1 randomtestcard2 randomtestadventurer tests
 
 # Random Tests
 randomtestcard1: randomtestcard1.c dominion.o rngs.o getCard.o interface.o
