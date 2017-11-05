@@ -1,6 +1,6 @@
 /*
  * Taylor Jones jonest3
- * Card: 
+ * Card: village 
  *
 */
 
@@ -18,7 +18,7 @@
 
 
 int main(){
-   printf("* RANDOM TESTING GREAT_HALL CARD *\n\n");
+   printf("* RANDOM TESTING VILLAGE CARD *\n\n");
 
    int cards[] = {     curse, estate, duchy, province, copper, silver,
                        gold, adventurer, council_room, feast, gardens,
@@ -45,7 +45,7 @@ int main(){
         numPlayers = rand() % (4 + 1 - 2) + 2;
         printf("-- # Players: %d\n", numPlayers);
 
-        k[0] = adventurer; // make sure adventurer is included
+        k[0] = village; // make sure adventurer is included
 
         int j;
         int numSelected = 1;
@@ -56,7 +56,10 @@ int main(){
         while(numSelected < 10){
                 used = 0;
                 // rand_int used for random card selection
-                rand_int = rand() % (26 + 1 - 8) + 8; // kingdom cards are elements 7-26
+                do{
+	                rand_int = rand() % (26 + 1 - 8) + 8; // kingdom cards are elements 7-26
+		}while(rand_int == village);
+
                 for(j = 1; j < numSelected; j++){
                         if(k[j] == cards[rand_int]){
                                 used = 1;
@@ -73,7 +76,7 @@ int main(){
         // Set up decks with 0 to 10 cards
         rand_hand = rand() % (10 + 1 - 1) + 1;
         G.handCount[0] = rand_hand;
-        G.hand[0][0] = great_hall;
+        G.hand[0][0] = village;
 
         rand_deck = rand() % (10 + 1);
         G.deckCount[0] = rand_deck;
@@ -120,9 +123,9 @@ int main(){
         printf("\n");
 
 
-// 	What great_hall should do
+// 	What village should do
 	drawCard(0, &G);
-	G.numActions += 1;
+	G.numActions += 2;
 	discardCard(0, 0, &G, 0);
 
         printf("\n--- EXPECTED DECKS ---\n\n");
@@ -157,7 +160,7 @@ int main(){
 
 //        memcpy(&testG, &G, sizeof(struct gameState));
 
-        cardEffect(great_hall, 0, 0, 0, &testG, 0, NULL);
+        cardEffect(village, 0, 0, 0, &testG, 0, NULL);
 
         printf("\n--- RESULTING DECKS ---\n\n");
 
@@ -190,22 +193,22 @@ int main(){
         printf("\n");
 
 /*********************************************************************/
-	printf("*** Testing: Actions Increased by 1 ***\n");
+	printf("*** Testing: Actions Increased by 2 ***\n");
 
 	printf("Result: ");
-	if(testG.numActions == rand_actions + 1){
+	if(testG.numActions == rand_actions + 2){
 		printf("PASSED\n\n");
 		passes++;
 	}
 	else{
 		printf("FAILED\n\n");
-		if(testG.numActions > rand_actions + 1)
-			printf("Test Actions had more actions added than 1.\n");
+		if(testG.numActions > rand_actions + 2)
+			printf("Test Actions had more actions added than 2.\n");
 		else
 			printf("Test Actions had less actions than expected.\n");
 	}
 
-	printf("*** Testing: Hand Size Stays the Same (- Great Hall + New Card) ***\n");
+	printf("*** Testing: Hand Size Stays the Same (- Village + New Card) ***\n");
 
 	printf("Results: ");
 	if(testG.handCount[0] == rand_hand){
@@ -221,14 +224,14 @@ int main(){
 	}
 	
 	printf("*** Testing: great_hall Added to Played Deck ***\n");
-	if(testG.playedCards[0] == great_hall  &&  testG.playedCardCount == 1){
+	if(testG.playedCards[0] == village  &&  testG.playedCardCount == 1){
 		printf("PASSED\n\n");
 		passes++;
 	}
 	else{
 		printf("FAILED\n\n");
-		if(testG.playedCards[0] != great_hall)
-			printf("Last card played was not Great Hall\n");
+		if(testG.playedCards[0] != village)
+			printf("Last card played was not Village\n");
 
 		if(testG.playedCardCount > 1){
 			printf("Too many cards added to play deck.\n");
