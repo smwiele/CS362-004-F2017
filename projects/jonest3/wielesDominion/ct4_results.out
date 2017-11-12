@@ -1,0 +1,132 @@
+---------- TESTING CARD: great_hall ----------
+Before: 
+-Hand: Player 0's hand:
+#  Card
+0  Copper       
+1  Copper       
+2  Estate       
+3  Copper       
+4  Copper       
+
+-Size: 5
+
+-Deck: Player 0's deck: 
+#  Card
+0  Estate       
+1  Copper       
+2  Copper       
+3  Estate       
+4  Copper       
+
+-Size: 5
+
+-Discard: Player 0's discard: 
+
+-Size: 0
+
+-Played: Player 0's played cards: 
+
+-Size: 0
+
+Game Action Count: 1
+
+--TESTING: cardEffect & mine
+TEST = PASSED
+
+After: 
+-Hand: Player 0's hand:
+#  Card
+0  Copper       
+1  Copper       
+2  Estate       
+3  Copper       
+4  Copper       
+
+-Size: 5
+
+-Deck: Player 0's deck: 
+#  Card
+0  Estate       
+1  Copper       
+2  Copper       
+3  Estate       
+
+-Size: 4
+
+-Discard: Player 0's discard: 
+
+-Size: 0
+
+-Played: Player 0's played cards: 
+#  Card
+0  Copper        
+
+-Size: 1
+
+Game Action Count: 2
+
+------RESULTS-----
+
+Expected: 
+-Hand: Player 0's hand:
+#  Card
+0  Copper       
+1  Copper       
+2  Estate       
+3  Copper       
+4  Copper       
+
+-Size: 5
+
+-Deck: Player 0's deck: 
+#  Card
+0  Estate       
+1  Copper       
+2  Copper       
+3  Estate       
+
+-Size: 4
+
+-Discard: Player 0's discard: 
+
+-Size: 0
+
+-Played: Player 0's played cards: 
+#  Card
+0  Copper        
+
+-Size: 1
+
+Game Action Count: 2
+
+
+
+--Results:
+--Testing Hands--
+
+-Hand Count:
+Expected: 5
+Results: 5
+TEST SUCCESSFUL
+--Testing Hand Increase by Exact Amount--
+TEST SUCCESSFUL
+--Testing Decks--
+-Deck Count:
+Expected: 4
+Results: 4
+TEST SUCCESSFUL
+--Testing Discard--
+-Discard Count:
+Expected: 0
+Results: 0
+TEST SUCCESSFUL
+--Testing Played--
+-Played Count:
+Expected: 1
+Results: 1
+TEST SUCCESSFUL
+--Testing Action Count--
+-# of Actions:
+Expected: 2
+Results: 2
+TEST SUCCESSFUL

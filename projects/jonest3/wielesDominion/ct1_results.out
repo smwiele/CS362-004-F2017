@@ -1,0 +1,50 @@
+---------- TESTING CARD: adventurer ----------
+Before: 
+-Hand: copper copper estate copper copper 
+-Size: 5
+-Deck: estate copper copper estate copper 
+-Size: 5
+-Discard: 
+-Size: 0
+--TESTING: cardEffect & adventurer
+TEST = PASSED
+
+After: 
+-Hand: copper copper estate copper copper copper copper 
+-Size: 7
+-Deck: estate copper 
+-Size: 2
+-Discard: estate 
+-Size: 1
+---Print Results
+
+Expected: 
+-Hand: copper copper estate copper copper copper copper 
+-Size: 7
+-Deck: estate copper 
+-Size: 2
+-Discard: estate 
+-Size: 1
+
+
+--Results:
+-Hand Count:
+Expected: 7
+Results : 7
+--TESTING HAND COUNT--
+TESTING = PASSED
+--TESTING HAND COUNT GAINED 2
+TESTING = PASSED
+
+-Deck Count:
+Expected: 2
+Results : 2
+--TESTING DECK COUNT
+TESTING = PASSED
+
+-Discard Count:
+Expected: 1
+Results : 1
+--TESTING DISCARD
+TESTING = PASSED
+>>> TEST SUCCESSFUL <<<
