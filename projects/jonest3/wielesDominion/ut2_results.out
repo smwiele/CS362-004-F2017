@@ -303,3 +303,10 @@ outpost's supply count: 0
 salvager's supply count: 0
 sea_hag's supply count: 0
 TEST FAILED @ Game not over when 3 supply == 0
+File 'unittest2.c'
+Lines executed:96.08% of 51
+Branches executed:95.45% of 44
+Taken at least once:77.27% of 44
+Calls executed:84.85% of 33
+Creating 'unittest2.c.gcov'
+

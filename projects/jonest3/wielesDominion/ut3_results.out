@@ -1659,3 +1659,10 @@ Player 0: curse estate duchy province copper silver gold adventurer gardens mine
 Player 1: curse estate duchy province copper silver gold adventurer gardens mine smithy village minion tribute cutpurse embargo sea_hag curse 
 Player 2: curse estate duchy province copper silver gold adventurer gardens mine smithy village minion tribute cutpurse embargo sea_hag curse 
 Player 3: curse estate duchy province copper silver gold gardens curse 
+File 'unittest3.c'
+Lines executed:100.00% of 55
+Branches executed:100.00% of 30
+Taken at least once:100.00% of 30
+Calls executed:100.00% of 29
+Creating 'unittest3.c.gcov'
+

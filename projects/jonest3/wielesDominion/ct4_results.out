@@ -130,3 +130,10 @@ TEST SUCCESSFUL
 Expected: 2
 Results: 2
 TEST SUCCESSFUL
+File 'cardtest4.c'
+Lines executed:97.41% of 116
+Branches executed:95.45% of 44
+Taken at least once:54.55% of 44
+Calls executed:85.88% of 85
+Creating 'cardtest4.c.gcov'
+

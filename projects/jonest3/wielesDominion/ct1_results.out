@@ -14,8 +14,8 @@ After:
 -Size: 7
 -Deck: estate copper 
 -Size: 2
--Discard: estate 
--Size: 1
+-Discard: 
+-Size: 0
 ---Print Results
 
 Expected: 
@@ -44,7 +44,14 @@ TESTING = PASSED
 
 -Discard Count:
 Expected: 1
-Results : 1
+Results : 0
 --TESTING DISCARD
-TESTING = PASSED
->>> TEST SUCCESSFUL <<<
+CARD FAILED AT >> Discard Count
+>>> TEST FAILED <<<
+File 'cardtest1.c'
+Lines executed:92.17% of 115
+Branches executed:95.45% of 88
+Taken at least once:67.05% of 88
+Calls executed:78.38% of 74
+Creating 'cardtest1.c.gcov'
+

@@ -57,3 +57,10 @@ TESTING = PASSED
 TEST = PASSED
 --TESTING ACTION COUNT
 TEST = SUCCESSFUL
+File 'cardtest3.c'
+Lines executed:89.34% of 122
+Branches executed:96.77% of 62
+Taken at least once:66.13% of 62
+Calls executed:78.65% of 89
+Creating 'cardtest3.c.gcov'
+

@@ -27,7 +27,7 @@ Discard:  Curse Curse Curse Curse Curse Curse Curse Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper 
    Deck:  
-Discard:  Curse Curse Curse Curse Curse Curse Curse Estate Estate 
+Discard:  Curse Curse Curse Curse Curse Curse Curse Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -36,7 +36,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -77,7 +78,7 @@ Discard:  Curse Curse Curse Estate Curse Curse Curse Curse Curse Estate Estate E
 
    Hand:  Adventurer Copper Estate Copper Copper ? Curse Curse Curse Curse Copper 
    Deck:  
-Discard:  Curse Curse Curse Estate Curse Estate Curse Curse Curse Curse Estate Estate 
+Discard:  Curse Curse Curse Estate Curse Estate Curse Curse Curse Curse Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -86,7 +87,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -230,7 +232,7 @@ Discard:  Curse Curse Curse Estate Curse Curse Curse Curse Curse Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Curse Curse Curse Estate Curse Estate Curse Curse Curse Curse 
+Discard:  Curse Curse Curse Estate Curse Estate Curse Curse Curse 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -239,7 +241,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -281,7 +284,7 @@ Discard:  Curse Curse Curse Estate Curse Curse Curse Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Copper ? Curse Curse Copper 
    Deck:  
-Discard:  Estate Curse Curse Curse Curse Curse Curse Estate Estate 
+Discard:  Estate Curse Curse Curse Curse Curse Curse Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -290,7 +293,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -383,7 +387,7 @@ Discard:  Curse Curse Curse Estate Curse Curse Curse Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? ? Curse Curse Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Curse Curse Curse Estate Curse Curse Curse Estate Estate Estate 
+Discard:  Curse Curse Curse Estate Curse Curse Curse Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -392,7 +396,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -536,7 +541,7 @@ Discard:  Curse Curse Estate Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Curse Curse Estate Estate 
+Discard:  Curse Curse Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -545,7 +550,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -689,7 +695,7 @@ Discard:  ? ? Curse Curse Estate Estate Curse Estate Curse Estate Curse Estate E
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  ? ? Curse Estate Curse Estate Curse Curse Curse Estate Estate Estate Estate 
+Discard:  ? ? Curse Estate Curse Estate Curse Curse Curse Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -698,7 +704,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -740,7 +747,7 @@ Discard:  Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? Curse Curse Copper Copper 
    Deck:  
-Discard:  Estate Estate 
+Discard:  Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -749,7 +756,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -842,7 +850,7 @@ Discard:  Estate Curse Estate Estate Curse Estate Estate Curse Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate Curse Estate Curse Estate Curse Estate Estate Estate Estate 
+Discard:  Estate Curse Estate Curse Estate Curse Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -851,7 +859,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -944,7 +953,7 @@ Discard:  Estate Curse Estate Estate Curse Estate Estate Estate Curse
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate Estate Curse Estate Curse Estate Curse Estate Estate 
+Discard:  Estate Estate Curse Estate Curse Estate Curse Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -953,7 +962,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -1046,7 +1056,7 @@ Discard:  Estate Curse Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? Curse Curse Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Curse Estate 
+Discard:  Estate Curse 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -1055,7 +1065,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -1097,7 +1108,7 @@ Discard:  Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? Curse Copper 
    Deck:  
-Discard:  Estate Estate Estate 
+Discard:  Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -1106,7 +1117,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -1199,7 +1211,7 @@ Discard:  Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate 
+Discard:  Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -1208,7 +1220,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -1250,7 +1263,7 @@ Discard:  Estate Estate Estate Estate Curse Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? Curse Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Curse Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Curse Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -1259,7 +1272,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -1301,7 +1315,7 @@ Discard:  Estate Estate Estate Estate Curse Estate Estate Estate Curse Estate Es
 
    Hand:  Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Curse Estate Estate Estate Curse Estate Estate 
+Discard:  Estate Estate Estate Estate Curse Estate Estate Estate Curse Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -1310,7 +1324,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -1352,7 +1367,7 @@ Discard:  Estate Estate Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Estate Estate 
+Discard:  Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -1361,7 +1376,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -1454,7 +1470,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Curse
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Curse Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Curse Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -1463,7 +1479,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -1505,7 +1522,7 @@ Discard:  Estate Estate Estate
 
    Hand:  Adventurer Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate 
+Discard:  Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -1514,7 +1531,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -1556,7 +1574,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Curse Curse Estate Es
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate Curse Curse Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Curse Curse Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -1565,7 +1583,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -1709,7 +1728,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -1718,7 +1737,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -1760,7 +1780,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Curse Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate Curse Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Curse 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -1769,7 +1789,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -1811,7 +1832,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Curse Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate Curse Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Curse 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -1820,7 +1841,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -1862,7 +1884,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -1871,7 +1893,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -1913,7 +1936,7 @@ Discard:  Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate 
+Discard:  Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -1922,7 +1945,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -1964,7 +1988,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -1973,7 +1997,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -2117,7 +2142,7 @@ Discard:  Estate Estate Estate
 
    Hand:  Copper 
    Deck:  
-Discard:  Estate Estate Estate 
+Discard:  Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -2126,7 +2151,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -2270,7 +2296,7 @@ Discard:  Estate Adventurer Estate Estate Estate Estate Estate Estate Curse Esta
 
    Hand:  
    Deck:  
-Discard:  Estate Adventurer Estate Estate Estate Estate Estate Estate Estate Estate Estate Curse Estate 
+Discard:  Estate Adventurer Estate Estate Estate Estate Estate Estate Estate Estate Estate Curse 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -2279,7 +2305,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -2321,7 +2348,7 @@ Discard:  Estate Estate Estate Adventurer Estate Estate Estate Estate Curse Esta
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper 
    Deck:  
-Discard:  Estate Adventurer Estate Estate Curse Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Adventurer Estate Estate Curse Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -2330,7 +2357,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -2576,7 +2604,7 @@ Discard:  Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? Copper ? Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate 
+Discard:  
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -2585,7 +2613,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -2729,7 +2758,7 @@ Discard:  Estate Estate Estate Adventurer Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate Adventurer Estate Estate Estate Estate 
+Discard:  Estate Adventurer Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -2738,7 +2767,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -2984,7 +3014,7 @@ Discard:  Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -2993,7 +3023,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -3035,7 +3066,7 @@ Discard:  Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate 
+Discard:  Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -3044,7 +3075,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -3137,7 +3169,7 @@ Discard:  Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? Estate Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate 
+Discard:  Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -3146,7 +3178,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -3239,7 +3272,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Curse Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Curse 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -3248,7 +3281,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -3341,7 +3375,7 @@ Discard:  Estate Adventurer Estate Estate Estate Estate
 
    Hand:  
    Deck:  
-Discard:  Estate Adventurer Estate Estate Estate Estate 
+Discard:  Estate Adventurer Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -3350,7 +3384,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -3392,7 +3427,7 @@ Discard:  Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate 
+Discard:  
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -3401,7 +3436,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -3443,7 +3479,7 @@ Discard:  ? ? Estate Estate Estate Adventurer Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Estate Copper 
    Deck:  
-Discard:  ? ? Estate Adventurer Estate Estate Estate Estate 
+Discard:  ? ? Estate Adventurer Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -3452,7 +3488,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -3494,7 +3531,7 @@ Discard:  Estate ? ? ? Estate Adventurer Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate ? Estate Adventurer Estate ? ? Estate Estate Estate 
+Discard:  Estate ? Estate Adventurer Estate ? ? Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -3503,7 +3540,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -3596,7 +3634,7 @@ Discard:  Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate 
+Discard:  
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -3605,7 +3643,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -3647,7 +3686,7 @@ Discard:  Estate ? ? ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Estate ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate ? ? ? Estate Estate 
+Discard:  Estate ? ? ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -3656,7 +3695,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -3698,7 +3738,7 @@ Discard:  ? ? Estate Estate Estate Estate Estate Estate Estate ? Estate Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  ? Estate Estate Estate Estate Estate ? ? Estate Estate Estate Estate 
+Discard:  ? Estate Estate Estate Estate Estate ? ? Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -3707,7 +3747,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -3902,7 +3943,7 @@ Discard:  ? ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate ? ? Estate 
+Discard:  Estate ? ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -3911,7 +3952,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -4055,7 +4097,7 @@ Discard:  ? ? ? Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  ? Estate Estate Estate ? ? 
+Discard:  ? Estate Estate Estate ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -4064,7 +4106,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -4157,7 +4200,7 @@ Discard:  ? ? Estate Estate Estate Estate Estate ? Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate ? ? Estate Estate Estate ? Estate Estate 
+Discard:  Estate ? ? Estate Estate Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -4166,7 +4209,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -4208,7 +4252,7 @@ Discard:  ? ? Estate Estate Estate Estate Estate Estate ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? Copper 
    Deck:  
-Discard:  ? ? Estate Estate Estate Estate Estate ? Estate Estate Estate 
+Discard:  ? ? Estate Estate Estate Estate Estate ? Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -4217,7 +4261,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -4259,7 +4304,7 @@ Discard:  ? ? Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  ? ? Estate Estate Estate Estate Estate 
+Discard:  ? ? Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -4268,7 +4313,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -4310,7 +4356,7 @@ Discard:  ? ? Estate
 
    Hand:  Adventurer Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  ? ? Estate 
+Discard:  ? ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -4319,7 +4365,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -4463,7 +4510,7 @@ Discard:  ? Estate ? Estate Estate Estate Estate Estate Estate ? ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? ? Copper 
    Deck:  
-Discard:  ? Estate Estate Estate ? ? ? Estate Estate Estate Estate Estate 
+Discard:  ? Estate Estate Estate ? ? ? Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -4472,7 +4519,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -4514,7 +4562,7 @@ Discard:  ? Estate ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? ? ? ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  ? Estate ? Estate 
+Discard:  ? Estate ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -4523,7 +4571,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -4769,7 +4818,7 @@ Discard:  ? ? Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate Estate ? ? Estate Estate Estate Estate Estate 
+Discard:  Estate Estate ? ? Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -4778,7 +4827,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -4820,7 +4870,7 @@ Discard:  ? ? Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  ? ? Estate Estate Estate Estate 
+Discard:  ? ? Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -4829,7 +4879,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -4922,7 +4973,7 @@ Discard:  ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  ? Estate 
+Discard:  ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -4931,7 +4982,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -5024,7 +5076,7 @@ Discard:  ? Estate Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? Copper ? ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  ? Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  ? Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -5033,7 +5085,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -5075,7 +5128,7 @@ Discard:  Estate Estate Estate Estate ? Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? Copper ? ? Copper 
    Deck:  
-Discard:  ? Estate Estate Estate Estate Estate Estate Estate 
+Discard:  ? Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -5084,7 +5137,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -5126,7 +5180,7 @@ Discard:  ? ? Estate Estate Estate Estate ?
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? Copper 
    Deck:  
-Discard:  ? ? Estate Estate Estate Estate ? 
+Discard:  ? ? Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -5135,7 +5189,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -5177,7 +5232,7 @@ Discard:  ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? Copper 
    Deck:  
-Discard:  ? Estate Estate 
+Discard:  ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -5186,7 +5241,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -5279,7 +5335,7 @@ Discard:  ? Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper 
    Deck:  
-Discard:  Estate Estate ? Estate Estate Estate 
+Discard:  Estate Estate ? Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -5288,7 +5344,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -5432,7 +5489,7 @@ Discard:  ? ? ? ? Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  ? ? ? Estate Estate ? Estate Estate 
+Discard:  ? ? ? Estate Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -5441,7 +5498,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -5483,7 +5541,7 @@ Discard:  ? ? Estate
 
    Hand:  Adventurer Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  ? ? Estate 
+Discard:  ? ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -5492,7 +5550,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -5534,7 +5593,7 @@ Discard:  ? ? Estate ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  ? ? Estate ? Estate 
+Discard:  ? ? Estate ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -5543,7 +5602,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -5585,7 +5645,7 @@ Discard:  ? ? ? Estate Estate Estate Estate ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? Copper 
    Deck:  
-Discard:  ? Estate Estate ? ? Estate ? Estate Estate 
+Discard:  ? Estate Estate ? ? Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -5594,7 +5654,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -5636,7 +5697,7 @@ Discard:  ? ? ? ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  ? ? ? ? Estate Estate 
+Discard:  ? ? ? ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -5645,7 +5706,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -5687,7 +5749,7 @@ Discard:  Estate Adventurer ? ? ? Estate Estate ? Estate ? Estate Estate
 
    Hand:  
    Deck:  
-Discard:  Estate Adventurer Estate ? ? Estate ? Estate ? ? Estate Estate 
+Discard:  Estate Adventurer Estate ? ? Estate ? Estate ? ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -5696,7 +5758,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -5738,7 +5801,7 @@ Discard:  Estate ? Estate Estate Adventurer ? Estate ? ? Estate Estate Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Estate ? ? Estate Adventurer ? Estate Estate ? Estate Estate 
+Discard:  Estate Estate ? ? Estate Adventurer ? Estate Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -5747,7 +5810,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -5840,7 +5904,7 @@ Discard:  Estate Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Estate 
+Discard:  Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -5849,7 +5913,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -5891,7 +5956,7 @@ Discard:  Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? ? ? Estate Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -5900,7 +5965,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -5942,7 +6008,7 @@ Discard:  ? ? ? ? Estate Estate ? Estate Estate Estate Estate Estate Estate ? ?
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  ? ? ? ? Estate Estate Estate Estate ? ? ? Estate Estate Estate Estate 
+Discard:  ? ? ? ? Estate Estate Estate Estate ? ? ? Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -5951,7 +6017,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -6044,7 +6111,7 @@ Discard:  ? ? ? Estate ? Estate ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate Estate ? ? ? ? ? Estate Estate 
+Discard:  Estate Estate ? ? ? ? ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -6053,7 +6120,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -6095,7 +6163,7 @@ Discard:  Estate Adventurer ? ? ? Estate ? Estate ? Estate Estate
 
    Hand:  
    Deck:  
-Discard:  Estate Adventurer ? ? Estate ? ? Estate ? Estate Estate 
+Discard:  Estate Adventurer ? ? Estate ? ? Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -6104,7 +6172,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -6197,7 +6266,7 @@ Discard:  Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate Estate Estate 
+Discard:  Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -6206,7 +6275,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -6299,7 +6369,7 @@ Discard:  Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Copper 
    Deck:  
-Discard:  Estate Estate 
+Discard:  Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -6308,7 +6378,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -6350,7 +6421,7 @@ Discard:  Estate ? Estate Estate ? Estate Estate ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate ? Estate ? Estate ? Estate Estate Estate Estate 
+Discard:  Estate ? Estate ? Estate ? Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -6359,7 +6430,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -6503,7 +6575,7 @@ Discard:  Estate ? Estate Estate ? Estate Estate ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate ? Estate Estate ? Estate Estate ? Estate 
+Discard:  Estate ? Estate Estate ? Estate Estate ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -6512,7 +6584,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -6554,7 +6627,7 @@ Discard:  Estate Adventurer Estate ? Estate Estate Estate Estate Estate Estate ?
 
    Hand:  
    Deck:  
-Discard:  Estate Adventurer Estate Estate Estate ? ? ? Estate Estate Estate Estate 
+Discard:  Estate Adventurer Estate Estate Estate ? ? ? Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -6563,7 +6636,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -6656,7 +6730,7 @@ Discard:  Estate Estate Estate Adventurer Estate Estate Estate Estate Estate ? E
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Adventurer Estate Estate ? Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Adventurer Estate Estate ? Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -6665,7 +6739,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -6707,7 +6782,7 @@ Discard:  Estate Estate Estate Estate Estate Estate
 
    Hand:  
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -6716,7 +6791,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -6860,7 +6936,7 @@ Discard:  Estate Estate Estate Estate
 
    Hand:  
    Deck:  
-Discard:  Estate Estate Estate Estate 
+Discard:  Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -6869,7 +6945,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -6911,7 +6988,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Estate Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -6920,7 +6997,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -7013,7 +7091,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -7022,7 +7100,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -7064,7 +7143,7 @@ Discard:  Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Estate Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -7073,7 +7152,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -7115,7 +7195,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate ? Estat
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate ? Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -7124,7 +7204,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -7166,7 +7247,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? Estate Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -7175,7 +7256,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -7217,7 +7299,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -7226,7 +7308,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -7268,7 +7351,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -7277,7 +7360,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -7319,7 +7403,7 @@ Discard:  ? ? Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  ? ? Estate Estate Estate Estate 
+Discard:  ? ? Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -7328,7 +7412,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -7370,7 +7455,7 @@ Discard:  ? ? Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  ? ? Estate Estate Estate Estate 
+Discard:  ? ? Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -7379,7 +7464,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -7421,7 +7507,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate ? ? Estate Estate Est
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate ? ? Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate ? ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -7430,7 +7516,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -7472,7 +7559,7 @@ Discard:  Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -7481,7 +7568,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -7574,7 +7662,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -7583,7 +7671,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -7625,7 +7714,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate ? ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate ? ? Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate ? ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -7634,7 +7723,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -7880,7 +7970,7 @@ Discard:  Estate Adventurer Estate Estate Estate
 
    Hand:  
    Deck:  
-Discard:  Estate Adventurer Estate Estate Estate 
+Discard:  Estate Adventurer Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -7889,7 +7979,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -7931,7 +8022,7 @@ Discard:  Estate Estate Adventurer Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Estate Copper ? Copper 
    Deck:  
-Discard:  Adventurer Estate Estate Estate 
+Discard:  Adventurer Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -7940,7 +8031,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -8084,7 +8176,7 @@ Discard:  Estate Estate Adventurer Estate Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Adventurer Estate Estate Estate 
+Discard:  Estate Adventurer Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -8093,7 +8185,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -8135,7 +8228,7 @@ Discard:  Estate ? ? Estate Adventurer Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate ? Estate Estate Estate Adventurer Estate Estate ? Estate 
+Discard:  Estate ? Estate Estate Estate Adventurer Estate Estate ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -8144,7 +8237,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -8237,7 +8331,7 @@ Discard:  Estate ? ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate ? ? Estate Estate 
+Discard:  Estate ? ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -8246,7 +8340,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -8390,7 +8485,7 @@ Discard:  ? ? ? ? Estate Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Estate Copper 
    Deck:  
-Discard:  ? ? Estate Estate Estate Estate Estate Estate ? ? Estate Estate Estate Estate 
+Discard:  ? ? Estate Estate Estate Estate Estate Estate ? ? Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -8399,7 +8494,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -8441,7 +8537,7 @@ Discard:  Estate Estate
 
    Hand:  Adventurer Copper Copper 
    Deck:  
-Discard:  Estate Estate 
+Discard:  Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -8450,7 +8546,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -8492,7 +8589,7 @@ Discard:  Estate ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate ? Estate Estate 
+Discard:  Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -8501,7 +8598,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -8543,7 +8641,7 @@ Discard:  Estate ? Estate Estate Estate Estate Estate
 
    Hand:  Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate ? Estate Estate Estate Estate Estate 
+Discard:  Estate ? Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -8552,7 +8650,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -8594,7 +8693,7 @@ Discard:  Estate ? Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Estate ? Estate ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate ? Estate Estate Estate Estate Estate Estate 
+Discard:  Estate ? Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -8603,7 +8702,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -8645,7 +8745,7 @@ Discard:  Estate ? Estate ? ? Estate Estate Estate Estate Estate Estate Estate E
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate ? Estate ? Estate ? Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate ? Estate ? Estate ? Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -8654,7 +8754,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -8696,7 +8797,7 @@ Discard:  Estate ? Estate ? Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate ? Estate ? Estate Estate Estate 
+Discard:  Estate ? Estate ? Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -8705,7 +8806,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -8747,7 +8849,7 @@ Discard:  Estate ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Estate ? Estate ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate ? Estate 
+Discard:  Estate ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -8756,7 +8858,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -8849,7 +8952,7 @@ Discard:  Estate ? Estate ? Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Estate Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate ? Estate ? Estate Estate Estate 
+Discard:  Estate ? Estate ? Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -8858,7 +8961,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -8951,7 +9055,7 @@ Discard:  Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Estate Copper 
    Deck:  
-Discard:  Estate 
+Discard:  
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -8960,7 +9064,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -9002,7 +9107,7 @@ Discard:  Estate ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate ? Estate 
+Discard:  Estate ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -9011,7 +9116,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -9257,7 +9363,7 @@ Discard:  Estate ? Estate ? Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate ? Estate ? Estate Estate Estate 
+Discard:  Estate ? Estate ? Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -9266,7 +9372,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -9359,7 +9466,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate ? ?
 
    Hand:  Adventurer Copper Estate Copper Copper ? Copper 
    Deck:  
-Discard:  Estate Estate Estate ? Estate ? Estate Estate Estate Estate 
+Discard:  Estate Estate Estate ? Estate ? Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -9368,7 +9475,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -9410,7 +9518,7 @@ Discard:  Estate Estate Estate Estate Estate Estate ? Estate Estate Estate Estat
 
    Hand:  Adventurer Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate ? Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -9419,7 +9527,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -9461,7 +9570,7 @@ Discard:  Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? Estate ? Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate 
+Discard:  Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -9470,7 +9579,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -9563,7 +9673,7 @@ Discard:  Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? Estate Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -9572,7 +9682,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -9716,7 +9827,7 @@ Discard:  Estate
 
    Hand:  Adventurer Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate 
+Discard:  
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -9725,7 +9836,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -9767,7 +9879,7 @@ Discard:  Estate Adventurer Estate
 
    Hand:  
    Deck:  
-Discard:  Estate Adventurer Estate 
+Discard:  Estate Adventurer 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -9776,7 +9888,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -9920,7 +10033,7 @@ Discard:  Estate Adventurer Estate Estate Estate Estate ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Adventurer Estate Estate Estate Estate ? Estate Estate 
+Discard:  Estate Adventurer Estate Estate Estate Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -9929,7 +10042,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -9971,7 +10085,7 @@ Discard:  Estate Estate Estate Adventurer Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Adventurer Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Adventurer Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -9980,7 +10094,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -10124,7 +10239,7 @@ Discard:  Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate 
+Discard:  Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -10133,7 +10248,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -10226,7 +10342,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -10235,7 +10351,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -10328,7 +10445,7 @@ Discard:  Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Estate Estate 
+Discard:  Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -10337,7 +10454,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -10532,7 +10650,7 @@ Discard:  Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Estate Estate 
+Discard:  Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -10541,7 +10659,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -10583,7 +10702,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -10592,7 +10711,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -10736,7 +10856,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -10745,7 +10865,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -10787,7 +10908,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -10796,7 +10917,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -10991,7 +11113,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -11000,7 +11122,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -11093,7 +11216,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Estate ? Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -11102,7 +11225,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -11144,7 +11268,7 @@ Discard:  Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate 
+Discard:  
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -11153,7 +11277,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -11195,7 +11320,7 @@ Discard:  Estate ?
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate ? 
+Discard:  Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -11204,7 +11329,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -11246,7 +11372,7 @@ Discard:  ? Estate Estate Estate Estate Estate Estate
 
    Hand:  Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate ? Estate Estate 
+Discard:  Estate Estate Estate Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -11255,7 +11381,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -11297,7 +11424,7 @@ Discard:  Estate Estate Estate Estate ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Estate ? Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate ? 
+Discard:  Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -11306,7 +11433,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -11348,7 +11476,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate ?
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate ? Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate ? Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -11357,7 +11485,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -11399,7 +11528,7 @@ Discard:  Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate Estate Estate 
+Discard:  Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -11408,7 +11537,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -11501,7 +11631,7 @@ Discard:  Estate Estate Estate Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate 
+Discard:  Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -11510,7 +11640,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -11552,7 +11683,7 @@ Discard:  Estate Estate Estate Estate
 
    Hand:  
    Deck:  
-Discard:  Estate Estate Estate Estate 
+Discard:  Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -11561,7 +11692,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -11756,7 +11888,7 @@ Discard:  Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? Copper ? Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -11765,7 +11897,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -11858,7 +11991,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -11867,7 +12000,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -11909,7 +12043,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate ? Estat
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate ? Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -11918,7 +12052,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -11960,7 +12095,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
 
    Hand:  Adventurer Copper Estate Copper Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -11969,7 +12104,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -12368,7 +12504,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -12377,7 +12513,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -12470,7 +12607,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -12479,7 +12616,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -12521,7 +12659,7 @@ Discard:  Estate Adventurer Estate Estate Estate Estate Estate Estate Estate Est
 
    Hand:  
    Deck:  
-Discard:  Estate Adventurer Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Adventurer Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -12530,7 +12668,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -12776,7 +12915,7 @@ Discard:  Estate Estate Estate Estate Adventurer Estate
 
    Hand:  
    Deck:  
-Discard:  Estate Estate Estate Adventurer Estate Estate 
+Discard:  Estate Estate Estate Adventurer Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -12785,7 +12924,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -12878,7 +13018,7 @@ Discard:  Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -12887,7 +13027,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -12929,7 +13070,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -12938,7 +13079,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -12980,7 +13122,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper ? Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -12989,7 +13131,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -13031,7 +13174,7 @@ Discard:  Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate 
+Discard:  
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -13040,7 +13183,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -13235,7 +13379,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -13244,7 +13388,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -13490,7 +13635,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? ? Copper ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -13499,7 +13644,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -13541,7 +13687,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -13550,7 +13696,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -13592,7 +13739,7 @@ Discard:  ? ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  ? ? Estate Estate 
+Discard:  ? ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -13601,7 +13748,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -13745,7 +13893,7 @@ Discard:  ? ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate ? ? Estate 
+Discard:  Estate ? ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -13754,7 +13902,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -13847,7 +13996,7 @@ Discard:  Estate Estate Estate Estate Estate ? Estate Estate Estate ? Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate ? Estate ? Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate ? Estate ? Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -13856,7 +14005,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -13949,7 +14099,7 @@ Discard:  Estate Estate Estate Estate Estate ? Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate ? Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate ? Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -13958,7 +14108,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -14153,7 +14304,7 @@ Discard:  ? Estate Estate Estate Estate Estate Estate Estate ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  ? Estate Estate Estate Estate Estate ? Estate Estate Estate 
+Discard:  ? Estate Estate Estate Estate Estate ? Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -14162,7 +14313,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -14204,7 +14356,7 @@ Discard:  ? Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Estate ? Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  ? Estate Estate Estate Estate Estate 
+Discard:  ? Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -14213,7 +14365,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -14306,7 +14459,7 @@ Discard:  ? Estate Estate Estate Estate Estate Estate Estate ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  ? Estate Estate Estate Estate Estate Estate Estate ? Estate 
+Discard:  ? Estate Estate Estate Estate Estate Estate Estate ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -14315,7 +14468,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -14459,7 +14613,7 @@ Discard:  ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Copper 
    Deck:  
-Discard:  Estate ? Estate 
+Discard:  Estate ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -14468,7 +14622,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -14561,7 +14716,7 @@ Discard:  ? Estate Estate Estate Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Estate ? Estate Estate 
+Discard:  Estate Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -14570,7 +14725,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -14612,7 +14768,7 @@ Discard:  Estate ? Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Copper 
    Deck:  
-Discard:  Estate ? Estate Estate Estate 
+Discard:  Estate ? Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -14621,7 +14777,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -14663,7 +14820,7 @@ Discard:  Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate 
+Discard:  Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -14672,7 +14829,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -14918,7 +15076,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate ? Estate
 
    Hand:  Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate ? Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -14927,7 +15085,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -15071,7 +15230,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -15080,7 +15239,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -15122,7 +15282,7 @@ Discard:  Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Estate Estate Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate Estate 
+Discard:  Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -15131,7 +15291,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -15224,7 +15385,7 @@ Discard:  Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Copper ? Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate 
+Discard:  
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -15233,7 +15394,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -15275,7 +15437,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate ? Estate Estat
 
    Hand:  Adventurer Copper Estate Copper Copper ? Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate ? Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -15284,7 +15446,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -15377,7 +15540,7 @@ Discard:  ? Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Copper Copper 
    Deck:  
-Discard:  ? Estate Estate Estate Estate Estate Estate 
+Discard:  ? Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -15386,7 +15549,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -15581,7 +15745,7 @@ Discard:  ? Estate Estate Estate Estate Estate Estate Estate ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  ? Estate Estate Estate Estate Estate Estate Estate ? Estate Estate 
+Discard:  ? Estate Estate Estate Estate Estate Estate Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -15590,7 +15754,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -15632,7 +15797,7 @@ Discard:  ? Estate Estate Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  ? Estate Estate Estate 
+Discard:  ? Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -15641,7 +15806,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -15785,7 +15951,7 @@ Discard:  Estate Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Estate 
+Discard:  Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -15794,7 +15960,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -15836,7 +16003,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -15845,7 +16012,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -15938,7 +16106,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -15947,7 +16115,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -16040,7 +16209,7 @@ Discard:  Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -16049,7 +16218,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -16091,7 +16261,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -16100,7 +16270,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -16142,7 +16313,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -16151,7 +16322,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -16295,7 +16467,7 @@ Discard:  Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate 
+Discard:  
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -16304,7 +16476,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -16397,7 +16570,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Estate Copper ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate ? Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -16406,7 +16579,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -16499,7 +16673,7 @@ Discard:  Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Estate Copper ? Copper 
    Deck:  
-Discard:  Estate 
+Discard:  
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -16508,7 +16682,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -16550,7 +16725,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate ? Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -16559,7 +16734,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -16601,7 +16777,7 @@ Discard:  Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Estate Copper ? ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate 
+Discard:  
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -16610,7 +16786,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -16652,7 +16829,7 @@ Discard:  ? Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  ? Estate Estate Estate Estate 
+Discard:  ? Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -16661,7 +16838,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -16703,7 +16881,7 @@ Discard:  ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Estate Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  ? Estate Estate 
+Discard:  ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -16712,7 +16890,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -16754,7 +16933,7 @@ Discard:  Estate ? Estate Estate Estate Estate Estate
 
    Hand:  
    Deck:  
-Discard:  Estate Estate Estate ? Estate Estate Estate 
+Discard:  Estate Estate Estate ? Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -16763,7 +16942,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -16856,7 +17036,7 @@ Discard:  ? Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate Estate ? Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate ? Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -16865,7 +17045,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -16907,7 +17088,7 @@ Discard:  ?
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  ? 
+Discard:  
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -16916,7 +17097,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -16958,7 +17140,7 @@ Discard:  Estate Adventurer ? Estate Estate Estate Estate Estate Estate Estate E
 
    Hand:  
    Deck:  
-Discard:  Estate Adventurer Estate ? Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Adventurer Estate ? Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -16967,7 +17149,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -17009,7 +17192,7 @@ Discard:  Estate Adventurer ? Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Adventurer ? Estate Estate Estate Estate 
+Discard:  Estate Adventurer ? Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -17018,7 +17201,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -17060,7 +17244,7 @@ Discard:  Estate Adventurer Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? Copper ? Copper 
    Deck:  
-Discard:  Estate Adventurer Estate Estate 
+Discard:  Estate Adventurer Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -17069,7 +17253,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -17111,7 +17296,7 @@ Discard:  Estate Estate Estate Adventurer
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? Copper 
    Deck:  
-Discard:  Estate Estate Adventurer Estate 
+Discard:  Estate Estate Adventurer 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -17120,7 +17305,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -17264,7 +17450,7 @@ Discard:  ? ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  ? ? Estate Estate 
+Discard:  ? ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -17273,7 +17459,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -17366,7 +17553,7 @@ Discard:  ? ? Estate Estate ? Estate Estate Estate Estate Estate ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  ? ? Estate Estate ? Estate Estate Estate ? Estate Estate Estate 
+Discard:  ? ? Estate Estate ? Estate Estate Estate ? Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -17375,7 +17562,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -17519,7 +17707,7 @@ Discard:  Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? Estate Estate ? Copper 
    Deck:  
-Discard:  Estate Estate 
+Discard:  Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -17528,7 +17716,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -17570,7 +17759,7 @@ Discard:  Estate Adventurer Estate Estate Estate Estate
 
    Hand:  
    Deck:  
-Discard:  Estate Adventurer Estate Estate Estate Estate 
+Discard:  Estate Adventurer Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -17579,7 +17768,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -17621,7 +17811,7 @@ Discard:  Estate Adventurer Estate Estate Estate Estate Estate Estate Estate Est
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Adventurer Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Adventurer Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -17630,7 +17820,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -17825,7 +18016,7 @@ Discard:  Estate Estate Estate Adventurer Estate Estate Estate Estate Estate Est
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Adventurer Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Adventurer Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -17834,7 +18025,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -17876,7 +18068,7 @@ Discard:  Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Copper 
    Deck:  
-Discard:  Estate Estate 
+Discard:  Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -17885,7 +18077,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -17927,7 +18120,7 @@ Discard:  Estate Estate Estate Adventurer Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Adventurer Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Adventurer Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -17936,7 +18129,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -17978,7 +18172,7 @@ Discard:  Estate Estate Estate Adventurer Estate Estate Estate Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Adventurer Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Adventurer Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -17987,7 +18181,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -18029,7 +18224,7 @@ Discard:  Estate Estate Estate Estate Estate
 
    Hand:  
    Deck:  
-Discard:  Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -18038,7 +18233,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -18182,7 +18378,7 @@ Discard:  Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate 
+Discard:  Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -18191,7 +18387,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -18233,7 +18430,7 @@ Discard:  Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Estate Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate 
+Discard:  
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -18242,7 +18439,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -18284,7 +18482,7 @@ Discard:  Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -18293,7 +18491,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -18335,7 +18534,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -18344,7 +18543,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -18386,7 +18586,7 @@ Discard:  Estate Estate Estate
 
    Hand:  Adventurer Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate Estate 
+Discard:  Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -18395,7 +18595,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -18437,7 +18638,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -18446,7 +18647,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -18641,7 +18843,7 @@ Discard:  Estate
 
    Hand:  Adventurer Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate 
+Discard:  
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -18650,7 +18852,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -18743,7 +18946,7 @@ Discard:  Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate 
+Discard:  
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -18752,7 +18955,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -18845,7 +19049,7 @@ Discard:  Estate Adventurer Estate Estate Estate Estate Estate Estate Estate Est
 
    Hand:  
    Deck:  
-Discard:  Estate Adventurer Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Adventurer Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -18854,7 +19058,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -19049,7 +19254,7 @@ Discard:  Estate Estate Estate Adventurer Estate Estate Estate Estate Estate Est
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Adventurer Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Adventurer Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -19058,7 +19263,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -19202,7 +19408,7 @@ Discard:  ? Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? Copper 
    Deck:  
-Discard:  ? Estate Estate Estate 
+Discard:  ? Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -19211,7 +19417,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -19406,7 +19613,7 @@ Discard:  ? Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  ? Estate Estate Estate 
+Discard:  ? Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -19415,7 +19622,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -19610,7 +19818,7 @@ Discard:  ? ? Estate ? Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper 
    Deck:  
-Discard:  ? ? Estate Estate Estate Estate ? Estate Estate 
+Discard:  ? ? Estate Estate Estate Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -19619,7 +19827,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -19661,7 +19870,7 @@ Discard:  ? ? Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? ? Copper 
    Deck:  
-Discard:  Estate ? ? Estate Estate 
+Discard:  Estate ? ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -19670,7 +19879,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -19763,7 +19973,7 @@ Discard:  Estate ? Estate Estate Estate Estate Estate ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? ? Copper 
    Deck:  
-Discard:  Estate Estate Estate ? Estate ? Estate Estate Estate Estate 
+Discard:  Estate Estate Estate ? Estate ? Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -19772,7 +19982,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -19814,7 +20025,7 @@ Discard:  Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? ? ? Estate Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate 
+Discard:  
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -19823,7 +20034,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -19865,7 +20077,7 @@ Discard:  Estate ? Estate Estate Estate Estate Estate ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate ? Estate Estate Estate Estate Estate ? Estate 
+Discard:  Estate ? Estate Estate Estate Estate Estate ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -19874,7 +20086,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -19916,7 +20129,7 @@ Discard:  Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate 
+Discard:  
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -19925,7 +20138,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -19967,7 +20181,7 @@ Discard:  ? Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate ? Estate Estate 
+Discard:  Estate Estate Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -19976,7 +20190,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -20171,7 +20386,7 @@ Discard:  Estate Estate Estate Estate Estate Estate ? Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate ? Estate Estate Estate 
+Discard:  Estate Estate Estate Estate ? Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -20180,7 +20395,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -20273,7 +20489,7 @@ Discard:  Estate Estate
 
    Hand:  Adventurer Copper Copper 
    Deck:  
-Discard:  Estate Estate 
+Discard:  Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -20282,7 +20498,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -20324,7 +20541,7 @@ Discard:  Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate Estate 
+Discard:  Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -20333,7 +20550,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -20528,7 +20746,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -20537,7 +20755,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -20579,7 +20798,7 @@ Discard:  Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate 
+Discard:  Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -20588,7 +20807,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -20732,7 +20952,7 @@ Discard:  Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? Copper 
    Deck:  
-Discard:  Estate Estate 
+Discard:  Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -20741,7 +20961,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -20834,7 +21055,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? ? Estate Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -20843,7 +21064,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -20936,7 +21158,7 @@ Discard:  ? Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  ? Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  ? Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -20945,7 +21167,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -20987,7 +21210,7 @@ Discard:  ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  ? Estate 
+Discard:  ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -20996,7 +21219,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -21089,7 +21313,7 @@ Discard:  ? Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Copper 
    Deck:  
-Discard:  ? Estate Estate Estate 
+Discard:  ? Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -21098,7 +21322,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -21242,7 +21467,7 @@ Discard:  ? Estate Estate Estate Estate Estate Estate
 
    Hand:  Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  ? Estate Estate Estate Estate Estate Estate 
+Discard:  ? Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -21251,7 +21476,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -21446,7 +21672,7 @@ Discard:  Estate ? Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate ? Estate 
+Discard:  Estate Estate Estate ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -21455,7 +21681,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -21497,7 +21724,7 @@ Discard:  Estate Estate Estate Estate Estate Estate ? Estate Estate Estate Estat
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate ? Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -21506,7 +21733,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -21599,7 +21827,7 @@ Discard:  Estate Adventurer ? Estate Estate Estate Estate Estate Estate Estate E
 
    Hand:  
    Deck:  
-Discard:  Estate Adventurer ? Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Adventurer ? Estate Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -21608,7 +21836,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -21650,7 +21879,7 @@ Discard:  Estate Adventurer ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Copper ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Adventurer ? Estate 
+Discard:  Estate Adventurer ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -21659,7 +21888,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -21905,7 +22135,7 @@ Discard:  Estate Adventurer ? Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Adventurer ? Estate Estate Estate 
+Discard:  Estate Adventurer ? Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -21914,7 +22144,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -22109,7 +22340,7 @@ Discard:  Estate Adventurer ? Estate Estate Adventurer Estate
 
    Hand:  
    Deck:  
-Discard:  Estate Adventurer Estate Adventurer ? Estate Estate 
+Discard:  Estate Adventurer Estate Adventurer ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -22118,7 +22349,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -22211,7 +22443,7 @@ Discard:  Estate Adventurer ? Estate Estate Adventurer Estate
 
    Hand:  Adventurer Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Adventurer ? Estate Estate Adventurer Estate 
+Discard:  Estate Adventurer ? Estate Estate Adventurer 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -22220,7 +22452,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -22364,7 +22597,7 @@ Discard:  Estate Estate Adventurer Adventurer ? Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper 
    Deck:  
-Discard:  Estate Adventurer Estate Estate Adventurer ? Estate Estate 
+Discard:  Estate Adventurer Estate Estate Adventurer ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -22373,7 +22606,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -22466,7 +22700,7 @@ Discard:  Estate Estate Adventurer Adventurer Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate Adventurer Adventurer Estate 
+Discard:  Estate Estate Adventurer Adventurer 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -22475,7 +22709,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -22568,7 +22803,7 @@ Discard:  Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Estate ? Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate 
+Discard:  Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -22577,7 +22812,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -22721,7 +22957,7 @@ Discard:  Estate Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate Estate 
+Discard:  Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -22730,7 +22966,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -22772,7 +23009,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
 
    Hand:  Adventurer Copper Estate Copper Copper ? Estate ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -22781,7 +23018,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -22823,7 +23061,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -22832,7 +23070,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -22925,7 +23164,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -22934,7 +23173,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -23078,7 +23318,7 @@ Discard:  Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -23087,7 +23327,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -23180,7 +23421,7 @@ Discard:  Estate Estate Estate Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate 
+Discard:  Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -23189,7 +23430,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -23231,7 +23473,7 @@ Discard:  Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate 
+Discard:  Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -23240,7 +23482,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -23282,7 +23525,7 @@ Discard:  ? Estate ? Estate Estate Estate Estate Estate Estate Estate Estate Est
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  ? Estate ? Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  ? Estate ? Estate Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -23291,7 +23534,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -23384,7 +23628,7 @@ Discard:  ? Estate Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  ? Estate Estate 
+Discard:  ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -23393,7 +23637,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -23435,7 +23680,7 @@ Discard:  ? Estate ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  ? Estate ? Estate Estate 
+Discard:  ? Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -23444,7 +23689,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -23486,7 +23732,7 @@ Discard:  ? Estate ? Estate ? ? Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  ? Estate ? Estate Estate Estate Estate Estate Estate Estate ? ? Estate Estate Estate 
+Discard:  ? Estate ? Estate Estate Estate Estate Estate Estate Estate ? ? Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -23495,7 +23741,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -23588,7 +23835,7 @@ Discard:  ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  ? Estate 
+Discard:  ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -23597,7 +23844,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -23639,7 +23887,7 @@ Discard:  ? ? Estate Estate Estate Estate Estate ? ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper 
    Deck:  
-Discard:  ? ? Estate Estate Estate ? Estate ? Estate Estate Estate 
+Discard:  ? ? Estate Estate Estate ? Estate ? Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -23648,7 +23896,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -23741,7 +23990,7 @@ Discard:  ? ? ? Estate Estate Estate ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Copper Copper 
    Deck:  
-Discard:  ? ? ? Estate Estate Estate ? Estate Estate 
+Discard:  ? ? ? Estate Estate Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -23750,7 +23999,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -23894,7 +24144,7 @@ Discard:  ? Estate Estate
 
    Hand:  Copper 
    Deck:  
-Discard:  ? Estate Estate 
+Discard:  ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -23903,7 +24153,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -24098,7 +24349,7 @@ Discard:  ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  ? Estate 
+Discard:  ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -24107,7 +24358,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -24251,7 +24503,7 @@ Discard:  ? Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Estate Estate ? Estate Estate 
+Discard:  Estate Estate Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -24260,7 +24512,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -24353,7 +24606,7 @@ Discard:  ? Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper ? ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  ? Estate Estate Estate Estate Estate 
+Discard:  ? Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -24362,7 +24615,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -24404,7 +24658,7 @@ Discard:  Estate Estate Estate Estate ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper 
    Deck:  
-Discard:  ? Estate Estate Estate Estate Estate Estate 
+Discard:  ? Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -24413,7 +24667,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -24455,7 +24710,7 @@ Discard:  Estate Estate Estate Estate ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? Estate ? Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  Estate Estate Estate Estate ? Estate 
+Discard:  Estate Estate Estate Estate ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -24464,7 +24719,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -24506,7 +24762,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate ? Estat
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Estate Estate ? Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate ? Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -24515,7 +24771,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -24557,7 +24814,7 @@ Discard:  ? Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper 
    Deck:  
-Discard:  ? Estate Estate Estate Estate Estate 
+Discard:  ? Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -24566,7 +24823,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -24659,7 +24917,7 @@ Discard:  ? Estate Estate Estate Estate Estate Estate Estate Estate ? Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? ? Estate ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  ? Estate Estate Estate Estate Estate Estate Estate Estate ? Estate 
+Discard:  ? Estate Estate Estate Estate Estate Estate Estate Estate ? 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -24668,7 +24926,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -24710,7 +24969,7 @@ Discard:  ? Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper Copper 
-Discard:  ? Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  ? Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -24719,7 +24978,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -24812,7 +25072,7 @@ Discard:  ? Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper ? Estate Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  ? Estate Estate Estate Estate Estate Estate 
+Discard:  ? Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -24821,7 +25081,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -24863,7 +25124,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate ? Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate ? Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -24872,7 +25133,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -24914,7 +25176,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -24923,7 +25185,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -24965,7 +25228,7 @@ Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
 
    Hand:  Adventurer Copper Estate Copper Copper ? Estate Estate Copper 
    Deck:  
-Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -24974,7 +25237,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -25067,7 +25331,7 @@ Discard:  ? Estate Estate ? Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  ? Estate Estate ? Estate Estate 
+Discard:  ? Estate Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -25076,7 +25340,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -25118,7 +25383,7 @@ Discard:  ? Estate Estate ? ? Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper 
    Deck:  
-Discard:  ? Estate Estate ? Estate Estate ? Estate Estate 
+Discard:  ? Estate Estate ? Estate Estate ? Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -25127,7 +25392,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -25169,7 +25435,7 @@ Discard:  Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Estate Estate ? ? Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate 
+Discard:  
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -25178,7 +25444,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -25220,7 +25487,7 @@ Discard:  Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper ? Estate Estate ? ? Copper 
    Deck:  
-Discard:  Estate Estate Estate 
+Discard:  Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -25229,7 +25496,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -25322,7 +25590,7 @@ Discard:  Estate Estate Estate ? ? Estate Estate Estate Estate Estate
 
    Hand:  Adventurer Copper Estate Copper Copper Copper Copper 
    Deck:  Estate Estate Copper Copper Copper 
-Discard:  Estate Estate Estate ? ? Estate Estate Estate Estate Estate 
+Discard:  Estate Estate Estate ? ? Estate Estate Estate Estate 
  Played:  
 
 ** Testing: Current Player's Hand Count **
@@ -25331,7 +25599,8 @@ Test Hand has more cards than expected.
 ** Testing: Current Player's Deck Count **
 *** Result: PASSED ***
 ** Testing: Current Player's Discard Count **
-*** Result: PASSED ***
+*** Result: FAILED ***
+Test Discard has less cards than expected.
 ** Testing: Game's Played Card Count **
 *** Result: FAILED ***
 Test Played has less cards than expected.
@@ -25500,4 +25769,11 @@ Test Played has less adventurer cards than expected.
 ***** TRIAL FAILED *****
 
 * TOTAL 0 PASSED RUNS OUT OF 500 TRIALS *
+
+File 'randomtestadventurer.c'
+Lines executed:88.78% of 205
+Branches executed:94.92% of 118
+Taken at least once:77.12% of 118
+Calls executed:86.49% of 111
+Creating 'randomtestadventurer.c.gcov'
 

@@ -10,10 +10,10 @@ Before:
 TEST = PASSED
 
 After: 
--Hand: copper copper estate copper copper copper estate 
--Size: 7
--Deck: estate copper 
--Size: 2
+-Hand: estate copper estate copper copper copper 
+-Size: 6
+-Deck: estate copper copper 
+-Size: 3
 -Discard: 
 -Size: 0
 ---Print Results
@@ -30,21 +30,27 @@ Expected:
 --Results:
 -Hand Count:
 Expected: 7
-Results : 7
+Results : 6
 --TESTING HAND COUNT--
-TESTING = PASSED
+CARD FAILED AT >> Hand Count
 --TESTING HAND COUNT GAIN--
-TESTING = PASSED
+CARD FAILED AT >> Hand Count did not gain 3 cards & discard smithy.
 
 -Deck Count:
 Expected: 2
-Results : 2
+Results : 3
 --TESTING DECK COUNT
-TESTING = PASSED
+CARD FAILED AT >> Deck Count
 
 -Discard Count:
 Expected: 0
 Results : 0
 --TESTING DISCARD
-TESTING = PASSED
->>> TEST SUCCESSFUL <<<
+>>> TEST FAILED <<<
+File 'cardtest2.c'
+Lines executed:83.87% of 93
+Branches executed:80.00% of 50
+Taken at least once:54.00% of 50
+Calls executed:77.78% of 72
+Creating 'cardtest2.c.gcov'
+
