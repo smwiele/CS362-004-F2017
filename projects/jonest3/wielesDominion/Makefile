@@ -39,7 +39,7 @@ player: player.c interface.o
 all: dominion.o rngs.o interface.o playdom player results badTestDraw
 
 clean:
-	rm -f *.o playdom.exe playdom player player.exe *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe randtests unittests cardtests
+	rm -f *.o playdom.exe playdom player player.exe *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe ut1 ut2 ut3 ut4 ct1 ct2 ct3 ct4 rtc1 rtc2 rtca
 
 rtc1: randomtestcard1.c dominion.o getCard.o rngs.o interface.o
 	gcc -o rtc1 -g randomtestcard1.c dominion.o getCard.o rngs.o interface.o $(CFLAGS)
