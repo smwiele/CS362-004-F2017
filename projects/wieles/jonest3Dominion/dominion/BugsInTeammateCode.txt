@@ -1,0 +1,143 @@
+Bug Report 1
+============
+
+Title: Mine card function not trashing selected treasure card.
+
+Class: Serious Bug
+
+Date: 11/19/2017         
+Reported By: Stephanie Wiele 
+Email: wieles@oregonstate.edu   
+
+
+Program: domionion.c            
+Platform: Windows 10            Version: 1703
+
+Is it reproducible: Yes 
+
+Description
+===========
+The treasure card selected to be trashed is not being trashed and selected card to gain is not being added to hand for valid card selections.
+
+Steps to Produce/Reproduce
+--------------------------
+Initialize a new game.
+Select a player.
+Set choice1 (card to be trashed) equal to a copper.
+Set choice2 (card to be gained) equal to a silver.
+Set one hand card as choice1 and set one hand card equal to mine card in selected player's hand.
+Call the cardEffect() function based on the above settings for the mine card.
+
+Expected Results
+----------------
+Copper card is removed from hand and is set to be trashed (not to be added to discard). Silver card is added to hand.
+
+Actual Results
+--------------
+Copper card remains in hand and is not trashed. Silver card is not added to hand.
+
+Attachments
+-----------
+See mine card test results in projects/wieles/tjones3Dominion/dominion/unittestresults.out.
+
+Other Information
+-----------------
+Part of the error is due to a bug in line 719 in jonest3's dominion.c code. Instead of the selected card to be trashed, the first card in the hand that is not equal to the card to be trashed is discarded.
+
+----------------------------------------------------------------
+
+Bug Report 2
+============
+
+Title: Adventurer card function not discarding adventurer card from hand.
+
+Class: Serious Bug
+
+Date: 11/19/2017         
+Reported By: Stephanie Wiele 
+Email: wieles@oregonstate.edu   
+
+
+Program: domionion.c            
+Platform: Windows 10            Version: 1703
+
+Is it reproducible: Yes 
+
+Description
+===========
+After the adventurer card function is called, the final hand count and adventurer card card are incorrect. Both counts are 1 higher than they should be because the adventurer card is still in the hand.
+
+Steps to Produce/Reproduce
+--------------------------
+Initialize a new game.
+Select a player.
+Set one hand card as adventurer card in selected player's hand.
+Call the cardEffect() function for the adventurer card.
+
+Expected Results
+----------------
+If there are at least two treasure cards are in the deck and discard piles, the hand count should increase by one. (Gain two cards and discard adventurer.)
+If there is only one treasure card in the deck and discard, the hand count should not change. (Gain one card and discard adventurer.)
+If there are no treasure cards in the deck and discard, the hand count should decrease by one. (Do not gain any cards and discard adventurer.)
+
+Actual Results
+--------------
+If there are at least two treasure cards are in the deck and discard piles, the hand count is increased by two.
+If there is only one treasure card in the deck and discard, the hand count is increased by one.
+If there are no treasure cards in the deck and discard, the hand count remains the same.
+
+Attachments
+-----------
+See adventurer card test results in projects/wieles/tjones3Dominion/dominion/unittestresults.out and projects/wieles/tjones3Dominion/dominion/randomtestadventurer.out
+
+Other Information
+-----------------
+In looking at the adventurer card function code (lines 646 - 666 in jonest3's dominion.c), the function does not end with a call to discardCard() before returning.
+
+----------------------------------------------------------------
+
+Bug Report 3
+============
+
+Title: Smithy card function drawing incorrect number of cards.
+
+Class: Serious Bug
+
+Date: 11/19/2017         
+Reported By: Stephanie Wiele 
+Email: wieles@oregonstate.edu   
+
+
+Program: domionion.c            
+Platform: Windows 10            Version: 1703
+
+Is it reproducible: Yes 
+
+Description
+===========
+When the smithy card function is called, four cards are drawn instead of three cards. This makes the final hand counts and deck counts incorrect.
+
+Steps to Produce/Reproduce
+--------------------------
+Initialize a new game.
+Select a player.
+Set one hand card as smithy card in selected player's hand.
+Make sure deck has at least four cards.
+Call the cardEffect() function for the smithy card.
+
+Expected Results
+----------------
+Three cards should be drawn from the selected player's deck and added to their hand. The smithy card should be discarded. The final hand count should increase by two, and the final deck count should decrease by three.
+
+Actual Results
+--------------
+Four cards are drawn from the player's deck and are added to their hand. The smithy card is discarded. The final hand count is increased by three, and the final deck count is decreased by four.
+
+Attachments
+-----------
+See smithy card test results in projects/wieles/tjones3Dominion/dominion/unittestresults.out and projects/wieles/tjones3Dominion/dominion/randomtestcard1.out
+
+Other Information
+-----------------
+The error is due to a bug in line 671 in jonest3's dominion.c code. The "for" statement terminates at i <= 3 instead of i < 3.
+

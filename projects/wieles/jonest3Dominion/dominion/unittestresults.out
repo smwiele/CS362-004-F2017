@@ -1,0 +1,593 @@
+Results for running unit tests:
+unittest1.c:
+Testing getCost() function
+Card: Curse,  Cost: 0,  Expected Cost: 0
+PASS. Returned correct cost.
+Card: Estate,  Cost: 2,  Expected Cost: 2
+PASS. Returned correct cost.
+Card: Duchy,  Cost: 5,  Expected Cost: 5
+PASS. Returned correct cost.
+Card: Province,  Cost: 8,  Expected Cost: 8
+PASS. Returned correct cost.
+Card: Copper,  Cost: 0,  Expected Cost: 0
+PASS. Returned correct cost.
+Card: Silver,  Cost: 3,  Expected Cost: 3
+PASS. Returned correct cost.
+Card: Gold,  Cost: 6,  Expected Cost: 6
+PASS. Returned correct cost.
+Card: Adventurer,  Cost: 6,  Expected Cost: 6
+PASS. Returned correct cost.
+Card: Council Room,  Cost: 5,  Expected Cost: 5
+PASS. Returned correct cost.
+Card: Feast,  Cost: 4,  Expected Cost: 4
+PASS. Returned correct cost.
+Card: Gardens,  Cost: 4,  Expected Cost: 4
+PASS. Returned correct cost.
+Card: Mine,  Cost: 5,  Expected Cost: 5
+PASS. Returned correct cost.
+Card: Remodel,  Cost: 4,  Expected Cost: 4
+PASS. Returned correct cost.
+Card: Smithy,  Cost: 4,  Expected Cost: 4
+PASS. Returned correct cost.
+Card: Village,  Cost: 3,  Expected Cost: 3
+PASS. Returned correct cost.
+Card: Baron,  Cost: 4,  Expected Cost: 4
+PASS. Returned correct cost.
+Card: Great Hall,  Cost: 3,  Expected Cost: 3
+PASS. Returned correct cost.
+Card: Minion,  Cost: 5,  Expected Cost: 5
+PASS. Returned correct cost.
+Card: Steward,  Cost: 3,  Expected Cost: 3
+PASS. Returned correct cost.
+Card: Tribute,  Cost: 5,  Expected Cost: 5
+PASS. Returned correct cost.
+Card: Ambassador,  Cost: 3,  Expected Cost: 3
+PASS. Returned correct cost.
+Card: Cutpurse,  Cost: 4,  Expected Cost: 4
+PASS. Returned correct cost.
+Card: Embargo,  Cost: 2,  Expected Cost: 2
+PASS. Returned correct cost.
+Card: Outpost,  Cost: 5,  Expected Cost: 5
+PASS. Returned correct cost.
+Card: Salvager,  Cost: 4,  Expected Cost: 4
+PASS. Returned correct cost.
+Card: Sea Hag,  Cost: 4,  Expected Cost: 4
+PASS. Returned correct cost.
+Card: Treasure Map,  Cost: 4,  Expected Cost: 4
+PASS. Returned correct cost.
+
+Testing card value not in game
+PASS. Returned -1.
+
+getCost() Testing complete
+
+File 'dominion.c'
+Lines executed:5.39% of 557
+Creating 'dominion.c.gcov'
+
+unittest2.c:
+Testing gainCard() function
+
+Test 1: Gain Adventurer card and check it is added to deck.
+Adventurer count before: 0,  Adventurer count after: 1
+Deck count before: 5,        Deck count after: 6
+Hand count before: 5,        Hand count after: 5
+Discard count before: 0,     Discard count after: 0
+Supply count before: 10,      Supply count after: 9
+PASS. Added adventurer card to hand.
+PASS. Card added to deck.
+PASS. Hand count did not change.
+PASS. Discard count did not change.
+PASS. Supply pile decreased by 1.
+
+Test 2: Gain Adventurer card and check it is added to hand.
+Adventurer count before: 1,  Adventurer count after: 2
+Deck count before: 6,        Deck count after: 6
+Hand count before: 5,        Hand count after: 6
+Discard count before: 0,     Discard count after: 0
+Supply count before: 9,      Supply count after: 8
+PASS. Added adventurer card to hand.
+PASS. Deck count did not change.
+PASS. Hand count increased by 1.
+PASS. Discard count did not change.
+PASS. Supply pile decreased by 1.
+
+Test 3: Gain Adventurer card and check it is added to discard.
+Adventurer count before: 2,  Adventurer count after: 3
+Deck count before: 6,        Deck count after: 6
+Hand count before: 6,        Hand count after: 6
+Discard count before: 0,     Discard count after: 1
+Supply count before: 8,      Supply count after: 7
+PASS. Added adventurer card to hand.
+PASS. Deck count did not change.
+PASS. Hand count did not change.
+PASS. Discard count increased by 1.
+PASS. Supply pile decreased by 1.
+
+Test 4: Try to gain Tribute card when supply pile is empty.
+Tribute count before: 0,  Tribute count after: 0
+Deck count before: 6,     Deck count after: 6
+Hand count before: 6,     Hand count after: 6
+Discard count before: 1,  Discard count after: 1
+Supply count before: 0,   Supply count after: 0
+PASS. Did not add Tribute card.
+PASS. Deck count did not change.
+PASS. Hand count did not change.
+PASS. Discard count did not change.
+PASS. Supply pile did not change.
+
+Test 5: Try to gain Feast card that is not in game.
+Feast count before: 0,    Feast count after: 0
+Deck count before: 6,     Deck count after: 6
+Hand count before: 6,     Hand count after: 6
+Discard count before: 1,  Discard count after: 1
+Supply count before: -1,   Supply count after: -1
+PASS. Did not add Tribute card.
+PASS. Deck count did not change.
+PASS. Hand count did not change.
+PASS. Discard count did not change.
+PASS. Supply pile did not change.
+
+gainCard() Testing Complete
+
+File 'dominion.c'
+Lines executed:25.31% of 557
+Creating 'dominion.c.gcov'
+
+unittest3.c:
+Testing buyCard() function
+
+Test case 1: Buys = 1, Supply = 1, Coins = Cost
+Card = Village, Cost = 3
+Card type count before: 0,  Card type count after: 1
+Discard count before: 0,  	 Discard count after: 1
+Supply count before: 1,   	 Supply count after: 0
+Coin count before: 3,     	 Coin count after: 0
+Buy count before: 1,      	 Buy count after: 0
+PASS. Card type increased by 1.
+PASS. Added card to discard.
+PASS. Supply decreased by 1.
+PASS. Cost correctly subtracted from coins.
+PASS. Buys decreased by 1.
+
+Test case 2: Buys > 1, Supply > 1, Coins > Cost
+Card = Village, Cost = 3
+Card type count before: 1,  Card type count after: 2
+Discard count before: 1,  	 Discard count after: 2
+Supply count before: 10,   	 Supply count after: 9
+Coin count before: 5,     	 Coin count after: 2
+Buy count before: 3,      	 Buy count after: 2
+PASS. Card type increased by 1.
+PASS. Added card to discard.
+PASS. Supply decreased by 1.
+PASS. Cost correctly subtracted from coins.
+PASS. Buys decreased by 1.
+
+Test Case 3: Buys < 1
+Card = Village, Cost = 3
+Card type count before: 2,  Card type count after: 2
+Discard count before: 2,  	 Discard count after: 2
+Supply count before: 10,   	 Supply count after: 10
+Coin count before: 5,     	 Coin count after: 5
+Buy count before: 0,      	 Buy count after: 0
+PASS. Card type cound did not change.
+PASS. Discard count did not change.
+PASS. Supply count did not change.
+PASS. Coin count did not change.
+PASS. Buy count did not change.
+
+Test Case 4: Supply < 1
+Card = Village, Cost = 3
+Card type count before: 2,  Card type count after: 2
+Discard count before: 2,  	 Discard count after: 2
+Supply count before: 0,   	 Supply count after: 0
+Coin count before: 5,     	 Coin count after: 5
+Buy count before: 1,      	 Buy count after: 1
+PASS. Card type cound did not change.
+PASS. Discard count did not change.
+PASS. Supply count did not change.
+PASS. Coin count did not change.
+PASS. Buy count did not change.
+
+Test Case 5: Coins < Cost
+Card = Village, Cost = 3
+Card type count before: 2,  Card type count after: 2
+Discard count before: 2,  	 Discard count after: 2
+Supply count before: 10,   	 Supply count after: 10
+Coin count before: 2,     	 Coin count after: 2
+Buy count before: 1,      	 Buy count after: 1
+PASS. Card type cound did not change.
+PASS. Discard count did not change.
+PASS. Supply count did not change.
+PASS. Coin count did not change.
+PASS. Buy count did not change.
+
+buyCard() Testing Complete.
+
+File 'dominion.c'
+Lines executed:27.65% of 557
+Creating 'dominion.c.gcov'
+
+unittest4.c:
+Testing fullDeckCount() function
+
+Test 1: Card in game set that is in deck, hand, and discard
+Copper - Expected card count: 9, Actual card count: 9
+PASS. Card count correct.
+Estate - Expected card count: 6, Actual card count: 6
+PASS. Card count correct.
+
+Test 2: Card in game set that is not in deck, hand, or discard
+Expected card count: 0, Actual card count: 0
+PASS. Card count correct.
+
+Test 3: Card not in game set
+Expected card count: 0, Actual card count: 0
+PASS. Card count correct.
+
+fullDeckCount() Testing Complete.
+
+File 'dominion.c'
+Lines executed:27.65% of 557
+Creating 'dominion.c.gcov'
+
+cardtest1.c:
+Testing Adventurer Card
+
+Test 1: Drawing each type of treasure card
+
+Testing copper cards
+Hand count before: 5, Hand count after: 7
+Discard count before: 0, Discard count after: 1
+Deck count before: 6, Deck count after: 3
+Played card count before: 0, Played card count after: 0
+Treasure hand count before: 3, Treasure hand count after: 5
+Adventurer hand count before: 1, Adventurer hand count after: 1
+FAIL. Hand count did not increase by 1.
+PASS. Discard count increased by 1.
+PASS. Deck count decreased by 3.
+FAIL. Played card count did not increase by 1.
+PASS. Added two treasure cards to hand.
+FAIL. Adventurer count did not decrease by 1.
+
+Testing silver cards
+Hand count before: 5, Hand count after: 7
+Discard count before: 0, Discard count after: 1
+Deck count before: 6, Deck count after: 3
+Played card count before: 0, Played card count after: 0
+Treasure hand count before: 3, Treasure hand count after: 5
+Adventurer hand count before: 1, Adventurer hand count after: 1
+FAIL. Hand count did not increase by 1.
+PASS. Discard count increased by 1.
+PASS. Deck count decreased by 3.
+FAIL. Played card count did not increase by 1.
+PASS. Added two treasure cards to hand.
+FAIL. Adventurer count did not decrease by 1.
+
+Testing gold cards
+Hand count before: 5, Hand count after: 7
+Discard count before: 0, Discard count after: 1
+Deck count before: 6, Deck count after: 3
+Played card count before: 0, Played card count after: 0
+Treasure hand count before: 3, Treasure hand count after: 5
+Adventurer hand count before: 1, Adventurer hand count after: 1
+FAIL. Hand count did not increase by 1.
+PASS. Discard count increased by 1.
+PASS. Deck count decreased by 3.
+FAIL. Played card count did not increase by 1.
+PASS. Added two treasure cards to hand.
+FAIL. Adventurer count did not decrease by 1.
+
+Test 2: No treasure cards in deck, and only one treasure card in discard
+Hand count before: 5, Hand count after: 6
+Discard count before: 4, Discard count after: 9
+Deck count before: 6, Deck count after: 0
+Played card count before: 0, Played card count after: 0
+Treasure hand count before: 3, Treasure hand count after: 4
+Adventurer hand count before: 1, Adventurer hand count after: 1
+FAIL. Hand count changed.
+PASS. Went through entire deck and discard, and non-treasure drawn cards added to discard.
+FAIL. Played card count did not increase by 1.
+PASS. Added treasure card to hand.
+FAIL. Adventurer count did not decrease by 1.
+
+Test 3: No treasure cards in deck or discard
+Hand count before: 5, Hand count after: 5
+Discard count before: 4, Discard count after: 10
+Deck count before: 6, Deck count after: 0
+Played card count before: 0, Played card count after: 0
+Treasure hand count before: 3, Treasure hand count after: 3
+Adventurer hand count before: 1, Adventurer hand count after: 1
+FAIL. Hand count did not decrease by 1.
+PASS. Went through entire deck and discard, and non-treasure drawn cards added to discard.
+FAIL. Played card count did not increase by 1.
+PASS. Treasure hand count did not change.
+FAIL. Adventurer count did not decrease by 1.
+
+Aventurer Testing Complete
+
+File 'dominion.c'
+Lines executed:34.83% of 557
+Creating 'dominion.c.gcov'
+
+cardtest2.c:
+Testing Smithy Card
+Hand count before: 5, Hand count after: 8
+Deck count before: 5, Deck count after: 1
+Played card count before: 0, Played card count after: 1
+Smithy hand count before: 1, Smithy hand count after: 0
+FAIL. Hand count did not increase by 2.
+FAIL. Cards not correctly removed from players deck.
+PASS. Played card count increased by 1.
+PASS. Smithy card count decreased by 1.
+
+Check Player 2's card counts
+Hand count before: 0, Hand count after: 0
+Deck count before: 10, Deck count after: 10
+Discard count before: 0, Discard count after: 0
+PASS. Player 2's card counts did not change.
+
+Check supply card piles did not change
+Card 0 - supply count before: 10, supply count after: 10
+PASS. Card 0 supply count did not change.
+Card 1 - supply count before: 8, supply count after: 8
+PASS. Card 1 supply count did not change.
+Card 2 - supply count before: 8, supply count after: 8
+PASS. Card 2 supply count did not change.
+Card 3 - supply count before: 8, supply count after: 8
+PASS. Card 3 supply count did not change.
+Card 4 - supply count before: 46, supply count after: 46
+PASS. Card 4 supply count did not change.
+Card 5 - supply count before: 40, supply count after: 40
+PASS. Card 5 supply count did not change.
+Card 6 - supply count before: 30, supply count after: 30
+PASS. Card 6 supply count did not change.
+Card 7 - supply count before: 10, supply count after: 10
+PASS. Card 7 supply count did not change.
+Card 8 - supply count before: 10, supply count after: 10
+PASS. Card 8 supply count did not change.
+Card 9 - supply count before: -1, supply count after: -1
+PASS. Card 9 supply count did not change.
+Card 10 - supply count before: -1, supply count after: -1
+PASS. Card 10 supply count did not change.
+Card 11 - supply count before: 10, supply count after: 10
+PASS. Card 11 supply count did not change.
+Card 12 - supply count before: -1, supply count after: -1
+PASS. Card 12 supply count did not change.
+Card 13 - supply count before: 10, supply count after: 10
+PASS. Card 13 supply count did not change.
+Card 14 - supply count before: 10, supply count after: 10
+PASS. Card 14 supply count did not change.
+Card 15 - supply count before: -1, supply count after: -1
+PASS. Card 15 supply count did not change.
+Card 16 - supply count before: -1, supply count after: -1
+PASS. Card 16 supply count did not change.
+Card 17 - supply count before: 10, supply count after: 10
+PASS. Card 17 supply count did not change.
+Card 18 - supply count before: -1, supply count after: -1
+PASS. Card 18 supply count did not change.
+Card 19 - supply count before: 10, supply count after: 10
+PASS. Card 19 supply count did not change.
+Card 20 - supply count before: -1, supply count after: -1
+PASS. Card 20 supply count did not change.
+Card 21 - supply count before: 10, supply count after: 10
+PASS. Card 21 supply count did not change.
+Card 22 - supply count before: 10, supply count after: 10
+PASS. Card 22 supply count did not change.
+Card 23 - supply count before: -1, supply count after: -1
+PASS. Card 23 supply count did not change.
+Card 24 - supply count before: -1, supply count after: -1
+PASS. Card 24 supply count did not change.
+Card 25 - supply count before: 10, supply count after: 10
+PASS. Card 25 supply count did not change.
+Card 26 - supply count before: -1, supply count after: -1
+PASS. Card 26 supply count did not change.
+
+Smithy Testing complete
+
+File 'dominion.c'
+Lines executed:37.88% of 557
+Creating 'dominion.c.gcov'
+
+cardtest3.c:
+Testing Mine Card
+
+Test 1: Trash copper to gain silver
+Hand count before: 5, Hand count after: 4
+Deck count before: 5, Deck count after: 5
+Discard count before: 0, Discard count after: 0
+Played count before: 0, Played count after: 2
+Copper hand count before: 3, Copper hand count after: 3
+Silver hand count before: 0, Silver hand count after: 0
+Mine hand count before: 1, Mine hand count after: 0
+PASS. Hand count correct.
+PASS. Deck count did not change.
+PASS. Discard count did not change.
+FAIL. Played card count did not increase by 1.
+FAIL. Did not trash copper.
+FAIL. Did not gain silver.
+PASS. Discarded mine card.
+
+Test 2: Trash silver to gain gold
+Hand count before: 5, Hand count after: 4
+Deck count before: 5, Deck count after: 5
+Discard count before: 0, Discard count after: 0
+Played count before: 2, Played count after: 4
+Silver hand count before: 1, Silver hand count after: 1
+Gold hand count before: 0, Gold hand count after: 0
+Mine hand count before: 1, Mine hand count after: 0
+PASS. Hand count correct.
+PASS. Deck count did not change.
+PASS. Discard count did not change.
+FAIL. Played card count did not change.
+FAIL. Did not trash silver.
+FAIL. Did not gain gold.
+PASS. Discarded mine card.
+
+Test 3: Trash copper and try to gain gold
+Hand count before: 5, Hand count after: 4
+Deck count before: 5, Deck count after: 5
+Discard count before: 0, Discard count after: 0
+Played count before: 4, Played count after: 6
+Copper hand count before: 3, Copper hand count after: 3
+Gold hand count before: 0, Gold hand count after: 0
+Mine hand count before: 1, Mine hand count after: 0
+FAIL. Hand count changed.
+PASS. Deck count did not change.
+PASS. Discard count did not change.
+FAIL. Played card count changed.
+PASS. Copper count did not change.
+PASS. Gold count did not change.
+FAIL. Mine count changed.
+
+Test 4: Trash copper and try to gain village
+Hand count before: 5, Hand count after: 4
+Deck count before: 5, Deck count after: 5
+Discard count before: 0, Discard count after: 0
+Played count before: 6, Played count after: 8
+Copper hand count before: 3, Copper hand count after: 3
+Village hand count before: 0, Village hand count after: 0
+Mine hand count before: 1, Mine hand count after: 0
+FAIL. Hand count changed.
+PASS. Deck count did not change.
+PASS. Discard count did not change.
+FAIL. Played card count changed.
+PASS. Copper count did not change.
+PASS. Village count did not change.
+FAIL. Mine count changed.
+
+Test 5: Trash copper and try to gain estate
+Hand count before: 5, Hand count after: 5
+Deck count before: 5, Deck count after: 5
+Discard count before: 0, Discard count after: 0
+Played count before: 8, Played count after: 8
+Copper hand count before: 3, Copper hand count after: 3
+Estate hand count before: 1, Estate hand count after: 1
+Mine hand count before: 1, Mine hand count after: 1
+PASS. Hand count did not change.
+PASS. Deck count did not change.
+PASS. Discard count did not change.
+PASS. Played card count did not change.
+PASS. Copper count did not change.
+PASS. Estate count did not change.
+PASS. Mine count did not change.
+
+Test 6: Try to trash curse and try to gain silver.
+Hand count before: 5, Hand count after: 5
+Deck count before: 5, Deck count after: 5
+Discard count before: 0, Discard count after: 0
+Played count before: 8, Played count after: 8
+Curse hand count before: 1, Curse hand count after: 1
+Silver hand count before: 0, Silver hand count after: 0
+Mine hand count before: 1, Mine hand count after: 1
+PASS. Hand count did not change.
+PASS. Deck count did not change.
+PASS. Discard count did not change.
+PASS. Played card count did not change.
+PASS. Curse count did not change.
+PASS. Silver count did not change.
+PASS. Mine count did not change.
+
+Test 7: Try to trash village and try to gain gold.
+Hand count before: 5, Hand count after: 5
+Deck count before: 5, Deck count after: 5
+Discard count before: 0, Discard count after: 0
+Played count before: 8, Played count after: 8
+Village hand count before: 1, Village hand count after: 1
+Gold hand count before: 0, Gold hand count after: 0
+Mine hand count before: 1, Mine hand count after: 1
+PASS. Hand count did not change.
+PASS. Deck count did not change.
+PASS. Discard count did not change.
+PASS. Played card count did not change.
+PASS. Village count did not change.
+PASS. Gold count did not change.
+PASS. Mine count did not change.
+
+Mine Testing Complete.
+
+File 'dominion.c'
+Lines executed:40.57% of 557
+Creating 'dominion.c.gcov'
+
+cardtest4.c:
+Testing Salvager Card
+
+Test 1: Trash adventurer card.
+Hand count before: 5, Hand count after: 3
+Deck count before: 5, Deck count after: 5
+Discard count before: 0, Discard count after: 0
+Played count before: 0, Played count after: 1
+Adventurer hand count before: 1, Adventurer hand count after: 0
+Salvager hand count before: 1, Salvager hand count after: 0
+Buy count before: 1, Buy count after: 2
+Coin count before: 4, Coin count after: 10
+PASS. Hand count decreased by 2.
+PASS. Deck count did not change.
+PASS. Discard count did not change.
+PASS. Played card count increased by 1.
+PASS. Adventurer card count decreased by 1
+PASS. Salvager card count decreased by 1
+PASS. Buys increased by 1.
+PASS. Coin count correct.
+
+Test 2: Trash copper card.
+Hand count before: 5, Hand count after: 4
+Deck count before: 5, Deck count after: 5
+Discard count before: 0, Discard count after: 0
+Played count before: 1, Played count after: 2
+Copper hand count before: 3, Copper hand count after: 3
+Salvager hand count before: 1, Salvager hand count after: 0
+Buy count before: 2, Buy count after: 3
+Coin count before: 10, Coin count after: 10
+FAIL. Hand count did not decrease by 2.
+PASS. Deck count did not change.
+PASS. Discard count did not change.
+PASS. Played card count increased by 1.
+FAIL. Copper card count did not change.
+PASS. Salvager card count decreased by 1
+PASS. Buys increased by 1.
+PASS. Coin count correct.
+
+Test 3: Trash curse card.
+Hand count before: 5, Hand count after: 4
+Deck count before: 5, Deck count after: 5
+Discard count before: 0, Discard count after: 0
+Played count before: 2, Played count after: 3
+Curse hand count before: 1, Curse hand count after: 1
+Salvager hand count before: 1, Salvager hand count after: 0
+Buy count before: 3, Buy count after: 4
+Coin count before: 10, Coin count after: 10
+FAIL. Hand count did not decrease by 2.
+PASS. Deck count did not change.
+PASS. Discard count did not change.
+PASS. Played card count increased by 1.
+FAIL. Curse card count did not change.
+PASS. Salvager card count decreased by 1
+PASS. Buys increased by 1.
+PASS. Coin count correct.
+
+Test 4: Trash treasure map card.
+Hand count before: 5, Hand count after: 4
+Deck count before: 5, Deck count after: 5
+Discard count before: 0, Discard count after: 0
+Played count before: 3, Played count after: 4
+Treasure Map hand count before: 1, Treasure Map hand count after: 1
+Salvager hand count before: 1, Salvager hand count after: 0
+Buy count before: 4, Buy count after: 5
+Coin count before: 10, Coin count after: 10
+FAIL. Hand count did not decrease by 2.
+PASS. Deck count did not change.
+PASS. Discard count did not change.
+PASS. Played card count increased by 1.
+FAIL. Treasure Map card count did not change.
+PASS. Salvager card count decreased by 1
+PASS. Buys increased by 1.
+FAIL. Coin count incorrect.
+
+Salvager Testing Complete
+
+File 'dominion.c'
+Lines executed:42.19% of 557
+Creating 'dominion.c.gcov'
+
