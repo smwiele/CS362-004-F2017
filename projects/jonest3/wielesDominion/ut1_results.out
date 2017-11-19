@@ -1,0 +1,3138 @@
+TESTING updateCoins
+MAX_HAND = 500
+MAX_PLAYERS = 4
+----------Testing ALL COPPER
+
+----------TESTING FOR 2 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: copper
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: copper
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: copper
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: copper
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: copper
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: copper
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 4
+--Current Hand Size: 1
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+
+----------TESTING FOR 3 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: copper
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: copper
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: copper
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: copper
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: copper
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: copper
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 4
+--Current Hand Size: 1
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+
+----------TESTING FOR 4 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: copper
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: copper
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: copper
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: copper
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: copper
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: copper
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 4
+--Current Hand Size: 1
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+----------Testing ALL SILVER
+
+----------TESTING FOR 2 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: silver
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: silver
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: silver
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: silver
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: silver
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: silver
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: silver
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: silver
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: silver
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 5
+--Current Hand Size: 1
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+
+----------TESTING FOR 3 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: silver
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: silver
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: silver
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: silver
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: silver
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: silver
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: silver
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: silver
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: silver
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 5
+--Current Hand Size: 1
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+
+----------TESTING FOR 4 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: silver
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: silver
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: silver
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: silver
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: silver
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: silver
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: silver
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: silver
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: silver
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 5
+--Current Hand Size: 1
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+----------Testing ALL GOLD
+
+----------TESTING FOR 2 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 6
+--Current Hand Size: 1
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+
+----------TESTING FOR 3 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 6
+--Current Hand Size: 1
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+
+----------TESTING FOR 4 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 6
+--Current Hand Size: 1
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+----------Testing COPPER & SILVER
+
+----------TESTING FOR 2 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: silver
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: silver
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: silver
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: silver
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: silver
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: silver
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: silver
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: silver
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: silver
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 5
+--Current Hand Size: 1
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+
+----------TESTING FOR 3 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: silver
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: silver
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: silver
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: silver
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: silver
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: silver
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: silver
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: silver
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: silver
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 5
+--Current Hand Size: 1
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+
+----------TESTING FOR 4 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: silver
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: silver
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: silver
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: silver
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: silver
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: silver
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: silver
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: silver
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: silver
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 5
+--Current Hand Size: 1
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 2
+Card: copper
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 3
+Card: copper
+y = 1 and handCount = 3
+Card: silver
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 5
+Card: silver
+y = 0 and handCount = 4
+Card: copper
+y = 1 and handCount = 4
+Card: silver
+y = 2 and handCount = 4
+Card: silver
+y = 3 and handCount = 4
+Test = PASSED
+----------Testing SILVER & GOLD
+
+----------TESTING FOR 2 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 6
+--Current Hand Size: 1
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+
+----------TESTING FOR 3 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 6
+--Current Hand Size: 1
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+
+----------TESTING FOR 4 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 6
+--Current Hand Size: 1
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: gold
+y = 3 and handCount = 4
+Test = PASSED
+----------Testing GOLD & COPPER
+
+----------TESTING FOR 2 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: copper
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: copper
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: copper
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: copper
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: copper
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: copper
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 4
+--Current Hand Size: 1
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+
+----------TESTING FOR 3 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: copper
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: copper
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: copper
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: copper
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: copper
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: copper
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 4
+--Current Hand Size: 1
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+
+----------TESTING FOR 4 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: copper
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: copper
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: copper
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: copper
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: copper
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: copper
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 4
+--Current Hand Size: 1
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 2
+Card: gold
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 3
+Card: gold
+y = 1 and handCount = 3
+Card: copper
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: copper
+y = 0 and handCount = 4
+Card: gold
+y = 1 and handCount = 4
+Card: copper
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+----------Testing ALL THREE
+
+----------TESTING FOR 2 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 6
+--Current Hand Size: 1
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+
+----------TESTING FOR 3 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 6
+--Current Hand Size: 1
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+
+----------TESTING FOR 4 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 6
+--Current Hand Size: 1
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: gold
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 6
+Card: gold
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: gold
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+----------Testing MIXED HAND
+
+----------TESTING FOR 2 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: curse
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: curse
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: curse
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: curse
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: curse
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: curse
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: curse
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: curse
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: curse
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: curse
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: curse
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: curse
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: curse
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: curse
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: curse
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: curse
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: curse
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: curse
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 0
+Card: curse
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 0
+Card: curse
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 0
+Card: curse
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: curse
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 0
+Card: curse
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: curse
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+
+----------TESTING FOR 3 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: curse
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: curse
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: curse
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: curse
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: curse
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: curse
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: curse
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: curse
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: curse
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: curse
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: curse
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: curse
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: curse
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: curse
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: curse
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: curse
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: curse
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: curse
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 0
+Card: curse
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 0
+Card: curse
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 0
+Card: curse
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: curse
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 0
+Card: curse
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: curse
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+
+----------TESTING FOR 4 PLAYERS----------
+Player 1:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: curse
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: curse
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: curse
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: curse
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: curse
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: curse
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 2:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: curse
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: curse
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: curse
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: curse
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: curse
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: curse
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 3:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 1
+Card: curse
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 2
+Card: curse
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 3
+Card: curse
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: curse
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 4
+Card: curse
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: curse
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+Player 4:
+--Current Hand Size: 0
+--Current Hand Size: 0
+--Current Hand Size: 1
+--Current Hand Size: 0
+Card: curse
+y = 0 and handCount = 1
+--Current Hand Size: 2
+--Current Hand Size: 0
+Card: curse
+y = 0 and handCount = 2
+Card: silver
+y = 1 and handCount = 2
+--Current Hand Size: 3
+--Current Hand Size: 0
+Card: curse
+y = 0 and handCount = 3
+Card: silver
+y = 1 and handCount = 3
+Card: curse
+y = 2 and handCount = 3
+--Current Hand Size: 4
+--Current Hand Size: 0
+Card: curse
+y = 0 and handCount = 4
+Card: silver
+y = 1 and handCount = 4
+Card: curse
+y = 2 and handCount = 4
+Card: copper
+y = 3 and handCount = 4
+Test = PASSED
+File 'unittest1.c'
+Lines executed:89.09% of 110
+Branches executed:100.00% of 60
+Taken at least once:90.00% of 60
+Calls executed:77.78% of 27
+Creating 'unittest1.c.gcov'
+
