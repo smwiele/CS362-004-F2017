@@ -111,6 +111,14 @@ int main(){
 				else if(!isGameOver(&G)  &&  j == 2){ printf("TEST FAILED @ Game not over when 3 supply == 0\n"); break;}
 			}
 		}
+		for(i = 0; i < 24; i++){
+			G.supplyCount[cards[i]] = 10;
+		}
+		G.supplyCount[cards[24]] = 0;
+		G.supplyCount[cards[19]] = 0;
+		G.supplyCount[cards[4]] = 0;
+		if(isGameOver(&G)) printf("TEST PASSED SEA_HAG\n");
+		else printf("TEST FAILED SEA_HAG\n");
 	}
    }
    return 0;

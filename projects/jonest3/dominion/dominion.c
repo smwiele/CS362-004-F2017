@@ -399,7 +399,7 @@ int isGameOver(struct gameState *state) {
 
   //if three supply pile are at 0, the game ends
   j = 0;
-  for (i = 0; i < 25; i++)
+  for (i = 0; i < 26; i++)
     {
       if (state->supplyCount[i] == 0)
 	{
@@ -645,7 +645,7 @@ int getCost(int cardNumber)
 
 int adventurer_func(int drawntreasure, struct gameState *state, int currentPlayer, int temphand[], int z){
    while(drawntreasure<2){
-	if (state->handCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
+	if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
 		shuffle(currentPlayer, state);
 	}
         drawCard(currentPlayer, state);
@@ -653,7 +653,7 @@ int adventurer_func(int drawntreasure, struct gameState *state, int currentPlaye
         if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
 		drawntreasure++;
         else{
-//            	temphand[z]=cardDrawn;
+            	temphand[z]=cardDrawn;
             	state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
 		z++;
        	}
@@ -668,7 +668,7 @@ int adventurer_func(int drawntreasure, struct gameState *state, int currentPlaye
 int smithy_func(int currentPlayer, struct gameState *state, int handPos){
    // +3 Cards
    int i;
-   for (i = 0; i <= 3; i++)
+   for (i = 0; i < 3; i++)
    {
 	drawCard(currentPlayer, state);
    }
