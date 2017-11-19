@@ -1,0 +1,50 @@
+Taylor Jones
+jonest3
+
+Bug-Reports
+
+Adventurer card:
+   - cardtest1
+   - Specific Tests Failed:
+	- Comparing Resulting Hand & Expected Hand counts
+		- Resulting Hand > Expected Hand by 1
+	- Comparing Resulting Played Card & Expected Played Card counts
+		- Resulting Played < Expected Played by 1
+   - Bugs Found:
+	1. Deck card not added to “discard” deck
+		- Where in Code:
+			- Missing “discardCard(handPos, currentPlayer, state, 0);” in adventurerCardEffect
+		- How to Reproduce:
+			- Have deck with multiple non-treasure cards to be drawn prior to 2 treasure cards.  Compare decks of the hand before and after 
+			  Adventurer is completed.  You will find that 1 of the cards disappears from all decks completely when it should have been added 
+			  to the discard deck.
+	2. Hand card not added to “played” deck
+		- Where in Code:
+			- Line 1240
+			- Current Code:	while(z - 1 > 0)
+			- Should Be:	while(z - 1 >= 0)
+		- How to Reproduce:
+			- Set the first card in the player’s hand so that it is distinct from all of the other cards.  Call the function and compare the 
+			  first card in the deck to the distinct card.  If these two cards match, the card was not removed from the player’s hand.  Now check 
+			  and see if playedCardCount is greater than the previous playedCardCount by only 1.  Compare the newest card in the hand to the 
+			  distinct card.  If they do not match, it was not added to the played deck.
+
+Smithy card:
+   - cardtest2.c
+   - Specific Tests Failed:
+	- Comparing Resulting Hand and Expected Hand counts
+		- Resulting Hand < Expected Hand
+	- Testing Hand Count Card Gain
+		- Resulting Hand did not gain 3 cards & discard Smithy
+   - Bugs Found:
+	1. Only 2 cards from the deck were added to the player’s hand instead of 3.
+		- Where in Code:
+			- Line 1252: 
+			- Current Code:	for( i = 1; i < 3; i++)
+			- Should be: 	for( i = 0; i < 3; i++)
+		- How to Reproduce:
+			- Initiate a game and set the first card in the player’s hand to be Smithy.  Print out the current player’s hand and deck.  Call 
+			  the cardEffect function and pass it “Smithy” as the card for the current player.  Print out the player’s hand and deck once again.  
+			  3 of the cards from the deck should have migrated into the player’s hand and Smithy should have been discarded from it, thus the 
+			  overall count of the player’s hand should have increased by 2.  Based on the printed statements, only 2 cards were moved from the 
+			  deck into the player’s hand instead of the 3.  Thus, the hand and deck do not accurately depict the expected behaviour of Smithy.

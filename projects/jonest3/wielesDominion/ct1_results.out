@@ -1,0 +1,69 @@
+---------- TESTING CARD: adventurer ----------
+Before: 
+-Hand: adventurer copper estate copper copper 
+-Size: 5
+-Deck: copper silver estate estate curse 
+-Size: 5
+-Discard: 
+-Size: 0
+-Played: 
+-Size: 0
+--TESTING: cardEffect & adventurer
+TEST = PASSED
+
+After: 
+-Hand: adventurer copper estate copper copper silver copper 
+-Size: 7
+-Deck: 
+-Size: 0
+-Discard: estate estate 
+-Size: 2
+-Played: 
+-Size: 0
+---Print Results
+
+Expected: 
+-Hand: copper copper estate copper copper silver 
+-Size: 6
+-Deck: 
+-Size: 0
+-Discard: estate estate curse 
+-Size: 3
+-Played: adventurer 
+-Size: 1
+
+
+--Results:
+-Hand Count:
+Expected: 6
+Results : 7
+--TESTING HAND COUNT--
+CARD FAILED AT >> Hand Count
+TESTING = PASSED
+--TESTING HAND COUNT GAINED 2
+TESTING = PASSED
+
+-Deck Count:
+Expected: 0
+Results: 0
+--TESTING DECK COUNT
+TESTING = PASSED
+
+-Discard Count:
+Expected: 3
+Results: 2
+--TESTING DISCARD
+CARD FAILED AT >> Discard Count
+-Played Count:
+Expected: 1
+Results: 0
+--TESTING PLAYED
+CARD FAILED AT >> Played Card Count
+>>> TEST FAILED <<<
+File 'cardtest1.c'
+Lines executed:87.16% of 148
+Branches executed:86.54% of 104
+Taken at least once:61.54% of 104
+Calls executed:75.27% of 93
+Creating 'cardtest1.c.gcov'
+

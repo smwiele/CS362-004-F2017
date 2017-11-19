@@ -1,0 +1,66 @@
+---------- TESTING CARD: village ----------
+Before: 
+-Hand: copper copper estate copper copper 
+-Size: 5
+-Deck: estate copper copper estate copper 
+-Size: 5
+-Discard: 
+-Size: 0
+-Played: 
+-Size: 0
+--TESTING: cardEffect & village
+TEST = PASSED
+
+After: 
+-Hand: copper copper estate copper copper 
+-Size: 5
+-Deck: estate copper copper estate 
+-Size: 4
+-Discard: 
+-Size: 0
+-Played: copper 
+-Size: 1
+---Print Results
+
+Expected: 
+-Hand: copper copper estate copper copper 
+-Size: 5
+-Deck: estate copper copper estate 
+-Size: 4
+-Discard: 
+-Size: 0
+-Played: copper 
+-Size: 1
+
+
+--Results:
+-Hand Count:
+Expected: 5
+Results : 5
+--TESTING HAND COUNT--
+TESTING = PASSED
+--TESTING HAND COUNT GAIN--
+TESTING = PASSED
+
+-Deck Count:
+Expected: 4
+Results : 4
+--TESTING DECK COUNT
+TESTING = PASSED
+
+-Discard Count:
+Expected: 0
+Results : 0
+--TESTING DISCARD
+TESTING = PASSED
+--TESTING PLAYED CARDS
+TEST = PASSED
+--TESTING ACTION COUNT
+TEST = SUCCESSFUL
+File 'cardtest3.c'
+Lines executed:89.34% of 122
+Branches executed:96.77% of 62
+Taken at least once:66.13% of 62
+Calls executed:78.65% of 89
+Creating 'cardtest3.c.gcov'
+
