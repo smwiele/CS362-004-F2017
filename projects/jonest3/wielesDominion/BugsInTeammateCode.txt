@@ -1,50 +1,116 @@
 Taylor Jones
 jonest3
 
-Bug-Reports
-
+Bug Reports
 Adventurer card:
-   - cardtest1
-   - Specific Tests Failed:
-	- Comparing Resulting Hand & Expected Hand counts
-		- Resulting Hand > Expected Hand by 1
-	- Comparing Resulting Played Card & Expected Played Card counts
-		- Resulting Played < Expected Played by 1
-   - Bugs Found:
-	1. Deck card not added to “discard” deck
-		- Where in Code:
-			- Missing “discardCard(handPos, currentPlayer, state, 0);” in adventurerCardEffect
-		- How to Reproduce:
-			- Have deck with multiple non-treasure cards to be drawn prior to 2 treasure cards.  Compare decks of the hand before and after 
-			  Adventurer is completed.  You will find that 1 of the cards disappears from all decks completely when it should have been added 
-			  to the discard deck.
-	2. Hand card not added to “played” deck
-		- Where in Code:
-			- Line 1240
-			- Current Code:	while(z - 1 > 0)
-			- Should Be:	while(z - 1 >= 0)
-		- How to Reproduce:
-			- Set the first card in the player’s hand so that it is distinct from all of the other cards.  Call the function and compare the 
-			  first card in the deck to the distinct card.  If these two cards match, the card was not removed from the player’s hand.  Now check 
-			  and see if playedCardCount is greater than the previous playedCardCount by only 1.  Compare the newest card in the hand to the 
-			  distinct card.  If they do not match, it was not added to the played deck.
+Test Case:	cardtest1
 
-Smithy card:
-   - cardtest2.c
-   - Specific Tests Failed:
-	- Comparing Resulting Hand and Expected Hand counts
-		- Resulting Hand < Expected Hand
-	- Testing Hand Count Card Gain
-		- Resulting Hand did not gain 3 cards & discard Smithy
-   - Bugs Found:
-	1. Only 2 cards from the deck were added to the player’s hand instead of 3.
-		- Where in Code:
-			- Line 1252: 
-			- Current Code:	for( i = 1; i < 3; i++)
-			- Should be: 	for( i = 0; i < 3; i++)
-		- How to Reproduce:
-			- Initiate a game and set the first card in the player’s hand to be Smithy.  Print out the current player’s hand and deck.  Call 
-			  the cardEffect function and pass it “Smithy” as the card for the current player.  Print out the player’s hand and deck once again.  
-			  3 of the cards from the deck should have migrated into the player’s hand and Smithy should have been discarded from it, thus the 
-			  overall count of the player’s hand should have increased by 2.  Based on the printed statements, only 2 cards were moved from the 
-			  deck into the player’s hand instead of the 3.  Thus, the hand and deck do not accurately depict the expected behaviour of Smithy.
+
+Specific Tests Failed:
+Comparing Resulting Hand & Expected Hand counts
+Resulting Hand > Expected Hand by 1
+Comparing Resulting Played Card & Expected Played Card counts
+Resulting Played < Expected Played by 1
+
+
+Bugs Found:
+Deck card not added to “discard” deck
+
+
+Category: 	Serious Bug
+
+
+Where in Code:
+Missing “discardCard(handPos, currentPlayer, state, 0);” in adventurerCardEffect
+
+
+How to Reproduce:
+Have deck with multiple non-treasure cards to be drawn prior to 2 treasure cards
+Print decks of the hand before Adventurer card is played
+Call cardEffect on Adventurer
+Print decks of the hand after Adventurer is completed
+Result: A card that should have been added to the discard deck disappears from all decks completely from the game.
+
+
+Effect of Bug:
+This bug is not detrimental to the execution of the game; however, it is detrimental to the functionality.  By not having the card be added to the discard deck, 
+the player loses the ability to use that card in any future rounds.  If this were to happen multiple times in a game, a player could potentially run out of viable 
+cards prematurely.  This type of outcome could lead to frustrated players and poor reputation for the program, which could lead to poor sales and loss of revenue.
+
+Hand card not added to “played” deck
+Category: 	Serious Bug
+
+
+Where in Code:
+Line 1240
+Current Code:	while(z - 1 > 0)
+Should Be:	while(z - 1 >= 0)
+
+
+How to Reproduce:
+Set the first card in the player’s hand so that it is distinct from all of the other cards
+Record the initial playedCardCount for later comparision
+Call cardEffect method on Adventurer
+Compare the first card in the deck to the distinct card
+If these two cards match, the card was not removed from the player’s hand
+Check and see if playedCardCount is greater than the previous playedCardCount by only 1
+Compare the newest card in the played deck to the distinct card
+If they do not match, it was not added to the played deck.
+
+
+Effect of Bug:
+This bug is not detrimental to the execution of the game; however, it is detrimental to the functionality.  By not moving the card from the player’s hand to the 
+played deck, the player could potentially reuse a card that should no longer be in use or could lose the chance to gain the appropriate number of cards when other 
+cards are played because of the player’s hand count.  If the player were to have multiple of these cards in their hand, they could lose out on potential cards that could help them win the game.  Though this card will not interfere with the execution of the game, it will interfere with the functionality.  This could lead to 
+upset or frustrated players and poor reputation.  Ultimately, this bug could result in a reduction of clients and loss of potential profit.
+
+Smithy card
+Test Case:	cardtest2
+
+
+Specific Tests Failed:
+Comparing Resulting Hand and Expected Hand counts
+Resulting Hand < Expected Hand
+Testing Hand Count Card Gain
+Resulting Hand did not gain 3 cards & discard Smithy
+
+
+Bugs Found:
+Only 2 cards from the deck were added to the player’s hand instead of 3.
+
+
+Category: Minor Annoyance 
+
+
+Where in Code:
+Line 1252: 
+Current Code:	for( i = 1; i < 3; i++)
+Should be: 	for( i = 0; i < 3; i++)
+
+
+How to Reproduce:
+Initiate a game
+Set the first card in the player’s hand to be Smithy
+Print out the current player’s hand and deck
+Call the cardEffect function and pass it “Smithy” as the card for the current player
+Print out the player’s hand and deck once again
+Compare the previous/initial hand and deck against the current hand and deck.
+Compare count of current hand to the previous/initial hand to see if 3 cards were added.
+Compare count of current deck hand to previous/initial hand to see if count decreased by 3.
+Result: Hand increased by 2 instead of 3 & deck reduced by 2 instead of 3.
+
+
+Effects of Bug:
+Three of the cards from the deck should have migrated into the player’s hand and Smithy should have been moved to the “played” deck.  These migrations should have 
+resulted in the player’s hand increasing by two cards in total, the played deck increasing by one, and, depending on deck size, three cards less from either deck, 
+discard, or a combination of both.  Based on the printf testing performed, only 2 cards were moved from the deck into the player’s hand instead of the 3.  Thus, 
+the hand and deck do not accurately depict the expected behaviour of Smithy.  This behavior causes inaccuracies within the game that cause it to diverge from the 
+original game.  This bug is not detrimental to the execution of the game; however, it can lead to frustrated players which can lead to bad reputation within the 
+program which could result in a loss of client use and recommendations.  
+
+I have become slightly more confident that I found a bug in the ‘isGameOver’ function, but do not trust my knowledge of Dominion enough to consider it an actual 
+bug just yet; I have tried researching it but would like to discuss the potential bug with a group of Dominion experts before submitting a proper bug report.  The 
+bug is that the function only checks through 25 of the 27 piles in the deck to determine if 3 supply piles have decreased to 0.  Providence will automatically cause the game to end if its supply pile is equal to 0.  Excluding that from the list of cards, there are 26 cards remaining whose supply piles need to be checked; 
+however, the for loop used is set to search 25 cards ( for(i = 0; i < 25; i++) ).  Because of this mistake, the game never checks to see if sea_hag’s supply is 
+equal to 0.  I found this bug by running my unittest2.c file against the code again.  Once again, the tests passed all test cases until sea_hag was tested.  Every 
+test that utilized this card as one of its test subjects, the test failed.  As stated, I have tried to search to see if there is a reason for this coding; however, I have not been able to find any evidence to support it as necessary.  After a consultation, if it results that this is a proper bug I would submit a bug report for it.
