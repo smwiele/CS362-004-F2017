@@ -42,6 +42,17 @@ public class UrlValidatorTest extends TestCase {
    {
 	   UrlValidator urlVal = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
 	   System.out.println(urlVal.isValid("http://www.amazon.com"));
+	   System.out.println(urlVal.isValid("http://www.ludlums.com"));
+	   System.out.println(urlVal.isValid("http://.ludlums.com"));
+	   System.out.println(urlVal.isValid("http:/www.ludlums.com"));
+	   System.out.println(urlVal.isValid("http//www.ludlums.com"));
+	   System.out.println(urlVal.isValid("http://ludlums.com/component/virtuemart/general-purpose-ratemeter-detail"));
+	   System.out.println(urlVal.isValid("http://ludlums.com/component/virtuemart/general-purpose-ratemeter-detail?activetab=introduction&Itemid=2657")); //returns false when it should be true
+	   System.out.println(urlVal.isValid("http://ludlums.com/products//general-purpose-meters/ratemeter"));
+	   System.out.println(urlVal.isValid("http://oregonstate.edu"));
+	   System.out.println(urlVal.isValid("http://eljentechnology.com"));
+	   System.out.println(urlVal.isValid("http://ludlums.com/../"));
+	   System.out.println(urlVal.isValid("http://ludlums.com/component/virtuemart/..?activetab=introduction"));
 	   
 	   
    }
@@ -59,6 +70,28 @@ public class UrlValidatorTest extends TestCase {
    
    public void testIsValid()
    {
+	ArrayList<String> schemeArray
+	ArrayList<String> hostArray
+	ArrayList<String> portArray
+	ArrayList<String> pathArray
+	ArrayList<String> queryArray
+
+	String testURL;
+
+	for (String scheme : schemeArray) {
+		for (String host : hostArray) {
+			for (String port : portArray) {
+				for (String path : pathArray) {
+					for (String query : queryArray) {
+						testURL = "";
+						testURL = scheme + host + port + path + query;
+						System.out.println(testURL);
+						System.out.print(urlVal.isValid(testURL));
+					}
+				}
+			}
+		}
+	}
 	   for(int i = 0;i<10000;i++)
 	   {
 		   
