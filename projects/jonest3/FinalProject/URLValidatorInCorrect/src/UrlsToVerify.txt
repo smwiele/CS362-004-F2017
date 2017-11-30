@@ -1,2 +1,7 @@
 https://www.google.com valid
 https://///www.google.com invalid
+http://www.google.com valid
+htp://www.google.com invalid
+https://ww.google.com invalid
+https:/www.google.com invalid
+https://com.google.www invalid
