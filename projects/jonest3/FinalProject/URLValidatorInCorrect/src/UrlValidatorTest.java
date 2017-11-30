@@ -68,7 +68,56 @@ public class UrlValidatorTest extends TestCase {
 	   
    }
    
+
+   // Testing invalid authority
+   public void testAuthority(){
+	ResultPair testPair;
+	boolean expected;
+	boolean result;
+
+	for(String authority : authorityArray){
+		testPair = authority;
+		expected = authority.valid;
+		result = url.isValidAuthority(testPair.item);
+		if(expected != result)
+			System.out.println(testPair.item + ": - FAILED");
+		else
+			System.out.println(testPair.item + ": + PASSED");
+	}
+   }
    
+   public void testQuery(){
+	ResultPair testPair;
+	boolean expected;
+	boolean result;
+
+	for(String query : queryArray){ 
+		testPair = query;
+		expected = query.valid;		
+		result = url.isValidQuery(testPair.item);
+		if(expected != result)
+			System.out.println(testPair.item + ": - FAILED");
+		else
+			System.out.println(testPair.item + ": + PASSED");
+	}
+   }
+
+   public void testScheme(){
+	ResultPair testPair;
+	boolean expected;
+	boolean result;
+
+	for(String scheme : schemeArray){
+		testPair = scheme;
+		expected = scheme.valid;
+		result = url.isValidScheme(testPair.item);
+		if(expected != result)
+			System.out.println(testPair.item + ": - FAILED");
+		else
+			System.out.println(testPair.item + ": + PASSED");
+	}
+   }
+
    public void testYourFirstPartition()
    {
 	   
@@ -170,20 +219,34 @@ public class UrlValidatorTest extends TestCase {
     * @param testObjects Used to create a url.
     */
    
-   ResultPair[] testScheme = {
+   ResultPair[] schemeArray = {
 	new ResultPair("", true),
+	new ResultPair("http://", true),
+	new ResultPair("https://", true),
+	new ResultPair("http//", false),
+	new ResultPair("http:/", false),
+	new ResultPair("http:", false),
+	new ResultPair("ftp://", true),
+	new ResultPair("://", false),
+	new ResultPair("123://", false),
+	new ResultPair("5http://", false),
+	new ResultPair("&*&://", false)
    };   
 
-   ResultPair[] testAuthority = {
+   ResultPair[] authorityArray = {
 	new ResultPair("", false),
 	new ResultPair("google.com", true),
 	new ResultPair("amazon.com", true),
 	new ResultPair("ludlums.com", true),
-	new ResultPair("google.co.uk", true)
-
+	new ResultPair("google.co.uk", true),
+	new ResultPair("www.google.com", true),
+	new ResultPair("0.0.0.0", true),
+	new ResultPair("1.1.1.1", false),
+	new ResultPair("abc.123", false),
+	new ResultPair("123.abc", false)
    }; 
 
-   ResultPair[] testPort = {
+   ResultPair[] portArray = {
 	new ResultPair("", true),
 	new ResultPair(":0", true),
 	new ResultPair(":1", true),
@@ -191,13 +254,10 @@ public class UrlValidatorTest extends TestCase {
 	new ResultPair(":99999", true),
 	new ResultPair(":abcd", false),
 	new ResultPair(":123abc", false),
-	new ResultPair(":123ABC", false),
-	new ResultPair(":1a2b3c", false),
-	new ResultPair(":", false),
-	new ResultPair(":!@#$%", false)	
+	new ResultPair(":", false)	
    };
 
-   ResultPair[] testPathOptions = {
+   ResultPair[] pathOptionsArray = {
 	new ResultPair("", true),
 	new ResultPair("/#", false),
 	new ResultPair("/..", false),
@@ -207,11 +267,12 @@ public class UrlValidatorTest extends TestCase {
 	new ResultPair("/123//abc", true)
    };
 
-   ResultPair[] testQuery = {
+   ResultPair[] queryArray = {
 	new ResultPair("", true),
 	new ResultPair("?foo=bar", true),
-	new ResultPair("mypage.html?", true),
-	new ResultPair("?", true),
-	new ResultPair("?var1=a&var2=b&var3=3", true);	
+	new ResultPair("?foo=bar&bar=foo", true),
+	new ResultPair("?q=%5E(.*)%24", true),
+//	new ResultPair("search?q=pickle", true)
+	new ResultPair("?q=%5E(.*)%24rlz=1C1CHBF_enUS771US771&oq=%5E(.*)%24&aqs=chrome..69i57j0.713j0j4&sourceid=chrome&ie=UTF-8",true)
    };
 }
