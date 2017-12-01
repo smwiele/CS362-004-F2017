@@ -65,57 +65,66 @@ public class UrlValidatorTest extends TestCase {
 	   System.out.println(urlVal.isValid("http://ludlums.com/../"));
 	   System.out.println(urlVal.isValid("http://ludlums.com/component/virtuemart/..?activetab=introduction"));
 */	   
-	   
+	   System.out.println();
    }
    
 
    // Testing invalid authority
    public void testAuthority(){
+	System.out.println("** Testing Authority **");
+	UrlValidator url = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
 	ResultPair testPair;
 	boolean expected;
 	boolean result;
 
-	for(String authority : authorityArray){
+	for(ResultPair authority : authorityArray){
 		testPair = authority;
 		expected = authority.valid;
-		result = url.isValidAuthority(testPair.item);
+		result = url.isValid("http://" + testPair.item);
 		if(expected != result)
-			System.out.println(testPair.item + ": - FAILED");
+			System.out.println("failed - " + testPair.item + "  (expected: " + testPair.valid + "  result: " + result + ")");
 		else
-			System.out.println(testPair.item + ": + PASSED");
+			System.out.println("passed - " + testPair.item + "  (expected: " + testPair.valid + "  result: " + result + ")");
 	}
+	System.out.println();
    }
    
    public void testQuery(){
+	System.out.println("** Testing Query **");
+	UrlValidator url = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
 	ResultPair testPair;
 	boolean expected;
 	boolean result;
 
-	for(String query : queryArray){ 
+	for(ResultPair query : queryArray){ 
 		testPair = query;
 		expected = query.valid;		
-		result = url.isValidQuery(testPair.item);
+		result = url.isValid("http://google.com/" + testPair.item);
 		if(expected != result)
-			System.out.println(testPair.item + ": - FAILED");
+			System.out.println("failed - " + testPair.item + "  (expected: " + testPair.valid + "  result: " + result + ")");
 		else
-			System.out.println(testPair.item + ": + PASSED");
+			System.out.println("passed - " + testPair.item + "  (expected: " + testPair.valid + "  result: " + result + ")");
 	}
+	System.out.println();
    }
 
    public void testScheme(){
+	System.out.println("** Testing Scheme **");
+	UrlValidator url = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
 	ResultPair testPair;
 	boolean expected;
 	boolean result;
 
-	for(String scheme : schemeArray){
+	for(ResultPair scheme : schemeArray){
 		testPair = scheme;
 		expected = scheme.valid;
-		result = url.isValidScheme(testPair.item);
+		result = url.isValid(testPair.item + "www.google.com");
 		if(expected != result)
-			System.out.println(testPair.item + ": - FAILED");
+			System.out.println("failed - " + testPair.item + "  (expected: " + testPair.valid + "  result: " + result + ")");
 		else
-			System.out.println(testPair.item + ": + PASSED");
+			System.out.println("passed - " + testPair.item + "  (expected: " + testPair.valid + "  result: " + result + ")");
 	}
+	System.out.println();
    }
 
    public void testYourFirstPartition()
@@ -128,20 +137,14 @@ public class UrlValidatorTest extends TestCase {
    }
    
    
-   public void testIsValid(ResultPair schemeArray, ResultPair hostArray, ResultPair portArray, ResultPair pathArray, ResultPair queryArray)
+   public void testIsValid(ResultPair[] schemeArray, ResultPair[] hostArray, ResultPair[] portArray, ResultPair[] pathArray, ResultPair[] queryArray)
    {
-/*
-	ArrayList<String> schemeArray
-	ArrayList<String> hostArray
-	ArrayList<String> portArray
-	ArrayList<String> pathArray
-	ArrayList<String> queryArray
-*/
+	UrlValidator url = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
 	String testURL;
 
 	boolean expectedResult = true;
 	boolean testedResult;
-	int errorCount = 0;
+	//int errorCount = 0;
 	
 	String scheme, host, port, path, query;
 
@@ -150,7 +153,7 @@ public class UrlValidatorTest extends TestCase {
 		for (ResultPair h : hostArray) {
 			host = h.item;
 			for (ResultPair po : portArray) {
-				post = po.item;
+				port = po.item;
 				for (ResultPair pa : pathArray) {
 					path = pa.item;
 					for (ResultPair q : queryArray) {
@@ -162,12 +165,12 @@ public class UrlValidatorTest extends TestCase {
 						testURL = "";
 						testURL = scheme + host + port + path + query;
 						System.out.println(testURL);
-						testedResult = urlVal.isValid(testURL);
+						testedResult = url.isValid(testURL);
 						System.out.print(testedResult);
 						
 						if(testedResult != expectedResult){
 							System.out.println("- TEST FAILED: " + scheme + host + port + path + query);
-							errorCount++;
+							//errorCount++;
 
 /*
 							// error in query
@@ -241,7 +244,7 @@ public class UrlValidatorTest extends TestCase {
 	new ResultPair("google.co.uk", true),
 	new ResultPair("www.google.com", true),
 	new ResultPair("0.0.0.0", true),
-	new ResultPair("1.1.1.1", false),
+	new ResultPair("255.255.255.255", true),
 	new ResultPair("abc.123", false),
 	new ResultPair("123.abc", false)
    }; 
@@ -272,7 +275,9 @@ public class UrlValidatorTest extends TestCase {
 	new ResultPair("?foo=bar", true),
 	new ResultPair("?foo=bar&bar=foo", true),
 	new ResultPair("?q=%5E(.*)%24", true),
-//	new ResultPair("search?q=pickle", true)
-	new ResultPair("?q=%5E(.*)%24rlz=1C1CHBF_enUS771US771&oq=%5E(.*)%24&aqs=chrome..69i57j0.713j0j4&sourceid=chrome&ie=UTF-8",true)
+	new ResultPair("search?q=pickle", true),
+	new ResultPair("search?q=%5E(.*)%24rlz=1C1CHBF_enUS771US771&oq=%5E(.*)%24&aqs=chrome..69i57j0.713j0j4&sourceid=chrome&ie=UTF-8",true),
+	new ResultPair("search?", true),
+	new ResultPair("?", true)
    };
 }
