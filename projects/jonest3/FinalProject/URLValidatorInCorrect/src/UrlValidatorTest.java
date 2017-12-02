@@ -37,7 +37,6 @@ public class UrlValidatorTest extends TestCase {
    }
 
    
-   
    public void testManualTest()
    {
 	   UrlValidator urlVal = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
@@ -58,26 +57,13 @@ public class UrlValidatorTest extends TestCase {
 	   for(ResultPair url : urlArray){
 		System.out.println(url.item + " Expected: " + url.valid + " Result: " + urlVal.isValid(url.item));
 	   }
-/*
-	   System.out.println(urlVal.isValid("http://www.amazon.com"));
-	   System.out.println(urlVal.isValid("http://www.ludlums.com"));
-	   System.out.println(urlVal.isValid("http://.ludlums.com"));
-	   System.out.println(urlVal.isValid("http:/www.ludlums.com"));
-	   System.out.println(urlVal.isValid("http//www.ludlums.com"));
-	   System.out.println(urlVal.isValid("http://ludlums.com/component/virtuemart/general-purpose-ratemeter-detail"));
-	   System.out.println(urlVal.isValid("http://ludlums.com/component/virtuemart/general-purpose-ratemeter-detail?activetab=introduction&Itemid=2657")); //returns false when it should be true
-	   System.out.println(urlVal.isValid("http://ludlums.com/products//general-purpose-meters/ratemeter"));
-	   System.out.println(urlVal.isValid("http://oregonstate.edu"));
-	   System.out.println(urlVal.isValid("http://eljentechnology.com"));
-	   System.out.println(urlVal.isValid("http://ludlums.com/../"));
-	   System.out.println(urlVal.isValid("http://ludlums.com/component/virtuemart/..?activetab=introduction"));
-*/	   
+  
 	   System.out.println();
    }
    
 
-   // Testing invalid host
-   public void testhost(){
+   // Testing host
+   public void testHost(){
 	System.out.println("** Testing host **");
 	UrlValidator url = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
 	ResultPair testPair;
@@ -96,6 +82,7 @@ public class UrlValidatorTest extends TestCase {
 	System.out.println();
    }
    
+   // Testing query
    public void testQuery(){
 	System.out.println("** Testing Query **");
 	UrlValidator url = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
@@ -115,21 +102,50 @@ public class UrlValidatorTest extends TestCase {
 	System.out.println();
    }
 
+   // Testing schemes
    public void testScheme(){
-	System.out.println("** Testing Scheme **");
+	System.out.println("** Testing Schemes **");
 	UrlValidator url = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
 	ResultPair testPair;
 	boolean expected;
 	boolean result;
 
-	for(ResultPair scheme : schemeArray){
-		testPair = scheme;
-		expected = scheme.valid;
+	for(ResultPair schema : schemeArray){
+		testPair = schema;
+		expected = schema.valid;
 		result = url.isValid(testPair.item + "www.google.com");
 		if(expected != result)
 			System.out.println("failed - " + testPair.item + "  (expected: " + testPair.valid + "  result: " + result + ")");
 		else
 			System.out.println("passed - " + testPair.item + "  (expected: " + testPair.valid + "  result: " + result + ")");
+	}
+	System.out.println();
+   }
+   
+   public void testAuthority(){
+	System.out.println("** Testing Authority **");
+	UrlValidator url = new UrlValidator();
+	ResultPair testPair = new ResultPair("",false);
+	boolean expected;
+	boolean result;
+
+	for(ResultPair host : hostArray){
+		for(ResultPair port : portArray) {
+			testPair.valid = false;
+			testPair.item = host.item + port.item;
+			//System.out.println("host.valid: " + host.valid);
+			//System.out.println("port.valid: " + port.valid);
+			if(host.valid == true && port.valid == true)
+				testPair.valid = true;
+			
+			expected = testPair.valid;
+			result = url.isValid("http://" + testPair.item);
+			
+			if(expected != result)
+				System.out.println("failed - " + testPair.item + "  (expected: " + testPair.valid + "  result: " + result + ")");
+			else
+				System.out.println("passed - " + testPair.item + "  (expected: " + testPair.valid + "  result: " + result + ")");
+		}
 	}
 	System.out.println();
    }
@@ -144,69 +160,41 @@ public class UrlValidatorTest extends TestCase {
    }
    
    
-   public void testIsValid(ResultPair[] schemeArray, ResultPair[] hostArray, ResultPair[] portArray, ResultPair[] pathArray, ResultPair[] queryArray)
+   public void testIsValid()
    {
 	UrlValidator url = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
 	String testURL;
 
 	boolean expectedResult = true;
 	boolean testedResult;
-	//int errorCount = 0;
 	
-	String scheme, host, port, path, query;
+	String schema, host, port, path, query;
 
 	for (ResultPair s : schemeArray) {
-		scheme = s.item;
+		schema = s.item;
 		for (ResultPair h : hostArray) {
 			host = h.item;
 			for (ResultPair po : portArray) {
 				port = po.item;
-				for (ResultPair pa : pathArray) {
+				for (ResultPair pa : pathOptionsArray) {
 					path = pa.item;
 					for (ResultPair q : queryArray) {
 						query = q.item;
 
+						expectedResult = true;
 						if(!s.valid  ||  !h.valid  ||  !po.valid  ||  !pa.valid  ||  !q.valid)
 							expectedResult = false;
 
 						testURL = "";
-						testURL = scheme + host + port + path + query;
-						System.out.println(testURL);
+						testURL = schema + host + port + path + query;
+						//System.out.println(testURL);
 						testedResult = url.isValid(testURL);
-						System.out.print(testedResult);
+						//System.out.print(testedResult);
 						
-						if(testedResult != expectedResult){
-							System.out.println("- TEST FAILED: " + scheme + host + port + path + query);
-							//errorCount++;
-
-/*
-							// error in query
-							if(errorCount == 1){
-								System.out.println("Error in QUERY");
-							}
-							// error in path
-							else if(errorCount == queryArray.length){
-								System.out.println("Error in PATH");
-							}
-							// error in port
-							else if(errorCount == (queryArray.length * pathArray.length)){
-								System.out.println("Error in PORT");
-							}	
-							// error in host
-							else if(errorCount == (queryArray.length * pathArray.length * portArray.length)){
-								System.out.println("Error in HOST");
-							}
-							// error in scheme
-							else if(errorCount == (queryArray.length * pathArray.length * portArray.length * hostArray.length)){
-								System.out.println("Error in SCHEME");
-							}
-							else{
-								System.out.println("****ERROR IN DEBUGGING LOGIC****");
-							}
-*/
-						}
+						if(testedResult != expectedResult)
+							System.out.println("- TEST FAILED: " + schema + host + port + path + query);
 						else
-							System.out.println("+ TEST PASSED");
+							System.out.println("+ Test PASSED: " + schema + host + port + path + query);
 					}
 				}
 			}
