@@ -41,15 +41,22 @@ public class UrlValidatorTest extends TestCase {
    public void testManualTest()
    {
 	   UrlValidator urlVal = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
+	   
+	   ResultPair[] urlArray = {new ResultPair ("http://www.amazon.com", true),	
+			   					new ResultPair ("http://www.ludlums.com", true),
+			   					new ResultPair ("http://.ludlums.com", false),
+			   					new ResultPair ("http:/www.ludlums.com", false),
+			   					new ResultPair ("http//www.ludlums.com", false),
+			   					new ResultPair ("http://ludlums.com/component/virtuemart/general-purpose-ratemeter-detail", true),
+			   					new ResultPair ("http://ludlums.com/component/virtuemart/general-purpose-ratemeter-detail?activetab=introduction&Itemid=2657", true),
+			   					new ResultPair ("http://ludlums.com/products//general-purpose-meters/ratemeter", true),
+			   					new ResultPair ("http://oregonstate.edu", true),	
+			   					new ResultPair ("http://eljentechnology.com", true),
+			   					new ResultPair ("http://ludlums.com/../", false),
+			   					new ResultPair ("http://ludlums.com/component/virtuemart/..?activetab=introduction", true)};
 
-	   String[] urlArray = {"http://www.amazon.com","http://www.ludlums.com","http://.ludlums.com","http:/www.ludlums.com",
-				"http//www.ludlums.com","http://ludlums.com/component/virtuemart/general-purpose-ratemeter-detail",
-				"http://ludlums.com/component/virtuemart/general-purpose-ratemeter-detail?activetab=introduction&Itemid=2657",
-				"http://ludlums.com/products//general-purpose-meters/ratemeter","http://oregonstate.edu","http://eljentechnology.com",
-				"http://ludlums.com/../","http://ludlums.com/component/virtuemart/..?activetab=introduction"};
-
-	   for(String url : urlArray){
-		System.out.println(urlVal.isValid(url) + " - " + url);
+	   for(ResultPair url : urlArray){
+		System.out.println(url.item + " Expected: " + url.valid + " Result: " + urlVal.isValid(url.item));
 	   }
 /*
 	   System.out.println(urlVal.isValid("http://www.amazon.com"));
@@ -69,17 +76,17 @@ public class UrlValidatorTest extends TestCase {
    }
    
 
-   // Testing invalid authority
-   public void testAuthority(){
-	System.out.println("** Testing Authority **");
+   // Testing invalid host
+   public void testhost(){
+	System.out.println("** Testing host **");
 	UrlValidator url = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
 	ResultPair testPair;
 	boolean expected;
 	boolean result;
 
-	for(ResultPair authority : authorityArray){
-		testPair = authority;
-		expected = authority.valid;
+	for(ResultPair host : hostArray){
+		testPair = host;
+		expected = host.valid;
 		result = url.isValid("http://" + testPair.item);
 		if(expected != result)
 			System.out.println("failed - " + testPair.item + "  (expected: " + testPair.valid + "  result: " + result + ")");
@@ -233,15 +240,19 @@ public class UrlValidatorTest extends TestCase {
 	new ResultPair("://", false),
 	new ResultPair("123://", false),
 	new ResultPair("5http://", false),
-	new ResultPair("&*&://", false)
+	new ResultPair("&*&://", false),
+	new ResultPair("//", false),
+	new ResultPair(":", false)
    };   
 
-   ResultPair[] authorityArray = {
+   ResultPair[] hostArray = {
 	new ResultPair("", false),
 	new ResultPair("google.com", true),
 	new ResultPair("amazon.com", true),
 	new ResultPair("ludlums.com", true),
 	new ResultPair("google.co.uk", true),
+	new ResultPair("google.uk", true),
+	new ResultPair("google.com.br", true),
 	new ResultPair("www.google.com", true),
 	new ResultPair("0.0.0.0", true),
 	new ResultPair("255.255.255.255", true),
