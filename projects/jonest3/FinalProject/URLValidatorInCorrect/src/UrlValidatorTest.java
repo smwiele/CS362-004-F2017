@@ -48,11 +48,11 @@ public class UrlValidatorTest extends TestCase {
 			   					new ResultPair ("http//www.ludlums.com", false),
 			   					new ResultPair ("http://ludlums.com/component/virtuemart/general-purpose-ratemeter-detail", true),
 			   					new ResultPair ("http://ludlums.com/component/virtuemart/general-purpose-ratemeter-detail?activetab=introduction&Itemid=2657", true),
-			   					new ResultPair ("http://ludlums.com/products//general-purpose-meters/ratemeter", true),
+			   					new ResultPair ("http://ludlums.com/products//general-purpose-meters/ratemeter", false),
 			   					new ResultPair ("http://oregonstate.edu", true),	
 			   					new ResultPair ("http://eljentechnology.com", true),
 			   					new ResultPair ("http://ludlums.com/../", false),
-			   					new ResultPair ("http://ludlums.com/component/virtuemart/..?activetab=introduction", true)};
+			   					new ResultPair ("http://ludlums.com/component/virtuemart/..?activetab=introduction", false)};
 
 	   for(ResultPair url : urlArray){
 		System.out.println(url.item + " Expected: " + url.valid + " Result: " + urlVal.isValid(url.item));
