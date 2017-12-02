@@ -20,8 +20,6 @@ import junit.framework.TestCase;
 
 
 
-
-
 /**
  * Performs Validation Test for url validations.
  *
@@ -36,248 +34,391 @@ public class UrlValidatorTest extends TestCase {
       super(testName);
    }
 
-   
-   
-   public void testManualTest()
-   {
-	   UrlValidator urlVal = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
-
-	   String[] urlArray = {"http://www.amazon.com","http://www.ludlums.com","http://.ludlums.com","http:/www.ludlums.com",
-				"http//www.ludlums.com","http://ludlums.com/component/virtuemart/general-purpose-ratemeter-detail",
-				"http://ludlums.com/component/virtuemart/general-purpose-ratemeter-detail?activetab=introduction&Itemid=2657",
-				"http://ludlums.com/products//general-purpose-meters/ratemeter","http://oregonstate.edu","http://eljentechnology.com",
-				"http://ludlums.com/../","http://ludlums.com/component/virtuemart/..?activetab=introduction"};
-
-	   for(String url : urlArray){
-		System.out.println(urlVal.isValid(url) + " - " + url);
-	   }
-/*
-	   System.out.println(urlVal.isValid("http://www.amazon.com"));
-	   System.out.println(urlVal.isValid("http://www.ludlums.com"));
-	   System.out.println(urlVal.isValid("http://.ludlums.com"));
-	   System.out.println(urlVal.isValid("http:/www.ludlums.com"));
-	   System.out.println(urlVal.isValid("http//www.ludlums.com"));
-	   System.out.println(urlVal.isValid("http://ludlums.com/component/virtuemart/general-purpose-ratemeter-detail"));
-	   System.out.println(urlVal.isValid("http://ludlums.com/component/virtuemart/general-purpose-ratemeter-detail?activetab=introduction&Itemid=2657")); //returns false when it should be true
-	   System.out.println(urlVal.isValid("http://ludlums.com/products//general-purpose-meters/ratemeter"));
-	   System.out.println(urlVal.isValid("http://oregonstate.edu"));
-	   System.out.println(urlVal.isValid("http://eljentechnology.com"));
-	   System.out.println(urlVal.isValid("http://ludlums.com/../"));
-	   System.out.println(urlVal.isValid("http://ludlums.com/component/virtuemart/..?activetab=introduction"));
-*/	   
-	   System.out.println();
-   }
-   
-
-   // Testing invalid authority
-   public void testAuthority(){
-	System.out.println("** Testing Authority **");
-	UrlValidator url = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
-	ResultPair testPair;
-	boolean expected;
-	boolean result;
-
-	for(ResultPair authority : authorityArray){
-		testPair = authority;
-		expected = authority.valid;
-		result = url.isValid("http://" + testPair.item);
-		if(expected != result)
-			System.out.println("failed - " + testPair.item + "  (expected: " + testPair.valid + "  result: " + result + ")");
-		else
-			System.out.println("passed - " + testPair.item + "  (expected: " + testPair.valid + "  result: " + result + ")");
-	}
-	System.out.println();
-   }
-   
-   public void testQuery(){
-	System.out.println("** Testing Query **");
-	UrlValidator url = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
-	ResultPair testPair;
-	boolean expected;
-	boolean result;
-
-	for(ResultPair query : queryArray){ 
-		testPair = query;
-		expected = query.valid;		
-		result = url.isValid("http://google.com/" + testPair.item);
-		if(expected != result)
-			System.out.println("failed - " + testPair.item + "  (expected: " + testPair.valid + "  result: " + result + ")");
-		else
-			System.out.println("passed - " + testPair.item + "  (expected: " + testPair.valid + "  result: " + result + ")");
-	}
-	System.out.println();
+   protected void setUp() {
+      for (int index = 0; index < testPartsIndex.length - 1; index++) {
+         testPartsIndex[index] = 0;
+      }
    }
 
-   public void testScheme(){
-	System.out.println("** Testing Scheme **");
-	UrlValidator url = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
-	ResultPair testPair;
-	boolean expected;
-	boolean result;
+   public void testIsValid() {
+        testIsValid(testUrlParts, UrlValidator.ALLOW_ALL_SCHEMES);
+        setUp();
+        //long options =
+        //    UrlValidator.ALLOW_2_SLASHES
+        //        + UrlValidator.ALLOW_ALL_SCHEMES
+        //        + UrlValidator.NO_FRAGMENTS;
 
-	for(ResultPair scheme : schemeArray){
-		testPair = scheme;
-		expected = scheme.valid;
-		result = url.isValid(testPair.item + "www.google.com");
-		if(expected != result)
-			System.out.println("failed - " + testPair.item + "  (expected: " + testPair.valid + "  result: " + result + ")");
-		else
-			System.out.println("passed - " + testPair.item + "  (expected: " + testPair.valid + "  result: " + result + ")");
-	}
-	System.out.println();
+        //testIsValid(testUrlPartsOptions, options);
    }
 
-   public void testYourFirstPartition()
-   {
-	   
+   public void testIsValidScheme() {
+      if (printStatus) {
+         System.out.print("\n testIsValidScheme() ");
+      }
+      String[] schemes = {"http", "gopher"};
+      //UrlValidator urlVal = new UrlValidator(schemes,false,false,false);
+      UrlValidator urlVal = new UrlValidator(schemes, 0);
+      for (int sIndex = 0; sIndex < testScheme.length; sIndex++) {
+         ResultPair testPair = testScheme[sIndex];
+         boolean result = urlVal.isValidScheme(testPair.item);
+         assertEquals(testPair.item, testPair.valid, result);
+         if (printStatus) {
+            if (result == testPair.valid) {
+               System.out.print('.');
+            } else {
+               System.out.print('X');
+            }
+         }
+      }
+      if (printStatus) {
+         System.out.println();
+      }
+
    }
-   
-   public void testYourSecondPartition(){
-	   
-   }
-   
-   
-   public void testIsValid(ResultPair[] schemeArray, ResultPair[] hostArray, ResultPair[] portArray, ResultPair[] pathArray, ResultPair[] queryArray)
-   {
-	UrlValidator url = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
-	String testURL;
 
-	boolean expectedResult = true;
-	boolean testedResult;
-	//int errorCount = 0;
-	
-	String scheme, host, port, path, query;
-
-	for (ResultPair s : schemeArray) {
-		scheme = s.item;
-		for (ResultPair h : hostArray) {
-			host = h.item;
-			for (ResultPair po : portArray) {
-				port = po.item;
-				for (ResultPair pa : pathArray) {
-					path = pa.item;
-					for (ResultPair q : queryArray) {
-						query = q.item;
-
-						if(!s.valid  ||  !h.valid  ||  !po.valid  ||  !pa.valid  ||  !q.valid)
-							expectedResult = false;
-
-						testURL = "";
-						testURL = scheme + host + port + path + query;
-						System.out.println(testURL);
-						testedResult = url.isValid(testURL);
-						System.out.print(testedResult);
-						
-						if(testedResult != expectedResult){
-							System.out.println("- TEST FAILED: " + scheme + host + port + path + query);
-							//errorCount++;
-
-/*
-							// error in query
-							if(errorCount == 1){
-								System.out.println("Error in QUERY");
-							}
-							// error in path
-							else if(errorCount == queryArray.length){
-								System.out.println("Error in PATH");
-							}
-							// error in port
-							else if(errorCount == (queryArray.length * pathArray.length)){
-								System.out.println("Error in PORT");
-							}	
-							// error in host
-							else if(errorCount == (queryArray.length * pathArray.length * portArray.length)){
-								System.out.println("Error in HOST");
-							}
-							// error in scheme
-							else if(errorCount == (queryArray.length * pathArray.length * portArray.length * hostArray.length)){
-								System.out.println("Error in SCHEME");
-							}
-							else{
-								System.out.println("****ERROR IN DEBUGGING LOGIC****");
-							}
-*/
-						}
-						else
-							System.out.println("+ TEST PASSED");
-					}
-				}
-			}
-		}
-	}
-	for(int i = 0;i<10000;i++)
-	{
-		   
-	}
-   }
-   
-   public void testAnyOtherUnitTest()
-   {
-	   
-   }
    /**
     * Create set of tests by taking the testUrlXXX arrays and
     * running through all possible permutations of their combinations.
     *
     * @param testObjects Used to create a url.
     */
+   public void testIsValid(Object[] testObjects, long options) {
+      UrlValidator urlVal = new UrlValidator(null, null, options);
+      assertTrue(urlVal.isValid("http://www.google.com"));
+      assertTrue(urlVal.isValid("http://www.google.com/"));
+      int statusPerLine = 60;
+      int printed = 0;
+      if (printIndex)  {
+         statusPerLine = 6;
+      }
+      do {
+         StringBuffer testBuffer = new StringBuffer();
+         boolean expected = true;
+         for (int testPartsIndexIndex = 0; testPartsIndexIndex < testPartsIndex.length; ++testPartsIndexIndex) {
+            int index = testPartsIndex[testPartsIndexIndex];
+            ResultPair[] part = (ResultPair[]) testObjects[testPartsIndexIndex];
+            testBuffer.append(part[index].item);
+            expected &= part[index].valid;
+         }
+         //System.out.println(testPartsIndex[0]);
+         String url = testBuffer.toString();
+         boolean result = urlVal.isValid(url);
+         
+         if(result == true)
+        	 System.out.println(url);
+         assertEquals(url, expected, result);
+         
+         if (printStatus) {
+            if (printIndex) {
+               //System.out.print(testPartsIndextoString());
+            } else {
+               if (result == expected) {
+                  System.out.print('.');
+               } else {
+                  System.out.print('X');
+               }
+            }
+            printed++;
+            if (printed == statusPerLine) {
+               System.out.println();
+               printed = 0;
+            }
+         }
+      } while (incrementTestPartsIndex(testPartsIndex, testObjects));
+      if (printStatus) {
+         System.out.println();
+      }
+   }
+
+   public void testValidator202() {
+       String[] schemes = {"http","https"};
+       UrlValidator urlValidator = new UrlValidator(schemes, UrlValidator.NO_FRAGMENTS);
+       //UrlValidator urlValidator = new UrlValidator(schemes, UrlValidator.ALLOW_ALL_SCHEMES);
+       assertTrue(urlValidator.isValid("http://www.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.logoworks.comwww.org"));
+   }
+
+   public void testValidator204() {
+       String[] schemes = {"http","https"};
+       UrlValidator urlValidator = new UrlValidator(schemes);
+       assertTrue(urlValidator.isValid("http://tech.yahoo.com/rc/desktops/102;_ylt=Ao8yevQHlZ4On0O3ZJGXLEQFLZA5"));
+   }
+
+   public void testValidator218() {
+       UrlValidator validator = new UrlValidator(UrlValidator.ALLOW_2_SLASHES);
+       assertTrue("parentheses should be valid in URLs",
+               validator.isValid("http://somewhere.com/pathxyz/file(1).html"));
+   }
+
+    public void testValidator248() {
+        RegexValidator regex = new RegexValidator(new String[] {"localhost", ".*\\.my-testing"});
+        UrlValidator validator = new UrlValidator(regex, 0);
+
+        assertTrue("localhost URL should validate",
+                validator.isValid("http://localhost/test/index.html"));
+        assertTrue("first.my-testing should validate",
+                validator.isValid("http://first.my-testing/test/index.html"));
+        assertTrue("sup3r.my-testing should validate",
+                validator.isValid("http://sup3r.my-testing/test/index.html"));
+
+        assertFalse("broke.my-test should not validate",
+                validator.isValid("http://broke.my-test/test/index.html"));
+
+        assertTrue("www.apache.org should still validate",
+                validator.isValid("http://www.apache.org/test/index.html"));
+
+        // Now check using options
+        validator = new UrlValidator(UrlValidator.ALLOW_LOCAL_URLS);
+        
+        assertTrue("localhost URL should validate",
+              validator.isValid("http://localhost/test/index.html"));
+        
+        assertTrue("machinename URL should validate",
+              validator.isValid("http://machinename/test/index.html"));
+        
+        assertTrue("www.apache.org should still validate",
+              validator.isValid("http://www.apache.org/test/index.html"));
+    }
+
+    public void testValidator288() {
+        UrlValidator validator = new UrlValidator(UrlValidator.ALLOW_LOCAL_URLS);
+
+        assertTrue("hostname should validate",
+                validator.isValid("http://hostname"));
+
+        assertTrue("hostname with path should validate",
+                validator.isValid("http://hostname/test/index.html"));
+        
+        assertTrue("localhost URL should validate",
+                validator.isValid("http://localhost/test/index.html"));
+        
+        assertFalse("first.my-testing should not validate",
+                validator.isValid("http://first.my-testing/test/index.html"));
+
+
+        assertTrue("www.apache.org should still validate",
+                validator.isValid("http://www.apache.org/test/index.html"));
+
+        // Turn it off, and check
+        validator = new UrlValidator(0);
+
+        assertFalse("hostname should no longer validate",
+                validator.isValid("http://hostname"));
+
+        assertFalse("localhost URL should no longer validate",
+                validator.isValid("http://localhost/test/index.html"));
+        
+        assertTrue("www.apache.org should still validate",
+                validator.isValid("http://www.apache.org/test/index.html"));
+    }
+    
+    public void testValidator276() {
+        // file:// isn't allowed by default
+        UrlValidator validator = new UrlValidator();
+        
+        assertTrue("http://apache.org/ should be allowed by default",
+                 validator.isValid("http://www.apache.org/test/index.html"));
+       
+        assertFalse("file:///c:/ shouldn't be allowed by default",
+                 validator.isValid("file:///C:/some.file"));
+        
+        assertFalse("file:///c:\\ shouldn't be allowed by default",
+              validator.isValid("file:///C:\\some.file"));
+        
+        assertFalse("file:///etc/ shouldn't be allowed by default",
+              validator.isValid("file:///etc/hosts"));
+        
+        assertFalse("file://localhost/etc/ shouldn't be allowed by default",
+              validator.isValid("file://localhost/etc/hosts"));
+        
+        assertFalse("file://localhost/c:/ shouldn't be allowed by default",
+              validator.isValid("file://localhost/c:/some.file"));
+        
+        // Turn it on, and check
+        // Note - we need to enable local urls when working with file:
+        validator = new UrlValidator(new String[] {"http","file"}, UrlValidator.ALLOW_LOCAL_URLS);
+        
+        assertTrue("http://apache.org/ should be allowed by default",
+                 validator.isValid("http://www.apache.org/test/index.html"));
+       
+        assertTrue("file:///c:/ should now be allowed",
+                 validator.isValid("file:///C:/some.file"));
+        
+        // Currently, we don't support the c:\ form
+        assertFalse("file:///c:\\ shouldn't be allowed",
+              validator.isValid("file:///C:\\some.file"));
+        
+        assertTrue("file:///etc/ should now be allowed",
+              validator.isValid("file:///etc/hosts"));
+        
+        assertTrue("file://localhost/etc/ should now be allowed",
+              validator.isValid("file://localhost/etc/hosts"));
+        
+        assertTrue("file://localhost/c:/ should now be allowed",
+              validator.isValid("file://localhost/c:/some.file"));
+        
+        // These are never valid
+        assertFalse("file://c:/ shouldn't ever be allowed, needs file:///c:/",
+              validator.isValid("file://C:/some.file"));
+     
+        assertFalse("file://c:\\ shouldn't ever be allowed, needs file:///c:/",
+              validator.isValid("file://C:\\some.file"));
+    }
+
+    
+   static boolean incrementTestPartsIndex(int[] testPartsIndex, Object[] testParts) {
+      boolean carry = true;  //add 1 to lowest order part.
+      boolean maxIndex = true;
+      for (int testPartsIndexIndex = testPartsIndex.length - 1; testPartsIndexIndex >= 0; --testPartsIndexIndex) {
+         int index = testPartsIndex[testPartsIndexIndex];
+         ResultPair[] part = (ResultPair[]) testParts[testPartsIndexIndex];
+         if (carry) {
+            if (index < part.length - 1) {
+               index++;
+               testPartsIndex[testPartsIndexIndex] = index;
+               carry = false;
+            } else {
+               testPartsIndex[testPartsIndexIndex] = 0;
+               carry = true;
+            }
+         }
+         maxIndex &= (index == (part.length - 1));
+      }
+
+
+      return (!maxIndex);
+   }
+
+   private String testPartsIndextoString() {
+      StringBuffer carryMsg = new StringBuffer("{");
+      for (int testPartsIndexIndex = 0; testPartsIndexIndex < testPartsIndex.length; ++testPartsIndexIndex) {
+         carryMsg.append(testPartsIndex[testPartsIndexIndex]);
+         if (testPartsIndexIndex < testPartsIndex.length - 1) {
+            carryMsg.append(',');
+         } else {
+            carryMsg.append('}');
+         }
+      }
+      return carryMsg.toString();
+
+   }
+
+   public void testValidateUrl() {
+      assertTrue(true);
+   }
    
-   ResultPair[] schemeArray = {
-	new ResultPair("", true),
-	new ResultPair("http://", true),
-	new ResultPair("https://", true),
-	new ResultPair("http//", false),
-	new ResultPair("http:/", false),
-	new ResultPair("http:", false),
-	new ResultPair("ftp://", true),
-	new ResultPair("://", false),
-	new ResultPair("123://", false),
-	new ResultPair("5http://", false),
-	new ResultPair("&*&://", false)
-   };   
+   public void testBug1(){
+	  //http://www.google.com:80/test1?action=view true
+	   UrlValidator validator = new UrlValidator();
+	   validator.isValid("http://www.google.com:80/test1?action=view true");
+	   
+   }
+   
+   public void testBug2(){
+	   UrlValidator validator = new UrlValidator();
+	   validator.isValid("http://0.0.0.0:80/test1?action=view true");
+   }
 
-   ResultPair[] authorityArray = {
-	new ResultPair("", false),
-	new ResultPair("google.com", true),
-	new ResultPair("amazon.com", true),
-	new ResultPair("ludlums.com", true),
-	new ResultPair("google.co.uk", true),
-	new ResultPair("www.google.com", true),
-	new ResultPair("0.0.0.0", true),
-	new ResultPair("255.255.255.255", true),
-	new ResultPair("abc.123", false),
-	new ResultPair("123.abc", false)
-   }; 
+   /**
+    * Only used to debug the unit tests.
+    * @param argv
+    */
+   public static void main(String[] argv) {
 
-   ResultPair[] portArray = {
-	new ResultPair("", true),
-	new ResultPair(":0", true),
-	new ResultPair(":1", true),
-	new ResultPair(":-1", false),
-	new ResultPair(":99999", true),
-	new ResultPair(":abcd", false),
-	new ResultPair(":123abc", false),
-	new ResultPair(":", false)	
+      UrlValidatorTest fct = new UrlValidatorTest("url test");
+      fct.setUp();
+      fct.testIsValid();
+      fct.testIsValidScheme();
+   }
+   //-------------------- Test data for creating a composite URL
+   /**
+    * The data given below approximates the 4 parts of a URL
+    * <scheme>://<authority><path>?<query> except that the port number
+    * is broken out of authority to increase the number of permutations.
+    * A complete URL is composed of a scheme+authority+port+path+query,
+    * all of which must be individually valid for the entire URL to be considered
+    * valid.
+    */
+   ResultPair[] testUrlScheme = {new ResultPair("http://", true),
+                               new ResultPair("ftp://", true),
+                               new ResultPair("h3t://", true),
+                               new ResultPair("3ht://", false),
+                               new ResultPair("http:/", false),
+                               new ResultPair("http:", false),
+                               new ResultPair("http/", false),
+                               new ResultPair("://", false),
+                               new ResultPair("", true)};
+
+   ResultPair[] testUrlAuthority = {new ResultPair("www.google.com", true),
+                                  new ResultPair("go.com", true),
+                                  new ResultPair("go.au", true),
+                                  new ResultPair("0.0.0.0", true),
+                                  new ResultPair("255.255.255.255", true),
+                                  new ResultPair("256.256.256.256", false),
+                                  new ResultPair("255.com", true),
+                                  new ResultPair("1.2.3.4.5", false),
+                                  new ResultPair("1.2.3.4.", false),
+                                  new ResultPair("1.2.3", false),
+                                  new ResultPair(".1.2.3.4", false),
+                                  new ResultPair("go.a", false),
+                                  new ResultPair("go.a1a", false),
+                                  new ResultPair("go.cc", true),
+                                  new ResultPair("go.1aa", false),
+                                  new ResultPair("aaa.", false),
+                                  new ResultPair(".aaa", false),
+                                  new ResultPair("aaa", false),
+                                  new ResultPair("", false)
+   };
+   ResultPair[] testUrlPort = {new ResultPair(":80", true),
+                             new ResultPair(":65535", true),
+                             new ResultPair(":0", true),
+                             new ResultPair("", true),
+                             new ResultPair(":-1", false),
+                             new ResultPair(":65636", true),
+                             new ResultPair(":65a", false)
+   };
+   ResultPair[] testPath = {new ResultPair("/test1", true),
+                          new ResultPair("/t123", true),
+                          new ResultPair("/$23", true),
+                          new ResultPair("/..", false),
+                          new ResultPair("/../", false),
+                          new ResultPair("/test1/", true),
+                          new ResultPair("", true),
+                          new ResultPair("/test1/file", true),
+                          new ResultPair("/..//file", false),
+                          new ResultPair("/test1//file", false)
+   };
+   //Test allow2slash, noFragment
+   ResultPair[] testUrlPathOptions = {new ResultPair("/test1", true),
+                                    new ResultPair("/t123", true),
+                                    new ResultPair("/$23", true),
+                                    new ResultPair("/..", false),
+                                    new ResultPair("/../", false),
+                                    new ResultPair("/test1/", true),
+                                    new ResultPair("/#", false),
+                                    new ResultPair("", true),
+                                    new ResultPair("/test1/file", true),
+                                    new ResultPair("/t123/file", true),
+                                    new ResultPair("/$23/file", true),
+                                    new ResultPair("/../file", false),
+                                    new ResultPair("/..//file", false),
+                                    new ResultPair("/test1//file", true),
+                                    new ResultPair("/#/file", false)
    };
 
-   ResultPair[] pathOptionsArray = {
-	new ResultPair("", true),
-	new ResultPair("/#", false),
-	new ResultPair("/..", false),
-	new ResultPair("/../abc", false),
-	new ResultPair("/123/abc", true),
-	new ResultPair("/..//abc", false),
-	new ResultPair("/123//abc", true)
+   ResultPair[] testUrlQuery = {new ResultPair("?action=view", true),
+                              new ResultPair("?action=edit&mode=up", true),
+                              new ResultPair("", true)
    };
 
-   ResultPair[] queryArray = {
-	new ResultPair("", true),
-	new ResultPair("?foo=bar", true),
-	new ResultPair("?foo=bar&bar=foo", true),
-	new ResultPair("?q=%5E(.*)%24", true),
-	new ResultPair("search?q=pickle", true),
-	new ResultPair("search?q=%5E(.*)%24rlz=1C1CHBF_enUS771US771&oq=%5E(.*)%24&aqs=chrome..69i57j0.713j0j4&sourceid=chrome&ie=UTF-8",true),
-	new ResultPair("search?", true),
-	new ResultPair("?", true)
-   };
+   Object[] testUrlParts = {testUrlScheme, testUrlAuthority, testUrlPort, testPath, testUrlQuery};
+   Object[] testUrlPartsOptions = {testUrlScheme, testUrlAuthority, testUrlPort, testUrlPathOptions, testUrlQuery};
+   int[] testPartsIndex = {0, 0, 0, 0, 0};
+
+   //---------------- Test data for individual url parts ----------------
+   ResultPair[] testScheme = {new ResultPair("http", true),
+                            new ResultPair("ftp", false),
+                            new ResultPair("httpd", false),
+                            new ResultPair("telnet", false)};
+
+
 }
